@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-07",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which is the only Canadian province that is officially bilingual across both English and French?",
+    "a": [
+     "New Brunswick",
+     "Quebec",
+     "Ontario",
+     "Nova Scotia"
+    ],
+    "why": "New Brunswick adopted official bilingualism in 1969; Quebec's sole official provincial language is French."
+   },
+   {
+    "q": "Which is the only non-metallic element that is a liquid at standard room temperature and pressure?",
+    "a": [
+     "Bromine",
+     "Mercury",
+     "Gallium",
+     "Caesium"
+    ],
+    "why": "While mercury is a liquid metal, bromine is the only non-metal to exist in a liquid state at room temperature."
+   },
+   {
+    "q": "In South African winemaking, what is the traditional local name for the Chenin Blanc grape?",
+    "a": [
+     "Steen",
+     "Pinotage",
+     "Hanepoot",
+     "Groendruif"
+    ],
+    "why": "Dutch settlers introduced the grape in the 17th century, where it became widely cultivated under the name Steen."
+   },
+   {
+    "q": "Which Roman emperor was captured alive by the Sasanian Persian Empire at the Battle of Edessa in 260 AD?",
+    "a": [
+     "Valerian",
+     "Decius",
+     "Aurelian",
+     "Diocletian"
+    ],
+    "why": "Valerian became the only Roman emperor to be taken as a prisoner of war, spending the rest of his life in captivity."
+   },
+   {
+    "q": "Which is the only bone in the human body that does not articulate directly with any other bone?",
+    "a": [
+     "Hyoid",
+     "Stapes",
+     "Patella",
+     "Coccyx"
+    ],
+    "why": "Anchored only by muscles and ligaments in the throat, the hyoid plays an essential role in speech and swallowing."
+   }
+  ],
+  "pop": [
+   {
+    "q": "Which rotten borough does Baldrick win by a landslide in Blackadder the Third?",
+    "a": [
+     "Dunny-on-the-Wold",
+     "Dibley-on-the-Marsh",
+     "Puddle-in-the-Hole",
+     "Chipping Sodbury"
+    ],
+    "why": "Baldrick famously polled one vote (his own) to become MP for Dunny-on-the-Wold."
+   },
+   {
+    "q": "Before being redesigned as British adventurer Lara Croft, what was the character originally named?",
+    "a": [
+     "Laura Cruz",
+     "Carmen Cruz",
+     "Lara Castillo",
+     "Elena Cortez"
+    ],
+    "why": "Core Design swapped the South American mercenary Laura Cruz for an English aristocrat."
+   },
+   {
+    "q": "In 1999, which US intelligence agency banned Furby toys from its premises over fears they could record secrets?",
+    "a": [
+     "NSA",
+     "CIA",
+     "FBI",
+     "Pentagon"
+    ],
+    "why": "The NSA feared the talkative toys had built-in microphones that could repeat classified audio."
+   },
+   {
+    "q": "Which video game are Shaun and Ed playing together in the living room in Shaun of the Dead?",
+    "a": [
+     "TimeSplitters 2",
+     "GoldenEye 007",
+     "Resident Evil 2",
+     "Silent Hill"
+    ],
+    "why": "Ed is repeatedly seen glued to the PS2 shooter TimeSplitters 2 in their North London flat."
+   },
+   {
+    "q": "Which British musician provided backing vocals on the iconic 1970s 'Secret Lemonade Drinker' advert?",
+    "a": [
+     "Elvis Costello",
+     "David Bowie",
+     "Marc Bolan",
+     "Phil Collins"
+    ],
+    "why": "Elvis Costello (Declan MacManus) sang uncredited backing vocals on his father Ross's jingle."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which song ended Bryan Adams' record-breaking 16-week run at the top of the UK Singles Chart in 1991?",
+    "a": [
+     "The Fly",
+     "Dizzy",
+     "Black or White",
+     "Bohemian Rhapsody"
+    ],
+    "why": "U2's 'The Fly' knocked 'Everything I Do' from number one in November 1991, spending a single week at the top."
+   },
+   {
+    "q": "Which UK town or city hosted the 1974 Eurovision Song Contest, where ABBA took victory with 'Waterloo'?",
+    "a": [
+     "Brighton",
+     "Harrogate",
+     "Edinburgh",
+     "London"
+    ],
+    "why": "Brighton Dome hosted the 1974 contest after 1973 winners Luxembourg declined to stage it again on financial grounds."
+   },
+   {
+    "q": "Before co-founding The Police in 1977, which progressive rock band did drummer Stewart Copeland play in?",
+    "a": [
+     "Curved Air",
+     "Soft Machine",
+     "Caravan",
+     "Gong"
+    ],
+    "why": "Copeland joined Curved Air in 1975 and played on two studio albums before forming The Police with Sting."
+   },
+   {
+    "q": "Which synth-pop duo kept 'Fairytale of New York' off the UK Christmas number one spot in 1987?",
+    "a": [
+     "Pet Shop Boys",
+     "Erasure",
+     "Eurythmics",
+     "Soft Cell"
+    ],
+    "why": "Pet Shop Boys topped the 1987 Christmas chart with their cover version of 'Always on My Mind'."
+   },
+   {
+    "q": "Which synthesizer, launched in 1983, became the first commercially successful digital FM keyboard?",
+    "a": [
+     "Yamaha DX7",
+     "Roland Juno-60",
+     "Korg M1",
+     "Sequential Prophet-5"
+    ],
+    "why": "The Yamaha DX7 sold over 200,000 units and defined the bright digital synthesizer sound of 1980s pop."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which chemical element derives its name from the Ancient Greek word for 'pale green'?",
+    "a": [
+     "Chlorine",
+     "Chromium",
+     "Copper",
+     "Beryllium"
+    ],
+    "why": "Chlorine comes from 'chloros', referring to the pale yellow-green colour of the gas."
+   },
+   {
+    "q": "In the sitcom Fawlty Towers, in which Spanish city was the waiter Manuel born?",
+    "a": [
+     "Barcelona",
+     "Madrid",
+     "Seville",
+     "Valencia"
+    ],
+    "why": "Manuel famously repeats that he is 'from Barcelona' throughout the classic series."
+   },
+   {
+    "q": "Which Manchester band had a UK top five hit in 1990 with the single Step On?",
+    "a": [
+     "Happy Mondays",
+     "The Stone Roses",
+     "Inspiral Carpets",
+     "808 State"
+    ],
+    "why": "Happy Mondays scored a massive hit with their reimagined cover of John Kongos's Step On."
+   },
+   {
+    "q": "Which river is responsible for carving out the Grand Canyon in Arizona?",
+    "a": [
+     "Colorado River",
+     "Rio Grande",
+     "Snake River",
+     "Columbia River"
+    ],
+    "why": "The Colorado River has eroded the Grand Canyon over millions of years."
+   },
+   {
+    "q": "Which was the first animated film to be nominated for the Academy Award for Best Picture?",
+    "a": [
+     "Beauty and the Beast",
+     "Snow White",
+     "The Lion King",
+     "Toy Story"
+    ],
+    "why": "Beauty and the Beast was nominated for Best Picture in 1992, before an animated category existed."
+   },
+   {
+    "q": "Which keyboard instrument produces the distinctive flute sounds on the intro to Strawberry Fields Forever?",
+    "a": [
+     "Mellotron",
+     "Moog synthesizer",
+     "Hammond organ",
+     "Rhodes piano"
+    ],
+    "why": "Paul McCartney played the tape-based Mellotron keyboard to create the iconic opening flute sounds."
+   },
+   {
+    "q": "Who was the reigning monarch during the Great Fire of London in 1666?",
+    "a": [
+     "Charles II",
+     "Charles I",
+     "James II",
+     "William III"
+    ],
+    "why": "King Charles II personally inspected the firefighting efforts during the four-day blaze."
+   },
+   {
+    "q": "In George Orwell's allegorical novella Animal Farm, what type of animal is Boxer?",
+    "a": [
+     "Cart-horse",
+     "Pig",
+     "Donkey",
+     "Raven"
+    ],
+    "why": "Boxer is the loyal and hard-working cart-horse whose motto is 'I will work harder'."
+   },
+   {
+    "q": "Which iconic 1973 album features cover art designed by Hipgnosis depicting a prism refracting light?",
+    "a": [
+     "The Dark Side of the Moon",
+     "Wish You Were Here",
+     "Tubular Bells",
+     "Abraxas"
+    ],
+    "why": "Hipgnosis created the famous prism artwork for Pink Floyd's landmark 1973 album."
+   },
+   {
+    "q": "What is the SI unit of electrical conductance, named after a German inventor and industrialist?",
+    "a": [
+     "Siemens",
+     "Ohm",
+     "Tesla",
+     "Weber"
+    ],
+    "why": "Siemens (symbol S) is the unit of electric conductance, equal to the reciprocal of resistance."
+   }
+  ]
+ }
+}

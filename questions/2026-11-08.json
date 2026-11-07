@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-08",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which is the largest lake by surface area located entirely within Europe?",
+    "a": [
+     "Lake Ladoga",
+     "Lake Onega",
+     "Lake Vänern",
+     "Lake Saimaa"
+    ],
+    "why": "Lake Ladoga in northwestern Russia covers over 17,700 square kilometres."
+   },
+   {
+    "q": "Which moon of Saturn is famous for its stark two-tone coloration and prominent equatorial ridge?",
+    "a": [
+     "Iapetus",
+     "Enceladus",
+     "Rhea",
+     "Tethys"
+    ],
+    "why": "Iapetus has one side dark as coal and the other bright as snow, with a ridge along its equator."
+   },
+   {
+    "q": "Which type of short pasta takes its name from the Italian word for 'thimbles'?",
+    "a": [
+     "Ditalini",
+     "Farfalle",
+     "Orecchiette",
+     "Garganelli"
+    ],
+    "why": "Ditalini comes from 'ditale', meaning thimble, describing its small tube-like shape."
+   },
+   {
+    "q": "Which title for a high-ranking official originally derived from Germanic words meaning 'horse servant'?",
+    "a": [
+     "Marshal",
+     "Constable",
+     "Chamberlain",
+     "Seneschal"
+    ],
+    "why": "Marshal comes from the Old High German 'marah' (horse) and 'scalc' (servant)."
+   },
+   {
+    "q": "Which English monarch was the first to be formally granted the title 'King of Ireland' by parliament?",
+    "a": [
+     "Henry VIII",
+     "Henry II",
+     "Elizabeth I",
+     "Edward VI"
+    ],
+    "why": "The Crown of Ireland Act 1542 elevated Henry VIII from Lord of Ireland to King of Ireland."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the TV comedy The Vicar of Dibley, what is the name of the village church where Geraldine Granger serves?",
+    "a": [
+     "St Barnabas",
+     "St Jude",
+     "St Michael",
+     "St Mary"
+    ],
+    "why": "Geraldine Granger serves at St Barnabas Church in the fictional Oxfordshire village of Dibley."
+   },
+   {
+    "q": "Which Sheffield design agency created the iconic logos and graphic design for the classic 1995 video game Wipeout?",
+    "a": [
+     "The Designers Republic",
+     "Tomato",
+     "Stylorouge",
+     "Me Company"
+    ],
+    "why": "The Designers Republic created Wipeout's iconic branding, defining 1990s PlayStation visual culture."
+   },
+   {
+    "q": "Before being imported and renamed by Hasbro as Optimus Prime, what was the Transformers toy originally called in Japan?",
+    "a": [
+     "Battle Convoy",
+     "Super Convoy",
+     "Mech Master",
+     "Grand Commander"
+    ],
+    "why": "Optimus Prime originated in Takara's Diaclone toyline, where the truck robot was named Battle Convoy."
+   },
+   {
+    "q": "The iconic 1999 Guinness 'Surfer' television advert was heavily inspired by which classic 1851 novel?",
+    "a": [
+     "Moby-Dick",
+     "The Old Man and the Sea",
+     "Heart of Darkness",
+     "Twenty Thousand Leagues"
+    ],
+    "why": "Director Jonathan Glazer drew inspiration from Herman Melville's Moby-Dick for the advert's surging white horses."
+   },
+   {
+    "q": "In the 1999 sci-fi film The Matrix, what is the room number of Neo's apartment at the start of the movie?",
+    "a": [
+     "101",
+     "303",
+     "217",
+     "404"
+    ],
+    "why": "Neo lives in apartment 101, an intentional nod to George Orwell's famous torture room in Nineteen Eighty-Four."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which act kept Oasis's 'Wonderwall' off the UK Singles Chart number one spot in November 1995?",
+    "a": [
+     "Robson & Jerome",
+     "Simply Red",
+     "Take That",
+     "Michael Jackson"
+    ],
+    "why": "Robson & Jerome sold over one million copies of their double A-side, keeping 'Wonderwall' at number two."
+   },
+   {
+    "q": "Which North Yorkshire town hosted the 1982 Eurovision Song Contest following Bucks Fizz's victory in 1981?",
+    "a": [
+     "Harrogate",
+     "Scarborough",
+     "York",
+     "Bridlington"
+    ],
+    "why": "Harrogate International Centre hosted the 1982 contest, famously opening with the phrase 'Where is Harrogate?'."
+   },
+   {
+    "q": "Which act stepped in to headline the first Glastonbury Festival in 1970 after The Kinks pulled out?",
+    "a": [
+     "Tyrannosaurus Rex",
+     "David Bowie",
+     "Hawkwind",
+     "Fairport Convention"
+    ],
+    "why": "Tyrannosaurus Rex replaced The Kinks at short notice for the inaugural festival at Worthy Farm in 1970."
+   },
+   {
+    "q": "Which 1970 release became Pink Floyd's first UK Number 1 album?",
+    "a": [
+     "Atom Heart Mother",
+     "The Dark Side of the Moon",
+     "Meddle",
+     "Ummagumma"
+    ],
+    "why": "Atom Heart Mother topped the UK chart in 1970, whereas The Dark Side of the Moon peaked at number two."
+   },
+   {
+    "q": "Which music video was the very first played on MTV Europe when the network launched in August 1987?",
+    "a": [
+     "Money for Nothing",
+     "Video Killed the Radio Star",
+     "Sweet Dreams",
+     "Take On Me"
+    ],
+    "why": "Dire Straits' 'Money for Nothing' launched MTV Europe, appropriately featuring the channel's famous slogan."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which body of water is the deepest natural lake in England?",
+    "a": [
+     "Wast Water",
+     "Windermere",
+     "Ullswater",
+     "Derwentwater"
+    ],
+    "why": "Wast Water in the Lake District reaches a maximum depth of 79 metres (258 feet)."
+   },
+   {
+    "q": "Which fictional Essex town is the primary setting for the BBC comedy series Detectorists?",
+    "a": [
+     "Danebury",
+     "Hole-in-the-Wall",
+     "Framlingham",
+     "Oakhaven"
+    ],
+    "why": "Detectorists was set in the fictional town of Danebury, though mostly filmed around Framlingham in Suffolk."
+   },
+   {
+    "q": "Which 1980s synth-pop group took their name from a villain in the 1968 sci-fi film Barbarella?",
+    "a": [
+     "Duran Duran",
+     "Depeche Mode",
+     "Heaven 17",
+     "Soft Cell"
+    ],
+    "why": "Durand Durand was the scientist villain played by Milo O'Shea in the sci-fi film Barbarella."
+   },
+   {
+    "q": "Which English monarch was the first to take up residence in Buckingham Palace in 1837?",
+    "a": [
+     "Queen Victoria",
+     "King William IV",
+     "King George IV",
+     "Queen Anne"
+    ],
+    "why": "Queen Victoria moved into the palace upon her accession in 1837, making it the official royal residence."
+   },
+   {
+    "q": "Which actor played the antagonist Sheriff Little Bill Daggett in the 1992 western film Unforgiven?",
+    "a": [
+     "Gene Hackman",
+     "Clint Eastwood",
+     "Richard Harris",
+     "Morgan Freeman"
+    ],
+    "why": "Gene Hackman won the Academy Award for Best Supporting Actor for his role as Sheriff Little Bill."
+   },
+   {
+    "q": "Which British band released the critically acclaimed 1997 album Ladies and Gentlemen We Are Floating in Space?",
+    "a": [
+     "Spiritualized",
+     "Primal Scream",
+     "The Verve",
+     "Super Furry Animals"
+    ],
+    "why": "Spiritualized released the landmark space-rock album in June 1997 on Dedicated Records."
+   },
+   {
+    "q": "Which is the most abundant metal element in the Earth's continental crust?",
+    "a": [
+     "Aluminium",
+     "Iron",
+     "Calcium",
+     "Magnesium"
+    ],
+    "why": "Aluminium accounts for about 8.1% of the Earth's crust by mass, making it the most abundant metal."
+   },
+   {
+    "q": "In Terry Pratchett's Discworld series, what is the name of the wizarding institution in Ankh-Morpork?",
+    "a": [
+     "Unseen University",
+     "Invisible Academy",
+     "High Citadel",
+     "Miskatonic College"
+    ],
+    "why": "The Unseen University is the famous school of wizardry situated in the city-state of Ankh-Morpork."
+   },
+   {
+    "q": "Which Canadian singer-songwriter released the critically acclaimed 1971 album Blue?",
+    "a": [
+     "Joni Mitchell",
+     "Carole King",
+     "Carly Simon",
+     "Joan Baez"
+    ],
+    "why": "Joni Mitchell wrote and produced Blue, widely regarded as one of the greatest albums ever made."
+   },
+   {
+    "q": "Which capital city sits near the northern shores of Lake Victoria and serves as the capital of Uganda?",
+    "a": [
+     "Kampala",
+     "Entebbe",
+     "Nairobi",
+     "Kigali"
+    ],
+    "why": "Kampala is Uganda's capital, located just north of Lake Victoria, Africa's largest lake."
+   }
+  ]
+ }
+}
