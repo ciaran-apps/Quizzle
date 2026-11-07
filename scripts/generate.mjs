@@ -20,7 +20,11 @@ import { fileURLToPath } from "node:url";
 
 // Tried in order; if the first isn't available or is busy, the next is used.
 const MODELS = (process.env.QUIZZLE_MODELS || "openai/gpt-4.1,openai/gpt-4o").split(",");
-const ENDPOINT = "https://models.github.ai/inference/chat/completions";
+// Two addresses for the same free GitHub Models service; the second is a backup.
+const ENDPOINTS = [
+  "https://models.github.ai/inference/chat/completions",
+  "https://models.inference.ai.azure.com/chat/completions",
+];
 const TIMEZONE = "Europe/London";   // when "today" flips over
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -146,35 +150,50 @@ Reply with ONLY a JSON array of the "i" numbers that pass, e.g. [0,2,3]`;
 
 async function askAI(prompt, maxTokens) {
   let lastError;
-  for (const model of MODELS) {
-    for (let attempt = 1; attempt <= 3; attempt++) {
-      const res = await fetch(ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Authorization": `Bearer ${process.env.GITHUB_TOKEN}`,
-          "Content-Type": "application/json",
-          "Accept": "application/json",
-        },
-        body: JSON.stringify({
-          model,
-          max_tokens: maxTokens,
-          temperature: 0.9,
-          messages: [{ role: "user", content: prompt }],
-        }),
-      });
-      if (res.ok) {
-        const data = await res.json();
-        return data.choices?.[0]?.message?.content || "";
+  for (const endpoint of ENDPOINTS) {
+    for (const model of MODELS) {
+      // the older backup address uses model names without the "openai/" part
+      const name = endpoint.includes("azure") ? model.split("/").pop() : model;
+      for (let attempt = 1; attempt <= 3; attempt++) {
+        let res, text;
+        try {
+          res = await fetch(endpoint, {
+            method: "POST",
+            headers: {
+              "Authorization": `Bearer ${process.env.GITHUB_TOKEN}`,
+              "Content-Type": "application/json",
+              "Accept": "application/vnd.github+json",
+              "X-GitHub-Api-Version": "2022-11-28",
+            },
+            body: JSON.stringify({
+              model: name,
+              max_tokens: maxTokens,
+              temperature: 0.9,
+              messages: [{ role: "user", content: prompt }],
+            }),
+          });
+          text = await res.text();
+        } catch (err) {
+          lastError = `Network error (${name} @ ${endpoint}): ${err.message}`;
+          console.log(lastError);
+          await sleep(10000);
+          continue;
+        }
+        let data = null;
+        try { data = JSON.parse(text); } catch {}
+        const content = data?.choices?.[0]?.message?.content;
+        if (res.ok && typeof content === "string") return content;
+
+        lastError = `GitHub Models ${res.status} (${name} @ ${endpoint}): ${text.slice(0, 300).replace(/\s+/g, " ")}`;
+        console.log(lastError);
+        if (res.status === 429 || res.status >= 500) {
+          // busy: wait (honouring Retry-After if given, up to 2 minutes) and try again
+          const wait = Math.min(120, Number(res.headers.get("retry-after")) || 30 * attempt);
+          await sleep(wait * 1000);
+          continue;
+        }
+        break; // not usable (unknown model, odd reply…): try the next model/address
       }
-      lastError = `GitHub Models error ${res.status} (${model}): ${(await res.text()).slice(0, 300)}`;
-      console.log(lastError);
-      if (res.status === 429 || res.status >= 500) {
-        // busy: wait (honouring Retry-After if given, up to 2 minutes) and try again
-        const wait = Math.min(120, Number(res.headers.get("retry-after")) || 30 * attempt);
-        await sleep(wait * 1000);
-        continue;
-      }
-      break; // e.g. model not available: try the next model
     }
   }
   throw new Error(lastError || "AI request failed");
