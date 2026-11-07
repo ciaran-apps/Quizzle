@@ -184,9 +184,10 @@ async function askAI(prompt, maxTokens) {
       lastError = `Gemini ${res.status} (${model}): ${text.slice(0, 300).replace(/\s+/g, " ")}`;
       console.log(lastError);
       if (res.status === 401 || res.status === 403) throw new Error(lastError + "\nCheck the GEMINI_API_KEY secret.");
+      if (res.status >= 500 && attempt >= 2) break;   // model overloaded: move on to the next one
       if (res.status === 429 || res.status >= 500) {
         // busy or over the per-minute limit: wait and try again
-        const wait = Math.min(90, Number(res.headers.get("retry-after")) || 20 * attempt);
+        const wait = Math.min(60, Number(res.headers.get("retry-after")) || 15 * attempt);
         await sleep(wait * 1000);
         continue;
       }
