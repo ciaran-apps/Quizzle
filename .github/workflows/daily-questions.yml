@@ -1,0 +1,43 @@
+name: Daily questions
+
+on:
+  schedule:
+    # Every evening at 20:17 UTC: writes tomorrow's questions (and today's if missing).
+    - cron: "17 20 * * *"
+  # Lets you run it by hand: Actions tab → Daily questions → Run workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-questions
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Write questions
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/generate.mjs
+
+      - name: Save to the repository
+        run: |
+          git config user.name "quizzle-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add questions data
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+          else
+            git commit -m "Daily questions"
+            git push
+          fi

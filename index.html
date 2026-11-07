@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1b1b3a">
+<meta name="description" content="A fresh, hard daily quiz: general knowledge, pop culture and music.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Quizzle">
+<title>Quizzle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#1b1b3a; --bg2:#25254d; --card:#2f2f5e; --ink:#f4f1ea; --muted:#a9a6c9;
+    --accent:#ffcf4a; --good:#3ddc97; --bad:#ff6b6b; --line:rgba(255,255,255,.08);
+    --radius:20px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{height:100%}
+  body{
+    font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--ink);
+    background-image:radial-gradient(circle at 15% 0%,#3a2f7a 0,transparent 45%),radial-gradient(circle at 100% 100%,#2b4a6b 0,transparent 40%);
+    background-attachment:fixed;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  .app{max-width:480px;margin:0 auto;min-height:100%;display:flex;flex-direction:column;padding:20px 18px 28px}
+  h1,h2,.display{font-family:"Bricolage Grotesque",sans-serif}
+  .screen{display:none;flex:1;flex-direction:column;animation:in .35s ease}
+  .screen.active{display:flex}
+  @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  /* Home */
+  .brand{display:flex;align-items:center;gap:10px;margin:8px 0 22px}
+  .logo{width:40px;height:40px;border-radius:12px;background:var(--accent);display:grid;place-items:center;color:var(--bg);font-weight:800;font-family:"Bricolage Grotesque";font-size:22px;transform:rotate(-6deg)}
+  .brand span{font-family:"Bricolage Grotesque";font-weight:800;font-size:22px}
+  .streak{margin-left:auto;display:flex;align-items:center;gap:6px;background:var(--bg2);border:1px solid var(--line);border-radius:99px;padding:7px 12px;font-weight:600;font-size:14px}
+  .streak.off{color:var(--muted)}
+  .hero .date{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.02em}
+  .hero h1{font-size:36px;line-height:1.05;font-weight:800;letter-spacing:-.02em;margin-top:6px}
+  .hero h1 em{font-style:normal;color:var(--accent)}
+  .refresh{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:14px;margin:12px 0 22px}
+  .refresh b{color:var(--ink);font-variant-numeric:tabular-nums;font-weight:600}
+  .label{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);margin-bottom:10px;font-weight:600}
+
+  .mix{width:100%;display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#ffcf4a,#ff9f5a);color:var(--bg);border:0;border-radius:var(--radius);padding:18px;margin-bottom:14px;cursor:pointer;text-align:left;font:inherit;transition:.15s;position:relative}
+  .mix:active{transform:scale(.98)}
+  .mix .ico{font-size:30px}
+  .mix b{display:block;font:800 19px "Bricolage Grotesque"}
+  .mix small{font-size:13px;opacity:.75}
+  .mix .go{margin-left:auto;font:800 22px "Bricolage Grotesque"}
+
+  .cats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:auto}
+  .cats .cat{padding:14px 12px}
+  .cats .cat b{font-size:14px;line-height:1.25}
+  .cat{background:var(--card);border:2px solid transparent;border-radius:var(--radius);padding:16px;text-align:left;color:var(--ink);cursor:pointer;font:inherit;transition:.15s;position:relative}
+  .cat:active{transform:scale(.97)}
+  .cat .ico{font-size:26px;display:block;margin-bottom:10px}
+  .cat b{display:block;font-weight:600}
+  .cat small{color:var(--muted);font-size:12px}
+  .done{position:absolute;top:12px;right:12px;background:var(--good);color:var(--bg);font-size:11px;font-weight:700;border-radius:99px;padding:3px 8px}
+  .mix .done{background:var(--bg);color:var(--accent);top:10px;right:12px}
+  .note{color:var(--muted);font-size:12px;text-align:center;margin-top:18px}
+
+  .btn{width:100%;border:0;border-radius:16px;padding:18px;font:700 17px "Bricolage Grotesque",sans-serif;cursor:pointer;transition:.15s;margin-top:20px}
+  .btn:active{transform:scale(.98)}
+  .btn.primary{background:var(--accent);color:var(--bg);box-shadow:0 6px 0 #c99a16}
+  .btn.primary:active{box-shadow:0 2px 0 #c99a16;transform:translateY(4px)}
+  .btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--line);margin-top:12px}
+
+  /* Loading */
+  .loading{flex:1;display:grid;place-items:center;color:var(--muted)}
+  .spin{width:38px;height:38px;border:4px solid var(--bg2);border-top-color:var(--accent);border-radius:50%;animation:sp 0.8s linear infinite;margin:0 auto 14px}
+  @keyframes sp{to{transform:rotate(360deg)}}
+
+  /* Quiz */
+  .top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .icon-btn{width:40px;height:40px;border-radius:12px;border:0;background:var(--bg2);color:var(--ink);font-size:18px;cursor:pointer;flex:none}
+  .progress{flex:1;height:10px;background:var(--bg2);border-radius:99px;overflow:hidden}
+  .progress i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px;transition:width .4s}
+  .count{font-weight:600;font-size:14px;color:var(--muted);min-width:44px;text-align:right}
+  .meta{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+  .chip{background:var(--bg2);border-radius:99px;padding:6px 12px;font-size:13px;color:var(--muted)}
+  .q{font-size:25px;line-height:1.22;font-weight:700;margin:6px 0 24px;letter-spacing:-.01em}
+  .answers{display:flex;flex-direction:column;gap:12px}
+  .ans{display:flex;align-items:center;gap:14px;background:var(--card);border:2px solid transparent;border-radius:16px;padding:16px;color:var(--ink);font:500 16px Inter,sans-serif;text-align:left;cursor:pointer;transition:.15s}
+  .ans:active{transform:scale(.98)}
+  .ans .key{width:32px;height:32px;border-radius:10px;background:var(--bg2);display:grid;place-items:center;font-weight:700;flex:none;font-size:14px}
+  .ans.correct{border-color:var(--good);background:rgba(61,220,151,.15)}
+  .ans.correct .key{background:var(--good);color:var(--bg)}
+  .ans.wrong{border-color:var(--bad);background:rgba(255,107,107,.15);animation:shake .35s}
+  .ans.wrong .key{background:var(--bad);color:var(--bg)}
+  .ans.locked{pointer-events:none}
+  .ans.dim{opacity:.45}
+  @keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+  .feedback{margin-top:16px;padding:14px 16px;border-radius:14px;background:var(--bg2);font-size:14px;line-height:1.45;color:var(--muted);display:none}
+  .feedback.show{display:block;animation:in .3s}
+  .feedback b{color:var(--ink)}
+  .spacer{flex:1}
+
+  /* Results */
+  .result{text-align:center;padding-top:20px}
+  .score-ring{position:relative;width:180px;height:180px;margin:10px auto 18px}
+  .score-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+  .score-ring circle{fill:none;stroke-width:14}
+  .score-ring .bgc{stroke:var(--bg2)} .score-ring .fg{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset 1.2s ease}
+  .score-ring .num{position:absolute;inset:0;display:grid;place-items:center;font:800 46px "Bricolage Grotesque"}
+  .score-ring .num small{display:block;font:500 14px Inter;color:var(--muted)}
+  .result h2{font-size:30px;font-weight:800}
+  .result p{color:var(--muted);margin-top:6px}
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:24px 0 8px}
+  .stat{background:var(--card);border-radius:16px;padding:14px 8px}
+  .stat b{display:block;font:800 22px "Bricolage Grotesque"}
+  .stat span{font-size:12px;color:var(--muted)}
+  .comeback{margin-top:14px;background:var(--bg2);border:1px solid var(--line);border-radius:14px;padding:12px;font-size:14px;color:var(--muted)}
+  .comeback b{color:var(--ink);font-variant-numeric:tabular-nums}
+  .review{margin-top:18px;text-align:left}
+  .rev{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .rev .dot{width:22px;height:22px;border-radius:50%;flex:none;display:grid;place-items:center;font-size:12px;color:var(--bg);font-weight:700}
+  .rev .dot.y{background:var(--good)} .rev .dot.n{background:var(--bad)}
+  .rev small{display:block;color:var(--muted);margin-top:3px}
+  details summary{cursor:pointer;color:var(--muted);font-size:14px;margin-top:18px;list-style:none;text-align:center}
+  details summary::-webkit-details-marker{display:none}
+
+  /* Modal */
+  .modal{position:fixed;inset:0;background:rgba(10,10,30,.7);display:none;align-items:flex-end;justify-content:center;z-index:10;backdrop-filter:blur(4px)}
+  .modal.show{display:flex}
+  .sheet{background:var(--bg2);width:100%;max-width:480px;border-radius:24px 24px 0 0;padding:24px 20px calc(24px + env(safe-area-inset-bottom));animation:up .25s ease}
+  @keyframes up{from{transform:translateY(100%)}to{transform:none}}
+  .sheet h3{font:700 20px "Bricolage Grotesque"}
+  .sheet p{color:var(--muted);margin-top:6px}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- HOME -->
+  <section class="screen active" id="home">
+    <div class="brand">
+      <div class="logo">Q</div><span>Quizzle</span>
+      <div class="streak off" id="streak">🔥 0</div>
+    </div>
+    <div class="hero">
+      <div class="date" id="today"></div>
+      <h1>Today's <em>quizzes</em> are ready</h1>
+    </div>
+    <div class="refresh">⏳ New questions in <b id="countdown">--</b></div>
+
+    <button class="mix" id="mixBtn">
+      <span class="ico">⚡</span>
+      <span><b>Daily Mix</b><small>10 questions from all three topics</small></span>
+      <span class="go">→</span>
+    </button>
+
+    <div class="label">Or pick a topic</div>
+    <div class="cats" id="cats"></div>
+    <p class="note">Questions change every day at midnight.</p>
+  </section>
+
+  <!-- LOADING -->
+  <section class="screen" id="loading">
+    <div class="loading"><div><div class="spin"></div>Getting today's questions…</div></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section class="screen" id="quiz">
+    <div class="top">
+      <button class="icon-btn" id="quitBtn" aria-label="Quit">✕</button>
+      <div class="progress"><i id="bar"></i></div>
+      <div class="count" id="count">1/5</div>
+    </div>
+    <div class="meta">
+      <span class="chip" id="catChip">General</span>
+    </div>
+    <h2 class="q" id="question"></h2>
+    <div class="answers" id="answers"></div>
+    <div class="feedback" id="feedback"></div>
+    <div class="spacer"></div>
+    <button class="btn primary" id="nextBtn" style="display:none">Next</button>
+  </section>
+
+  <!-- RESULTS -->
+  <section class="screen" id="results">
+    <div class="result">
+      <div class="score-ring">
+        <svg viewBox="0 0 180 180"><circle class="bgc" cx="90" cy="90" r="76"/><circle class="fg" id="scoreRing" cx="90" cy="90" r="76" stroke-dasharray="477.5" stroke-dashoffset="477.5"/></svg>
+        <div class="num"><div><span id="scoreNum">0</span><small id="scoreOf">out of 5</small></div></div>
+      </div>
+      <h2 id="resultTitle">Nice work!</h2>
+      <p id="resultSub"></p>
+      <div class="stats">
+        <div class="stat"><b id="statPts">0</b><span>Points</span></div>
+        <div class="stat"><b id="statAcc">0%</b><span>Accuracy</span></div>
+        <div class="stat"><b id="statStreak">0</b><span>Day streak</span></div>
+      </div>
+      <div class="comeback">Come back tomorrow for new questions · <b id="countdown2">--</b></div>
+      <details><summary>Review answers ▾</summary><div class="review" id="review"></div></details>
+    </div>
+    <div class="spacer"></div>
+    <button class="btn primary" id="homeBtn">Back to today's quizzes</button>
+    <button class="btn ghost" id="againBtn">Replay for practice</button>
+  </section>
+</div>
+
+<!-- Quit confirm -->
+<div class="modal" id="quitModal">
+  <div class="sheet">
+    <h3>Quit this quiz?</h3>
+    <p>Your progress will be lost.</p>
+    <button class="btn primary" id="quitYes">Yes, quit</button>
+    <button class="btn ghost" id="quitNo">Keep playing</button>
+  </div>
+</div>
+
+<script>
+/* =========================================================
+   SETTINGS
+   ========================================================= */
+const PER_TOPIC    = 5;    // questions per topic each day
+const PER_MIX      = 10;   // questions in the Daily Mix
+// WHERE TODAY'S QUESTIONS COME FROM — the app tries these in order:
+// 1. The daily questions written by the GitHub Action (see README):
+//    new AI-written, fact-checked questions every day, never repeated.
+//    They're saved in the questions/ folder of this repository.
+const QUESTIONS_PATH = "questions/";
+// 2. The free Open Trivia Database (opentdb.com), skipping questions this
+//    device has already seen.
+const USE_ONLINE   = true;
+// 3. The built-in question bank below (works offline).
+
+/* =========================================================
+   BUILT-IN QUESTION BANK
+   Format: {q:"Question", a:[CORRECT, wrong, wrong, wrong], why:"..."}
+   The correct answer always goes FIRST; the app shuffles them.
+   Add more questions and the daily rotation gets longer automatically.
+   ========================================================= */
+const ORDER = ["general","pop","music"];   // order on the home screen
+const TOPICS = {
+  general:{ name:"General Knowledge", icon:"🌍", otdb:[9], bank:[
+    {q:"Which is the only letter that doesn't appear in any US state name?",a:["Q","J","Z","X"],why:"J is in New Jersey, Z in Arizona and X in Texas."},
+    {q:"Counting overseas territories, which country spans the most time zones?",a:["France","Russia","USA","United Kingdom"],why:"Thanks to its territories, France covers 12 time zones."},
+    {q:"What is the chemical symbol for tungsten?",a:["W","Tu","Tn","Tg"],why:"W comes from its other name, wolfram."},
+    {q:"Which planet has a day that lasts longer than its year?",a:["Venus","Mercury","Mars","Neptune"],why:"Venus takes 243 Earth days to spin once but only 225 to orbit the Sun."},
+    {q:"What is the capital of Kazakhstan?",a:["Astana","Almaty","Tashkent","Bishkek"],why:"Almaty was the capital until 1997."},
+    {q:"In which year did the Channel Tunnel open?",a:["1994","1990","1997","1988"],why:"It was officially opened in May 1994."},
+    {q:"What is the smallest bone in the human body?",a:["Stapes","Incus","Malleus","Hyoid"],why:"The stapes, in the middle ear, is about 3 mm long."},
+    {q:"How many hearts does an octopus have?",a:["3","1","2","8"],why:"Two pump blood to the gills, one to the rest of the body."},
+    {q:"What is the longest river entirely within England?",a:["Thames","Severn","Trent","Great Ouse"],why:"The Severn is longer but partly flows through Wales."},
+    {q:"Which is the only sea with no coastline?",a:["Sargasso Sea","Caspian Sea","Coral Sea","Tasman Sea"],why:"It's bounded only by ocean currents in the North Atlantic."},
+    {q:"Which country's flag is generally recognised as the oldest still in use?",a:["Denmark","Austria","Netherlands","Japan"],why:"The Dannebrog dates back to at least the 14th century."},
+    {q:"What is the collective noun for a group of crows?",a:["A murder","A parliament","An unkindness","A conspiracy"],why:"A parliament is owls; an unkindness is ravens."},
+    {q:"How is 1999 written in Roman numerals?",a:["MCMXCIX","MXMIX","MCMIC","MDCCCCXCIX"],why:"M (1000) + CM (900) + XC (90) + IX (9)."},
+    {q:"Which blood type is the universal donor for red blood cells?",a:["O negative","AB positive","A negative","O positive"],why:"O negative red cells can be given to almost anyone."},
+    {q:"What is the capital of Australia's Northern Territory?",a:["Darwin","Alice Springs","Cairns","Katherine"],why:"Darwin is named after Charles Darwin."},
+    {q:"What was George Orwell's real name?",a:["Eric Blair","Hector Munro","Arthur Ransome","Eric Gill"],why:"Eric Arthur Blair took his pen name from the River Orwell."},
+    {q:"What is the most northerly city in the UK?",a:["Inverness","Aberdeen","Dundee","Perth"],why:"Inverness was granted city status in 2000."},
+    {q:"After nitrogen and oxygen, what is the most common gas in the air?",a:["Argon","Carbon dioxide","Neon","Helium"],why:"Argon makes up almost 1% of the atmosphere."},
+    {q:"How many minutes are there in a week?",a:["10,080","8,640","10,800","12,040"],why:"60 × 24 × 7 = 10,080."},
+    {q:"What is the national animal of Scotland?",a:["Unicorn","Red deer","Golden eagle","Highland cow"],why:"The unicorn has been a Scottish symbol since the 1300s."},
+    {q:"Whose ship, Endurance, was found in the Weddell Sea in 2022?",a:["Ernest Shackleton","Robert Falcon Scott","John Franklin","James Cook"],why:"It had sunk in 1915, crushed by pack ice."},
+    {q:"In which country is Mount Kilimanjaro?",a:["Tanzania","Kenya","Uganda","Ethiopia"],why:"It's close to the Kenyan border, which catches many people out."},
+    {q:"Who appears on the Bank of England £50 note issued in 2021?",a:["Alan Turing","Rosalind Franklin","Stephen Hawking","Charles Darwin"],why:"Turing was a pioneer of computer science and wartime codebreaking."},
+    {q:"Each face of a regular dodecahedron is what shape?",a:["Pentagon","Hexagon","Triangle","Square"],why:"It has 12 pentagonal faces."},
+    {q:"What is the only mammal capable of true flight?",a:["Bat","Flying squirrel","Sugar glider","Colugo"],why:"The others glide rather than fly."}
+  ]},
+  pop:{ name:"Pop Culture", icon:"✨", otdb:[11,14,26], bank:[
+    {q:"In Friends, what is the name of Ross's pet monkey?",a:["Marcel","Bobo","Marvin","Moe"],why:"Marcel was played by two capuchin monkeys."},
+    {q:"Who played the Doctor directly before Matt Smith?",a:["David Tennant","Christopher Eccleston","Peter Capaldi","Jodie Whittaker"],why:"Tennant was the Tenth Doctor, Smith the Eleventh."},
+    {q:"What is the name of the local pub in Only Fools and Horses?",a:["The Nag's Head","The Queen Vic","The Bull","The Feathers"],why:"Mike Fisher was the landlord."},
+    {q:"What is Saul Goodman's real name in Breaking Bad?",a:["Jimmy McGill","Chuck McGill","Howard Hamlin","Mike Ehrmantraut"],why:"Chuck is his older brother, as seen in Better Call Saul."},
+    {q:"Which film won the first ever Oscar for Best Animated Feature?",a:["Shrek","Monsters, Inc.","Spirited Away","Toy Story"],why:"The category was introduced at the 2002 ceremony."},
+    {q:"What is Homer Simpson's middle name?",a:["Jay","Jerome","Joseph","James"],why:"It's a nod to Rocky and Bullwinkle, whose characters had the middle initial J."},
+    {q:"Which Nintendo character was originally called 'Jumpman'?",a:["Mario","Luigi","Donkey Kong","Link"],why:"He debuted as Jumpman in Donkey Kong (1981)."},
+    {q:"Which comedy is set in the fictional town of Royston Vasey?",a:["The League of Gentlemen","Little Britain","The Fast Show","Psychoville"],why:"Royston Vasey is comedian Roy Chubby Brown's real name."},
+    {q:"What is Nessa's surname in Gavin & Stacey?",a:["Jenkins","West","Shipman","Sutcliffe"],why:"West is Stacey's surname and Shipman is Gavin's."},
+    {q:"Which was Roger Moore's first film as James Bond?",a:["Live and Let Die","The Man with the Golden Gun","Moonraker","The Spy Who Loved Me"],why:"It came out in 1973."},
+    {q:"What is the name of Aragorn's reforged sword in The Lord of the Rings?",a:["Andúril","Narsil","Glamdring","Sting"],why:"Narsil was the broken sword it was reforged from."},
+    {q:"Which 1980s TV show featured a talking car called KITT?",a:["Knight Rider","The A-Team","Airwolf","Magnum, P.I."],why:"KITT stands for Knight Industries Two Thousand."},
+    {q:"Which film features the character Tyler Durden?",a:["Fight Club","American Psycho","Se7en","Memento"],why:"Brad Pitt played him in 1999."},
+    {q:"Which actor played Mark Darcy in Bridget Jones's Diary?",a:["Colin Firth","Hugh Grant","Patrick Dempsey","Jude Law"],why:"Hugh Grant played the rival, Daniel Cleaver."},
+    {q:"What is the Doctor's home planet in Doctor Who?",a:["Gallifrey","Skaro","Mondas","Telos"],why:"Skaro is the Daleks' home and Mondas the Cybermen's."},
+    {q:"Which Pixar film features the costume designer Edna Mode?",a:["The Incredibles","Ratatouille","Up","Inside Out"],why:"She was voiced by the film's director, Brad Bird."},
+    {q:"Who won the first series of Big Brother UK in 2000?",a:["Craig Phillips","Brian Dowling","Kate Lawler","Nick Bateman"],why:"He gave his £70,000 prize to a friend who needed a heart-and-lung transplant."},
+    {q:"Which game show was hosted by Bob Holness?",a:["Blockbusters","Countdown","Catchphrase","Bullseye"],why:"'Can I have a P please, Bob?'"},
+    {q:"What is the name of the paper company in the UK version of The Office?",a:["Wernham Hogg","Dunder Mifflin","Sterling Cooper","Initech"],why:"Dunder Mifflin is the American version."},
+    {q:"Zippy, George and Bungle appeared in which children's TV show?",a:["Rainbow","Playdays","Button Moon","Fingermouse"],why:"Rainbow ran on ITV from 1972 to 1992."},
+    {q:"What species is Chewbacca in Star Wars?",a:["Wookiee","Ewok","Jawa","Hutt"],why:"He comes from the planet Kashyyyk."},
+    {q:"In which year was the first Harry Potter film released?",a:["2001","1999","2002","2000"],why:"Harry Potter and the Philosopher's Stone premiered in November 2001."},
+    {q:"Which Blackadder character did Tony Robinson play?",a:["Baldrick","Percy","George","Bob"],why:"He always had a cunning plan."},
+    {q:"Which video game console was codenamed 'Revolution' during development?",a:["Nintendo Wii","PlayStation 3","Xbox 360","GameCube"],why:"It launched as the Wii in 2006."},
+    {q:"What is Sheldon Cooper's catchphrase in The Big Bang Theory?",a:["Bazinga!","Cowabunga!","Booyah!","Shazam!"],why:"He says it after a prank or joke."}
+  ]},
+  music:{ name:"Music Trivia", icon:"🎵", otdb:[12], bank:[
+    {q:"Which band was originally called The Quarrymen?",a:["The Beatles","The Rolling Stones","The Who","The Kinks"],why:"John Lennon formed The Quarrymen in Liverpool in 1956."},
+    {q:"What was Queen's first UK number one single?",a:["Bohemian Rhapsody","Killer Queen","We Will Rock You","Another One Bites the Dust"],why:"Killer Queen got to number two in 1974."},
+    {q:"Which act has had the most UK number one singles?",a:["Elvis Presley","The Beatles","Cliff Richard","Madonna"],why:"Elvis has 21; The Beatles have 17."},
+    {q:"Which country won the very first Eurovision Song Contest in 1956?",a:["Switzerland","France","Netherlands","Italy"],why:"Lys Assia won with 'Refrain'."},
+    {q:"How many times has the UK won Eurovision?",a:["5","3","7","4"],why:"Most recently with Katrina and the Waves in 1997."},
+    {q:"Which singer was born Reginald Dwight?",a:["Elton John","Cliff Richard","David Bowie","Rod Stewart"],why:"Cliff Richard was born Harry Webb."},
+    {q:"Where was Freddie Mercury born?",a:["Zanzibar","India","Egypt","Kenya"],why:"He was born Farrokh Bulsara in Zanzibar, now part of Tanzania."},
+    {q:"What was the first music video ever shown on MTV in 1981?",a:["Video Killed the Radio Star","Thriller","Money for Nothing","Ashes to Ashes"],why:"It was by The Buggles."},
+    {q:"Which Beatles album features 'Here Comes the Sun'?",a:["Abbey Road","Let It Be","Revolver","Rubber Soul"],why:"George Harrison wrote it in Eric Clapton's garden."},
+    {q:"Which Nirvana drummer went on to form Foo Fighters?",a:["Dave Grohl","Krist Novoselic","Chad Channing","Taylor Hawkins"],why:"He played almost every instrument on the first Foo Fighters album."},
+    {q:"Which instrument did jazz great John Coltrane play?",a:["Saxophone","Trumpet","Piano","Double bass"],why:"A Love Supreme (1965) is his best-known album."},
+    {q:"Who founded the Glastonbury Festival?",a:["Michael Eavis","Melvin Benn","Harvey Goldsmith","Emily Eavis"],why:"The first one, in 1970, cost £1 including free milk."},
+    {q:"In which city were Arctic Monkeys formed?",a:["Sheffield","Manchester","Leeds","Liverpool"],why:"They formed in High Green, Sheffield, in 2002."},
+    {q:"Which actor speaks the verses on Blur's 'Parklife'?",a:["Phil Daniels","Ray Winstone","Martin Kemp","Michael Caine"],why:"Daniels starred in the 1979 film Quadrophenia."},
+    {q:"Which band had a 1997 hit with 'Tubthumping'?",a:["Chumbawamba","Republica","Babybird","The Lightning Seeds"],why:"'I get knocked down, but I get up again…'"},
+    {q:"What was Stormzy's debut album called?",a:["Gang Signs & Prayer","Heavy Is the Head","Psychodrama","Boy in da Corner"],why:"Released in 2017, it was the first grime album to top the UK charts."},
+    {q:"How many symphonies did Beethoven complete?",a:["9","7","11","41"],why:"Mozart is credited with 41."},
+    {q:"Which song finally became the UK Christmas number one in 2023, 39 years after release?",a:["Last Christmas","Fairytale of New York","All I Want for Christmas Is You","Merry Xmas Everybody"],why:"Wham! first released it in 1984."},
+    {q:"Who was the lead singer of The Smiths?",a:["Morrissey","Johnny Marr","Ian Curtis","Ian Brown"],why:"Johnny Marr was the guitarist."},
+    {q:"What are Adele's album titles (19, 21, 25, 30) named after?",a:["Her age at the time","The year they came out","How many songs are on them","Her favourite numbers"],why:"Each title marks how old she was when making it."},
+    {q:"Which Oasis album features 'Don't Look Back in Anger'?",a:["(What's the Story) Morning Glory?","Definitely Maybe","Be Here Now","Standing on the Shoulder of Giants"],why:"It was Oasis's second UK number one single."},
+    {q:"Which band recorded the Bond theme 'A View to a Kill'?",a:["Duran Duran","a-ha","Spandau Ballet","Simple Minds"],why:"It's the only Bond theme to reach number one in the US."},
+    {q:"Who duetted with Kylie Minogue on 'Where the Wild Roses Grow'?",a:["Nick Cave","Jason Donovan","Robbie Williams","Michael Hutchence"],why:"It was on Nick Cave and the Bad Seeds' 1996 album Murder Ballads."},
+    {q:"Where does the name ABBA come from?",a:["The members' first names","A Swedish word for 'together'","Their manager's initials","Their record label"],why:"Agnetha, Björn, Benny and Anni-Frid."},
+    {q:"Which singer was known as 'The Queen of Soul'?",a:["Aretha Franklin","Diana Ross","Etta James","Whitney Houston"],why:"She was the first woman in the Rock and Roll Hall of Fame."}
+  ]}
+};
+
+/* =========================================================
+   DATE + DAILY SELECTION
+   Everyone gets the same questions on the same day; a new set at midnight.
+   Within each cycle no question repeats, then the order reshuffles.
+   ========================================================= */
+const $ = id => document.getElementById(id);
+const pad = n => String(n).padStart(2,"0");
+function todayKey(d=new Date()){ return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`; }
+function dayNumber(d=new Date()){ return Math.floor(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate())/864e5); }
+function hash(str){ let h=1779033703^str.length; for(let i=0;i<str.length;i++){ h=Math.imul(h^str.charCodeAt(i),3432918353); h=h<<13|h>>>19; } return h>>>0; }
+function rng(seed){ return ()=>{ seed|=0; seed=seed+0x6D2B79F5|0; let t=Math.imul(seed^seed>>>15,1|seed); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+function seededShuffle(arr, seed){ const r=rng(seed), a=arr.slice(); for(let i=a.length-1;i>0;i--){ const j=Math.floor(r()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+
+function dailyPick(pool, count, salt){
+  const day=dayNumber(), days=Math.max(1,Math.floor(pool.length/count));
+  const cycle=Math.floor(day/days), slot=day%days;
+  const cycleOrder=c=>seededShuffle(pool, hash(salt+":"+c));
+  const order=cycleOrder(cycle);
+  if(days>2){
+    // the first day of each cycle must not repeat the last day of the previous
+    // cycle, so swap any clashes into a middle day (the last day stays untouched)
+    const prev=new Set(cycleOrder(cycle-1).slice((days-1)*count, days*count));
+    for(let k=0;k<count;k++){
+      if(!prev.has(order[k])) continue;
+      for(let j=(days-1)*count-1;j>=count;j--){
+        if(!prev.has(order[j])){ [order[k],order[j]]=[order[j],order[k]]; break; }
+      }
+    }
+  }
+  return order.slice(slot*count, slot*count+count)
+    .map((item,k)=>prep(item, hash(salt+todayKey()+k)));
+}
+// shuffle answer order (correct is stored first) and remember which index is right
+function prep(item, seed){
+  const opts=seededShuffle(item.a.map((t,n)=>({t,ok:n===0})), seed);
+  return {q:item.q, a:opts.map(o=>o.t), c:opts.findIndex(o=>o.ok), why:item.why||""};
+}
+
+/* ---------- storage (safe) ---------- */
+const store = {
+  get(k){ try{ return JSON.parse(localStorage.getItem(k)); }catch(e){ return null; } },
+  set(k,v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+
+/* ---------- getting today's questions ---------- */
+function decode(s){ const t=document.createElement("textarea"); t.innerHTML=s; return t.value; }
+async function fetchWithTimeout(url, ms){
+  const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),ms);
+  try{ return await fetch(url,{signal:ctl.signal}); } finally{ clearTimeout(t); }
+}
+
+// 1. Daily questions file: one shared set of questions per day for everyone
+async function fromServer(key){
+  const cacheKey=`quizzle-day-${todayKey()}`;
+  let day=store.get(cacheKey);
+  if(!day){
+    try{
+      const res=await fetchWithTimeout(`${QUESTIONS_PATH}${todayKey()}.json`, 8000);
+      if(!res.ok) return null;
+      day=await res.json();
+      if(!day || !day.quizzes) return null;
+      store.set(cacheKey, day);
+    }catch(e){ return null; }
+  }
+  const list=day.quizzes[key];
+  if(!Array.isArray(list) || !list.length) return null;
+  return list.map((item,k)=>prep(item, hash(key+todayKey()+k)));
+}
+
+// 2. Open Trivia Database, skipping anything this device has seen before
+function seenSet(){ return new Set(store.get("quizzle-seen")||[]); }
+function markSeen(qs){ const s=seenSet(); qs.forEach(q=>s.add(hash(q.q.toLowerCase()))); store.set("quizzle-seen",[...s].slice(-20000)); }
+async function fromOpenTDB(key){
+  const cacheKey=`quizzle-q-${todayKey()}-${key}`;
+  const cached=store.get(cacheKey); if(cached) return cached;
+  const need = key==="mix" ? PER_MIX : PER_TOPIC;
+  const cats = key==="mix" ? ORDER.flatMap(k=>TOPICS[k].otdb) : TOPICS[key].otdb;
+  const cat = cats[dayNumber()%cats.length];
+  try{
+    let results=[];
+    for(const level of ["hard","medium"]){
+      const res=await fetchWithTimeout(`https://opentdb.com/api.php?amount=40&category=${cat}&difficulty=${level}&type=multiple`, 5000);
+      const data=await res.json();
+      if(data.response_code===0) results=results.concat(data.results);
+      if(results.length>=need*3) break;
+      await new Promise(r=>setTimeout(r,5100));   // the site allows one request every 5 seconds
+    }
+    if(!results.length) return null;
+    const seen=seenSet();
+    const fresh=results
+      .map(r=>({q:decode(r.question), a:[r.correct_answer,...r.incorrect_answers].map(decode)}))
+      .filter(r=>!seen.has(hash(r.q.toLowerCase())))
+      .slice(0,need);
+    if(fresh.length<need) return null;
+    const qs=fresh.map((r,k)=>prep(r, hash(key+todayKey()+k)));
+    store.set(cacheKey, qs);
+    return qs;
+  }catch(e){ return null; }
+}
+
+// 3. Built-in bank (rotates daily, see dailyPick above)
+function fromBank(key){
+  if(key==="mix") return dailyPick(ORDER.flatMap(k=>TOPICS[k].bank), PER_MIX, "mix");
+  return dailyPick(TOPICS[key].bank, PER_TOPIC, key);
+}
+
+async function getQuestions(key){
+  const qs = (await fromServer(key)) || (USE_ONLINE && await fromOpenTDB(key)) || fromBank(key);
+  markSeen(qs);
+  return qs;
+}
+
+/* ---------- daily progress + streak ---------- */
+function todayScores(){ const s=store.get("quizzle-today"); return s && s.date===todayKey() ? s : {date:todayKey(), scores:{}}; }
+function streakInfo(){
+  const s=store.get("quizzle-streak")||{count:0,last:null};
+  const yesterday=todayKey(new Date(Date.now()-864e5));
+  if(s.last!==todayKey() && s.last!==yesterday) s.count=0;   // streak broken
+  return s;
+}
+function recordPlay(key, pts){
+  const t=todayScores();
+  if(t.scores[key]==null){ t.scores[key]=pts; store.set("quizzle-today", t); }
+  const s=streakInfo();
+  if(s.last!==todayKey()){ s.count+=1; s.last=todayKey(); store.set("quizzle-streak", s); }
+  return s.count;
+}
+
+/* ---------- home ---------- */
+function renderHome(){
+  const now=new Date();
+  $("today").textContent=now.toLocaleDateString(undefined,{weekday:"long",day:"numeric",month:"long"});
+  const t=todayScores().scores;
+  $("cats").innerHTML=ORDER.map(k=>[k,TOPICS[k]]).map(([k,v])=>`
+    <button class="cat" data-k="${k}">
+      ${t[k]!=null?`<span class="done">✓ ${t[k]}</span>`:""}
+      <span class="ico">${v.icon}</span><b>${v.name}</b><small>${PER_TOPIC} questions</small>
+    </button>`).join("");
+  $("cats").querySelectorAll(".cat").forEach(b=>b.onclick=()=>start(b.dataset.k));
+  const old=$("mixBtn").querySelector(".done"); if(old) old.remove();
+  if(t.mix!=null) $("mixBtn").insertAdjacentHTML("afterbegin",`<span class="done">✓ ${t.mix}</span>`);
+  const s=streakInfo();
+  $("streak").textContent=`🔥 ${s.count}`;
+  $("streak").classList.toggle("off", s.last!==todayKey());
+}
+
+let lastDay=todayKey();
+function tick(){
+  const now=new Date(), mid=new Date(now); mid.setHours(24,0,0,0);
+  const ms=mid-now, h=Math.floor(ms/36e5), m=Math.floor(ms%36e5/6e4), s=Math.floor(ms%6e4/1e3);
+  const txt=`${h}h ${pad(m)}m ${pad(s)}s`;
+  $("countdown").textContent=txt; $("countdown2").textContent=txt;
+  if(todayKey()!==lastDay){ lastDay=todayKey(); if($("home").classList.contains("active")) renderHome(); }
+}
+setInterval(tick,1000);
+
+/* ---------- navigation ---------- */
+function show(id){ document.querySelectorAll(".screen").forEach(s=>s.classList.toggle("active", s.id===id)); window.scrollTo(0,0); }
+
+/* ---------- quiz ---------- */
+let curKey=null, qs=[], i=0, score=0, points=0, log=[], practice=false;
+
+async function start(key, isPractice=false){
+  curKey=key; practice=isPractice || todayScores().scores[key]!=null;
+  show("loading");
+  qs=await getQuestions(key);
+  i=0; score=0; points=0; log=[];
+  $("catChip").textContent = key==="mix" ? "⚡ Daily Mix" : TOPICS[key].icon+" "+TOPICS[key].name + (practice?" · practice":"");
+  show("quiz"); renderQ();
+}
+
+function renderQ(){
+  const item=qs[i];
+  $("count").textContent=`${i+1}/${qs.length}`;
+  $("bar").style.width=(i/qs.length*100)+"%";
+  $("question").textContent=item.q;
+  $("feedback").className="feedback";
+  $("nextBtn").style.display="none";
+  $("answers").innerHTML="";
+  item.a.forEach((t,n)=>{
+    const b=document.createElement("button"); b.className="ans";
+    b.innerHTML=`<span class="key">${"ABCD"[n]}</span><span></span>`;
+    b.lastChild.textContent=t;   // safe: text from the internet never runs as HTML
+    b.onclick=()=>answer(n);
+    $("answers").appendChild(b);
+  });
+}
+
+
+function answer(n){
+  const item=qs[i], ok=n===item.c;
+  [...$("answers").children].forEach((b,k)=>{
+    b.classList.add("locked");
+    if(k===item.c) b.classList.add("correct");
+    else if(k===n) b.classList.add("wrong");
+    else b.classList.add("dim");
+  });
+  if(ok){ score++; points+=100; }
+  if(navigator.vibrate) try{ navigator.vibrate(ok?20:[30,40,30]); }catch(e){}
+  log.push({q:item.q, ok, pick:item.a[n], right:item.a[item.c]});
+  const fb=$("feedback");
+  fb.innerHTML=`<b>${ok?"Correct! 🎉":"Not quite."}</b> <span></span>`;
+  fb.lastChild.textContent = item.why || (ok?"":`The answer was ${item.a[item.c]}.`);
+  fb.classList.add("show");
+  $("nextBtn").textContent=i===qs.length-1?"See results":"Next";
+  $("nextBtn").style.display="block";
+}
+
+function next(){ i++; if(i<qs.length) renderQ(); else finish(); }
+
+/* ---------- results ---------- */
+function finish(){
+  $("bar").style.width="100%";
+  const pct=Math.round(score/qs.length*100);
+  const streak = practice ? streakInfo().count : recordPlay(curKey, points);
+  $("scoreNum").textContent=score;
+  $("scoreOf").textContent=`out of ${qs.length}`;
+  $("statPts").textContent=points;
+  $("statAcc").textContent=pct+"%";
+  $("statStreak").textContent=streak;
+  const [t,s]= pct===100?["Perfect! 🏆","Flawless. You nailed every one."]
+             : pct>=80?["Brilliant! ⭐","You really know your stuff."]
+             : pct>=50?["Nice work! 👍","Solid effort."]
+             : ["Keep going! 💪","Every round makes you sharper."];
+  $("resultTitle").textContent=t;
+  $("resultSub").textContent=practice?s+" (Practice round — today's score is already saved.)":s;
+  $("review").innerHTML="";
+  log.forEach(l=>{
+    const d=document.createElement("div"); d.className="rev";
+    d.innerHTML=`<span class="dot ${l.ok?'y':'n'}">${l.ok?'✓':'✕'}</span><div><span></span><small></small></div>`;
+    d.querySelector("div span").textContent=l.q;
+    d.querySelector("small").textContent=l.ok?`You answered: ${l.right}`:`You: ${l.pick} · Answer: ${l.right}`;
+    $("review").appendChild(d);
+  });
+  show("results");
+  const ring=$("scoreRing"); ring.style.strokeDashoffset=477.5;
+  requestAnimationFrame(()=>requestAnimationFrame(()=>ring.style.strokeDashoffset=477.5*(1-score/qs.length)));
+}
+
+/* ---------- wiring ---------- */
+$("mixBtn").onclick=()=>start("mix");
+$("nextBtn").onclick=next;
+$("againBtn").onclick=()=>start(curKey,true);
+$("homeBtn").onclick=()=>{ renderHome(); show("home"); };
+$("quitBtn").onclick=()=>$("quitModal").classList.add("show");
+$("quitNo").onclick=()=>$("quitModal").classList.remove("show");
+$("quitYes").onclick=()=>{ $("quitModal").classList.remove("show"); renderHome(); show("home"); };
+document.addEventListener("keydown",e=>{
+  if(!$("quiz").classList.contains("active")) return;
+  const k="abcd".indexOf(e.key.toLowerCase());
+  if(k>-1 && $("answers").children[0] && !$("answers").children[0].classList.contains("locked")) answer(k);
+  if(e.key==="Enter" && $("nextBtn").style.display==="block") next();
+});
+
+renderHome(); tick();
+if("serviceWorker" in navigator) window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
+</script>
+</body>
+</html>
