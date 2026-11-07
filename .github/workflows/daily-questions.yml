@@ -28,6 +28,9 @@ jobs:
 
       - name: Write questions
         env:
+          # A free token from your personal GitHub account (Models: read-only).
+          # Falls back to the repo's own token if the secret isn't set.
+          MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate.mjs
 

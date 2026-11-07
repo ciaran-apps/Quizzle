@@ -7,7 +7,8 @@
  * and saves the result to questions/YYYY-MM-DD.json, which the app reads.
  *
  * The AI is GitHub Models: free, built into GitHub Actions, no key or card.
- * Inside the Action it signs in with the repo's own GITHUB_TOKEN.
+ * It signs in with MODELS_TOKEN (a free personal token with Models: read-only),
+ * or the repo's own GITHUB_TOKEN if that isn't set.
  *
  * Usage: node scripts/generate.mjs            (builds today and tomorrow if missing)
  *        node scripts/generate.mjs 2026-12-25 (builds that date if missing)
@@ -21,6 +22,7 @@ import { fileURLToPath } from "node:url";
 // Tried in order; if the first isn't available or is busy, the next is used.
 const MODELS = (process.env.QUIZZLE_MODELS || "openai/gpt-4.1,openai/gpt-4o").split(",");
 // Two addresses for the same free GitHub Models service; the second is a backup.
+const TOKEN = process.env.MODELS_TOKEN || process.env.GITHUB_TOKEN;
 const ENDPOINTS = [
   "https://models.github.ai/inference/chat/completions",
   "https://models.inference.ai.azure.com/chat/completions",
@@ -54,8 +56,8 @@ const QUIZZES = {
 /* ------------------------------------------------------------------ */
 
 async function main() {
-  if (!process.env.GITHUB_TOKEN) {
-    console.log("::warning::No GITHUB_TOKEN, so no questions were written. Run this from the GitHub Action.");
+  if (!TOKEN) {
+    console.log("::warning::No MODELS_TOKEN or GITHUB_TOKEN, so no questions were written. Run this from the GitHub Action.");
     return;
   }
   const dates = process.argv[2] ? [process.argv[2]] : [dateIn(TIMEZONE), dateIn(TIMEZONE, 1)];
@@ -160,7 +162,7 @@ async function askAI(prompt, maxTokens) {
           res = await fetch(endpoint, {
             method: "POST",
             headers: {
-              "Authorization": `Bearer ${process.env.GITHUB_TOKEN}`,
+              "Authorization": `Bearer ${TOKEN}`,
               "Content-Type": "application/json",
               "Accept": "application/vnd.github+json",
               "X-GitHub-Api-Version": "2022-11-28",

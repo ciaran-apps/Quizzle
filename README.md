@@ -19,9 +19,10 @@ The AI is **GitHub Models**, which is free and built into GitHub Actions: no API
 
 ## Setup (from a phone)
 
-1. **Make today's questions now:** **Actions → Daily questions → Run workflow**. It takes a few minutes.
-2. **GitHub Pages:** **Settings → Pages**. Source: **Deploy from a branch**, branch **main**, folder **/(root)**. Custom domain: `quiz.ciarandevine.uk`.
-3. **Cloudflare:** add a DNS record: type `CNAME`, name `quiz`, target `ciaran-apps.github.io`, proxy **off** (DNS only).
+1. **Free AI token:** GitHub Models isn't available to the organisation, so the job uses your personal account's free access. Create a fine-grained token at github.com/settings/personal-access-tokens/new with **Account permissions → Models → Read-only**, then add it here under **Settings → Secrets and variables → Actions** as `MODELS_TOKEN`.
+2. **Make today's questions now:** **Actions → Daily questions → Run workflow**. It takes a few minutes.
+3. **GitHub Pages:** **Settings → Pages**. Source: **Deploy from a branch**, branch **main**, folder **/(root)**. Custom domain: `quiz.ciarandevine.uk`.
+4. **Cloudflare:** add a DNS record: type `CNAME`, name `quiz`, target `ciaran-apps.github.io`, proxy **off** (DNS only).
 
 ## Changing things
 
