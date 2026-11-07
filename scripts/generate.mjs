@@ -6,27 +6,24 @@
  * second AI call fact-check them, drops anything doubtful or already used,
  * and saves the result to questions/YYYY-MM-DD.json, which the app reads.
  *
- * The AI is GitHub Models: free, built into GitHub Actions, no key or card.
- * It signs in with MODELS_TOKEN (a free personal token with Models: read-only),
- * or the repo's own GITHUB_TOKEN if that isn't set.
+ * The AI is Google's Gemini API on its free tier (no card, no charges):
+ * requests over the free limit simply fail, they're never billed.
  *
  * Usage: node scripts/generate.mjs            (builds today and tomorrow if missing)
  *        node scripts/generate.mjs 2026-12-25 (builds that date if missing)
- * Needs the GITHUB_TOKEN environment variable (set automatically in the Action).
+ * Needs the GEMINI_API_KEY environment variable (a repo secret in the Action).
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-// Tried in order; if the first isn't available or is busy, the next is used.
-const MODELS = (process.env.QUIZZLE_MODELS || "openai/gpt-4.1,openai/gpt-4o").split(",");
-// Two addresses for the same free GitHub Models service; the second is a backup.
-const TOKEN = process.env.MODELS_TOKEN || process.env.GITHUB_TOKEN;
-const ENDPOINTS = [
-  "https://models.github.ai/inference/chat/completions",
-  "https://models.inference.ai.azure.com/chat/completions",
-];
+// Free-tier Gemini models, tried in order. If one isn't available (Google
+// renames and retires models now and then), the next is used.
+const MODELS = (process.env.QUIZZLE_MODELS ||
+  "gemini-3.8-flash,gemini-3.6-flash,gemini-3-flash-preview,gemini-2.5-flash").split(",");
+const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
+const API_KEY = process.env.GEMINI_API_KEY;
 const TIMEZONE = "Europe/London";   // when "today" flips over
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -56,8 +53,8 @@ const QUIZZES = {
 /* ------------------------------------------------------------------ */
 
 async function main() {
-  if (!TOKEN) {
-    console.log("::warning::No MODELS_TOKEN or GITHUB_TOKEN, so no questions were written. Run this from the GitHub Action.");
+  if (!API_KEY) {
+    console.log("::warning::GEMINI_API_KEY isn't set, so no questions were written. The app will use its backup questions. See README.md.");
     return;
   }
   const dates = process.argv[2] ? [process.argv[2]] : [dateIn(TIMEZONE), dateIn(TIMEZONE, 1)];
@@ -128,7 +125,7 @@ ${avoid.length ? avoid.map(l => "  • " + l).join("\n") : "  (none yet)"}
 Reply with ONLY a JSON array, no other text:
 [{"q":"...","a":["correct","wrong","wrong","wrong"],"why":"..."}]`;
 
-  const reply = await askAI(prompt, 3000);
+  const reply = await askAI(prompt, 8000);
   return parseArray(reply).filter(isValidQuestion);
 }
 
@@ -145,57 +142,55 @@ ${JSON.stringify(drafts.map((d, i) => ({ i, q: d.q, options: d.a })), null, 1)}
 
 Reply with ONLY a JSON array of the "i" numbers that pass, e.g. [0,2,3]`;
 
-  const reply = await askAI(prompt, 300);
+  const reply = await askAI(prompt, 3000);
   const passed = new Set(parseArray(reply).filter(Number.isInteger));
   return drafts.filter((_, i) => passed.has(i));
 }
 
+let workingModel = null;   // remember the first model that works
+
 async function askAI(prompt, maxTokens) {
   let lastError;
-  for (const endpoint of ENDPOINTS) {
-    for (const model of MODELS) {
-      // the older backup address uses model names without the "openai/" part
-      const name = endpoint.includes("azure") ? model.split("/").pop() : model;
-      for (let attempt = 1; attempt <= 3; attempt++) {
-        let res, text;
-        try {
-          res = await fetch(endpoint, {
-            method: "POST",
-            headers: {
-              "Authorization": `Bearer ${TOKEN}`,
-              "Content-Type": "application/json",
-              "Accept": "application/vnd.github+json",
-              "X-GitHub-Api-Version": "2022-11-28",
-            },
-            body: JSON.stringify({
-              model: name,
-              max_tokens: maxTokens,
-              temperature: 0.9,
-              messages: [{ role: "user", content: prompt }],
-            }),
-          });
-          text = await res.text();
-        } catch (err) {
-          lastError = `Network error (${name} @ ${endpoint}): ${err.message}`;
-          console.log(lastError);
-          await sleep(10000);
-          continue;
-        }
-        let data = null;
-        try { data = JSON.parse(text); } catch {}
-        const content = data?.choices?.[0]?.message?.content;
-        if (res.ok && typeof content === "string") return content;
-
-        lastError = `GitHub Models ${res.status} (${name} @ ${endpoint}): ${text.slice(0, 300).replace(/\s+/g, " ")}`;
+  const order = workingModel ? [workingModel, ...MODELS.filter(m => m !== workingModel)] : MODELS;
+  for (const model of order) {
+    for (let attempt = 1; attempt <= 4; attempt++) {
+      let res, text;
+      try {
+        res = await fetch(ENDPOINT, {
+          method: "POST",
+          headers: { "Authorization": `Bearer ${API_KEY}`, "Content-Type": "application/json" },
+          body: JSON.stringify({
+            model,
+            max_tokens: maxTokens,
+            messages: [{ role: "user", content: prompt }],
+          }),
+        });
+        text = await res.text();
+      } catch (err) {
+        lastError = `Network error (${model}): ${err.message}`;
         console.log(lastError);
-        if (res.status === 429 || res.status >= 500) {
-          // busy: wait (honouring Retry-After if given, up to 2 minutes) and try again
-          const wait = Math.min(120, Number(res.headers.get("retry-after")) || 30 * attempt);
-          await sleep(wait * 1000);
-          continue;
-        }
-        break; // not usable (unknown model, odd reply…): try the next model/address
+        await sleep(10000);
+        continue;
       }
+      let data = null;
+      try { data = JSON.parse(text); } catch {}
+      const content = data?.choices?.[0]?.message?.content;
+      if (res.ok && typeof content === "string" && content.trim()) {
+        if (workingModel !== model) console.log(`Using ${model}`);
+        workingModel = model;
+        return content;
+      }
+
+      lastError = `Gemini ${res.status} (${model}): ${text.slice(0, 300).replace(/\s+/g, " ")}`;
+      console.log(lastError);
+      if (res.status === 401 || res.status === 403) throw new Error(lastError + "\nCheck the GEMINI_API_KEY secret.");
+      if (res.status === 429 || res.status >= 500) {
+        // busy or over the per-minute limit: wait and try again
+        const wait = Math.min(90, Number(res.headers.get("retry-after")) || 20 * attempt);
+        await sleep(wait * 1000);
+        continue;
+      }
+      break; // e.g. model not available: try the next one
     }
   }
   throw new Error(lastError || "AI request failed");

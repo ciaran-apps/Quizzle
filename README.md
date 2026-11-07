@@ -15,11 +15,11 @@ Every evening at about 20:17 UK winter time, the **Daily questions** GitHub Acti
 
 The app loads that day's file. If it's missing, it uses the free Open Trivia Database, then the questions built into `index.html`, so it always works.
 
-The AI is **GitHub Models**, which is free and built into GitHub Actions: no API key, no card, no cost. It has daily limits, and this job uses about 10 requests a day, well within them.
+The AI is **Google's Gemini API** on its free tier: no card and no charges. If it ever goes over the free limit, requests just fail for that day and the app uses its backup questions. This job uses about 10 requests a day.
 
 ## Setup (from a phone)
 
-1. **Free AI token:** GitHub Models isn't available to the organisation, so the job uses your personal account's free access. Create a fine-grained token at github.com/settings/personal-access-tokens/new with **Account permissions → Models → Read-only**, then add it here under **Settings → Secrets and variables → Actions** as `MODELS_TOKEN`.
+1. **Free Gemini key:** at aistudio.google.com tap **Get API key → Create API key**, copy it, then add it here under **Settings → Secrets and variables → Actions** as `GEMINI_API_KEY`.
 2. **Make today's questions now:** **Actions → Daily questions → Run workflow**. It takes a few minutes.
 3. **GitHub Pages:** **Settings → Pages**. Source: **Deploy from a branch**, branch **main**, folder **/(root)**. Custom domain: `quiz.ciarandevine.uk`.
 4. **Cloudflare:** add a DNS record: type `CNAME`, name `quiz`, target `ciaran-apps.github.io`, proxy **off** (DNS only).

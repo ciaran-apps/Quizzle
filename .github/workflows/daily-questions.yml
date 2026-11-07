@@ -9,7 +9,6 @@ on:
 
 permissions:
   contents: write
-  models: read   # free GitHub Models AI, no key needed
 
 concurrency:
   group: daily-questions
@@ -28,10 +27,8 @@ jobs:
 
       - name: Write questions
         env:
-          # A free token from your personal GitHub account (Models: read-only).
-          # Falls back to the repo's own token if the secret isn't set.
-          MODELS_TOKEN: ${{ secrets.MODELS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Free Gemini API key from aistudio.google.com (no card needed)
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: node scripts/generate.mjs
 
       - name: Save to the repository
