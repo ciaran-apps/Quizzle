@@ -2,20 +2,25 @@
  * Writes Quizzle's daily questions. Run by the GitHub Action in
  * .github/workflows/daily-questions.yml every evening.
  *
- * For each day it asks Claude for twice as many questions as needed, has a
- * second Claude call fact-check them, drops anything doubtful or already used,
+ * For each day it asks an AI for twice as many questions as needed, has a
+ * second AI call fact-check them, drops anything doubtful or already used,
  * and saves the result to questions/YYYY-MM-DD.json, which the app reads.
+ *
+ * The AI is GitHub Models: free, built into GitHub Actions, no key or card.
+ * Inside the Action it signs in with the repo's own GITHUB_TOKEN.
  *
  * Usage: node scripts/generate.mjs            (builds today and tomorrow if missing)
  *        node scripts/generate.mjs 2026-12-25 (builds that date if missing)
- * Needs the ANTHROPIC_API_KEY environment variable.
+ * Needs the GITHUB_TOKEN environment variable (set automatically in the Action).
  */
 import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const MODEL = process.env.QUIZZLE_MODEL || "claude-sonnet-5-5";
+// Tried in order; if the first isn't available or is busy, the next is used.
+const MODELS = (process.env.QUIZZLE_MODELS || "openai/gpt-4.1,openai/gpt-4o").split(",");
+const ENDPOINT = "https://models.github.ai/inference/chat/completions";
 const TIMEZONE = "Europe/London";   // when "today" flips over
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -45,8 +50,8 @@ const QUIZZES = {
 /* ------------------------------------------------------------------ */
 
 async function main() {
-  if (!process.env.ANTHROPIC_API_KEY) {
-    console.log("::warning::ANTHROPIC_API_KEY isn't set yet, so no questions were written. The app will use its backup questions. See README.md.");
+  if (!process.env.GITHUB_TOKEN) {
+    console.log("::warning::No GITHUB_TOKEN, so no questions were written. Run this from the GitHub Action.");
     return;
   }
   const dates = process.argv[2] ? [process.argv[2]] : [dateIn(TIMEZONE), dateIn(TIMEZONE, 1)];
@@ -67,13 +72,13 @@ async function main() {
 async function buildQuiz(key, cfg, date) {
   // seen.json = every question ever used, across all quizzes (so nothing repeats)
   const seen = new Set(await readJson("data/seen.json", []));
-  // recent-<key>.json = latest questions in this category, shown to Claude so
+  // recent-<key>.json = latest questions in this category, shown to the AI so
   // it avoids the same facts even when worded differently
   const recent = await readJson(`data/recent-${key}.json`, []);
 
   const picked = [];
   for (let attempt = 0; attempt < 3 && picked.length < cfg.count; attempt++) {
-    const avoid = [...recent, ...picked.map(asLine)].slice(-300);
+    const avoid = [...recent, ...picked.map(asLine)].slice(-120);
     const drafts = await draftQuestions(cfg, cfg.count * 2, avoid, date);
     const checked = await factCheck(drafts);
     for (const q of checked) {
@@ -93,7 +98,7 @@ async function buildQuiz(key, cfg, date) {
   return picked;
 }
 
-/* ---------- Claude calls ---------- */
+/* ---------- AI calls ---------- */
 
 async function draftQuestions(cfg, n, avoid, date) {
   const prompt = `Write ${n} multiple-choice questions for the "${cfg.label}" quiz on ${date} in Quizzle, a daily quiz app for a UK audience.
@@ -117,7 +122,7 @@ ${avoid.length ? avoid.map(l => "  • " + l).join("\n") : "  (none yet)"}
 Reply with ONLY a JSON array, no other text:
 [{"q":"...","a":["correct","wrong","wrong","wrong"],"why":"..."}]`;
 
-  const reply = await askClaude(prompt, 4000);
+  const reply = await askAI(prompt, 3000);
   return parseArray(reply).filter(isValidQuestion);
 }
 
@@ -134,31 +139,45 @@ ${JSON.stringify(drafts.map((d, i) => ({ i, q: d.q, options: d.a })), null, 1)}
 
 Reply with ONLY a JSON array of the "i" numbers that pass, e.g. [0,2,3]`;
 
-  const reply = await askClaude(prompt, 500);
+  const reply = await askAI(prompt, 300);
   const passed = new Set(parseArray(reply).filter(Number.isInteger));
   return drafts.filter((_, i) => passed.has(i));
 }
 
-async function askClaude(prompt, maxTokens) {
-  for (let attempt = 1; ; attempt++) {
-    const res = await fetch("https://api.anthropic.com/v1/messages", {
-      method: "POST",
-      headers: {
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": "2023-06-01",
-        "content-type": "application/json",
-      },
-      body: JSON.stringify({ model: MODEL, max_tokens: maxTokens, messages: [{ role: "user", content: prompt }] }),
-    });
-    if (res.ok) {
-      const data = await res.json();
-      return data.content.map(c => c.text || "").join("");
+async function askAI(prompt, maxTokens) {
+  let lastError;
+  for (const model of MODELS) {
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      const res = await fetch(ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${process.env.GITHUB_TOKEN}`,
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+        body: JSON.stringify({
+          model,
+          max_tokens: maxTokens,
+          temperature: 0.9,
+          messages: [{ role: "user", content: prompt }],
+        }),
+      });
+      if (res.ok) {
+        const data = await res.json();
+        return data.choices?.[0]?.message?.content || "";
+      }
+      lastError = `GitHub Models error ${res.status} (${model}): ${(await res.text()).slice(0, 300)}`;
+      console.log(lastError);
+      if (res.status === 429 || res.status >= 500) {
+        // busy: wait (honouring Retry-After if given, up to 2 minutes) and try again
+        const wait = Math.min(120, Number(res.headers.get("retry-after")) || 30 * attempt);
+        await sleep(wait * 1000);
+        continue;
+      }
+      break; // e.g. model not available: try the next model
     }
-    const body = await res.text();
-    // retry busy/overloaded errors a couple of times
-    if ((res.status === 429 || res.status >= 500) && attempt < 3) { await sleep(20000 * attempt); continue; }
-    throw new Error(`Claude API error ${res.status}: ${body}`);
   }
+  throw new Error(lastError || "AI request failed");
 }
 
 /* ---------- helpers ---------- */

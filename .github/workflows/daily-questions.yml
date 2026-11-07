@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  models: read   # free GitHub Models AI, no key needed
 
 concurrency:
   group: daily-questions
@@ -27,7 +28,7 @@ jobs:
 
       - name: Write questions
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/generate.mjs
 
       - name: Save to the repository
