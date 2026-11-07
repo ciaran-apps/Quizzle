@@ -10,7 +10,6 @@ jobs:
       - env:
           T: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "== catalog"; curl -sS -i https://models.github.ai/catalog/models -H "Authorization: Bearer $T" | head -c 700; echo
-          echo "== chat"; curl -sS -i -X POST https://models.github.ai/inference/chat/completions -H "Authorization: Bearer $T" -H "Content-Type: application/json" -H "Accept: application/vnd.github+json" -d '{"model":"openai/gpt-4o-mini","messages":[{"role":"user","content":"Say hi"}]}' | head -c 1500; echo
-          echo "== org chat"; curl -sS -i -X POST https://models.github.ai/orgs/ciaran-apps/inference/chat/completions -H "Authorization: Bearer $T" -H "Content-Type: application/json" -d '{"model":"openai/gpt-4o-mini","messages":[{"role":"user","content":"Say hi"}]}' | head -c 1500; echo
-          echo "== proxy env"; env | grep -i proxy || echo none
+          for u in https://api.github.com/zen https://opentdb.com/api.php?amount=1 https://example.com https://models.github.ai/catalog/models https://api.anthropic.com https://generativelanguage.googleapis.com; do echo "== $u"; curl -sS -o /tmp/b -w "%{http_code} %{content_type} ip=%{remote_ip}\n" "$u"; head -c 120 /tmp/b; echo; done
+          echo "== dns"; getent hosts models.github.ai opentdb.com
+          echo "== end"
