@@ -22,7 +22,7 @@ import { fileURLToPath } from "node:url";
 // renames and retires models now and then), the next is used.
 const MODELS = (process.env.QUIZZLE_MODELS ||
   "gemini-3.8-flash,gemini-3.6-flash,gemini-3-flash-preview,gemini-2.5-flash").split(",");
-const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions";
+const API_BASE = "https://generativelanguage.googleapis.com/v1beta/models";
 const API_KEY = process.env.GEMINI_API_KEY;
 const TIMEZONE = "Europe/London";   // when "today" flips over
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -156,13 +156,12 @@ async function askAI(prompt, maxTokens) {
     for (let attempt = 1; attempt <= 4; attempt++) {
       let res, text;
       try {
-        res = await fetch(ENDPOINT, {
+        res = await fetch(`${API_BASE}/${model}:generateContent`, {
           method: "POST",
-          headers: { "Authorization": `Bearer ${API_KEY}`, "Content-Type": "application/json" },
+          headers: { "x-goog-api-key": API_KEY, "Content-Type": "application/json" },
           body: JSON.stringify({
-            model,
-            max_tokens: maxTokens,
-            messages: [{ role: "user", content: prompt }],
+            contents: [{ role: "user", parts: [{ text: prompt }] }],
+            generationConfig: { maxOutputTokens: maxTokens },
           }),
         });
         text = await res.text();
@@ -174,7 +173,8 @@ async function askAI(prompt, maxTokens) {
       }
       let data = null;
       try { data = JSON.parse(text); } catch {}
-      const content = data?.choices?.[0]?.message?.content;
+      const content = (data?.candidates?.[0]?.content?.parts || [])
+        .filter(p => !p.thought).map(p => p.text || "").join("");
       if (res.ok && typeof content === "string" && content.trim()) {
         if (workingModel !== model) console.log(`Using ${model}`);
         workingModel = model;
