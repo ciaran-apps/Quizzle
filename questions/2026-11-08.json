@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-08",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which is the longest river located entirely within England?",
+    "a": [
+     "Thames",
+     "Severn",
+     "Trent",
+     "Ouse"
+    ],
+    "why": "The Severn is the UK's longest river, but it starts in Wales, making the Thames the longest entirely in England."
+   },
+   {
+    "q": "What type of light pastry dough is used to make profiteroles and eclairs?",
+    "a": [
+     "Choux pastry",
+     "Puff pastry",
+     "Filo pastry",
+     "Shortcrust pastry"
+    ],
+    "why": "Choux pastry uses high moisture to create steam while baking, puffing it up into hollow treats."
+   },
+   {
+    "q": "Which planet in our solar system is orbited by the large moon Triton?",
+    "a": [
+     "Neptune",
+     "Uranus",
+     "Saturn",
+     "Jupiter"
+    ],
+    "why": "Triton is Neptune's largest moon and the only large moon in the Solar System with a retrograde orbit."
+   },
+   {
+    "q": "Which English monarch reigned for just nine days in July 1553?",
+    "a": [
+     "Lady Jane Grey",
+     "Edward VI",
+     "Mary I",
+     "Richard III"
+    ],
+    "why": "Lady Jane Grey was proclaimed queen after Edward VI died, but was deposed by Mary I nine days later."
+   },
+   {
+    "q": "What is the hardest substance produced by the human body?",
+    "a": [
+     "Tooth enamel",
+     "Femur bone",
+     "Knee cartilage",
+     "Fingernail"
+    ],
+    "why": "Tooth enamel is composed mostly of hydroxyapatite, making it significantly harder than human bone."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In Only Fools and Horses, what specific vehicle model is Del Boy's yellow three-wheeled van?",
+    "a": [
+     "Reliant Regal",
+     "Reliant Robin",
+     "Reliant Rialto",
+     "Bond Bug"
+    ],
+    "why": "Though often confused with a Reliant Robin, Del Boy's famous van was actually a 1968 Reliant Regal."
+   },
+   {
+    "q": "Which classic 1990s fighting game introduced the famous victory instruction \"FINISH HIM!\"?",
+    "a": [
+     "Mortal Kombat",
+     "Street Fighter II",
+     "Tekken",
+     "Killer Instinct"
+    ],
+    "why": "Mortal Kombat introduced the iconic phrase in 1992, prompting players to perform a gory Fatality move."
+   },
+   {
+    "q": "Launched in 1996, which electronic virtual pet took its name from a blend of the Japanese words for 'egg' and 'watch'?",
+    "a": [
+     "Tamagotchi",
+     "Digimon",
+     "Giga Pet",
+     "Pixel Chix"
+    ],
+    "why": "Tamagotchi is a portmanteau combining the Japanese word 'tamago' (egg) with 'uotchi' (watch)."
+   },
+   {
+    "q": "In the famous 1990s UK television adverts for Tango soft drinks, what colour was the man who slapped consumers?",
+    "a": [
+     "Bright orange",
+     "Lime green",
+     "Electric yellow",
+     "Vibrant red"
+    ],
+    "why": "The iconic 'You Know When You've Been Tango'd' advert featured a painted orange man slapping drink consumers."
+   },
+   {
+    "q": "In the 1996 British film Trainspotting, what is the surname of Ewan McGregor's lead character, Mark?",
+    "a": [
+     "Renton",
+     "Sick Boy",
+     "Begbie",
+     "Spud"
+    ],
+    "why": "Ewan McGregor starred as Mark Renton, navigating the 1980s Edinburgh heroin scene."
+   }
+  ],
+  "music": [
+   {
+    "q": "In August 1995, Blur's single 'Country House' beat which Oasis song to the UK Number 1 spot?",
+    "a": [
+     "Roll With It",
+     "Some Might Say",
+     "Live Forever",
+     "Cigarettes & Alcohol"
+    ],
+    "why": "The famous 'Battle of Britpop' saw Blur take the top spot, selling over 274,000 copies to Oasis's 216,000."
+   },
+   {
+    "q": "Which pop group achieved three consecutive UK Christmas Number 1 singles from 1996 to 1998?",
+    "a": [
+     "Spice Girls",
+     "Take That",
+     "Westlife",
+     "Girls Aloud"
+    ],
+    "why": "They hit the UK Christmas top spot with '2 Become 1', 'Too Much', and 'Goodbye'."
+   },
+   {
+    "q": "Which song won the Eurovision Song Contest for the UK in 1997, performed by Katrina and the Waves?",
+    "a": [
+     "Love Shine a Light",
+     "Save Your Kisses for Me",
+     "Making Your Mind Up",
+     "Ooh Aah... Just a Little Bit"
+    ],
+    "why": "'Love Shine a Light' scored 227 points, giving the UK its fifth Eurovision victory."
+   },
+   {
+    "q": "What was the title of American rock band The Killers' debut studio album, released in 2004?",
+    "a": [
+     "Hot Fuss",
+     "Sam's Town",
+     "Day & Age",
+     "Battle Born"
+    ],
+    "why": "Hot Fuss contained giant singles including 'Mr. Brightside' and 'Somebody Told Me'."
+   },
+   {
+    "q": "Which iconic Roland drum machine, launched in 1980, played a pivotal role in shaping hip-hop and dance music?",
+    "a": [
+     "TR-808",
+     "TR-909",
+     "TB-303",
+     "MPC60"
+    ],
+    "why": "The TR-808 was famously used on tracks by Marvin Gaye, Afrika Bambaataa, and Whitney Houston."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British band had a UK number one hit in 1995 with the single Country House?",
+    "a": [
+     "Blur",
+     "Oasis",
+     "Pulp",
+     "Supergrass"
+    ],
+    "why": "Blur beat Oasis to the top spot in August 1995 during the famous 'Battle of Britpop'."
+   },
+   {
+    "q": "Which island is the largest by area in the Mediterranean Sea?",
+    "a": [
+     "Sicily",
+     "Sardinia",
+     "Cyprus",
+     "Crete"
+    ],
+    "why": "Sicily is the largest island in the Mediterranean, sitting just ahead of Sardinia."
+   },
+   {
+    "q": "Which 1994 film starring Tim Robbins and Morgan Freeman was adapted from a Stephen King novella?",
+    "a": [
+     "The Shawshank Redemption",
+     "The Green Mile",
+     "Stand by Me",
+     "Misery"
+    ],
+    "why": "It was based on Stephen King's 1982 novella Rita Hayworth and Shawshank Redemption."
+   },
+   {
+    "q": "What is the longest river located entirely within England?",
+    "a": [
+     "Thames",
+     "Severn",
+     "Trent",
+     "Great Ouse"
+    ],
+    "why": "The Thames is the longest river entirely in England, as the longer Severn flows through Wales."
+   },
+   {
+    "q": "Who sang lead vocals on the 1983 hit single Blue Monday by New Order?",
+    "a": [
+     "Bernard Sumner",
+     "Peter Hook",
+     "Ian Curtis",
+     "Gillian Gilbert"
+    ],
+    "why": "Bernard Sumner took over lead vocals for New Order following the death of Ian Curtis."
+   },
+   {
+    "q": "Which UK comedy series featured the characters David Brent and Gareth Keenan?",
+    "a": [
+     "The Office",
+     "Extras",
+     "Peep Show",
+     "The Inbetweeners"
+    ],
+    "why": "David Brent and Gareth Keenan were played by Ricky Gervais and Mackenzie Crook in The Office."
+   },
+   {
+    "q": "What is the only chemical element that is liquid at standard room temperature and pressure besides mercury?",
+    "a": [
+     "Bromine",
+     "Gallium",
+     "Cesium",
+     "Francium"
+    ],
+    "why": "Bromine is a reddish-brown halogen liquid and the only non-metallic element liquid at room temp."
+   },
+   {
+    "q": "Which Swedish pop group had a UK number one single with The Winner Takes It All in 1980?",
+    "a": [
+     "ABBA",
+     "Roxette",
+     "Ace of Base",
+     "A-ha"
+    ],
+    "why": "ABBA scored nine UK number one singles, including The Winner Takes It All in August 1980."
+   },
+   {
+    "q": "Which English king was defeated and killed at the Battle of Bosworth Field in 1485?",
+    "a": [
+     "Richard III",
+     "Henry VI",
+     "Edward IV",
+     "Richard II"
+    ],
+    "why": "Richard III was the last Plantagenet king and died fighting Henry Tudor's forces."
+   },
+   {
+    "q": "In the 1999 movie The Matrix, what colour is the pill Neo takes to discover the truth?",
+    "a": [
+     "Red",
+     "Blue",
+     "Green",
+     "Yellow"
+    ],
+    "why": "Morpheus offers Neo a choice between the blue pill to stay in the matrix or the red pill to wake up."
+   }
+  ]
+ }
+}

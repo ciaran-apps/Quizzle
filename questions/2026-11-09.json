@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-09",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which British seabird is often nicknamed the 'Sea Parrot' due to the distinctive appearance of its beak?",
+    "a": [
+     "Puffin",
+     "Razorbill",
+     "Guillemot",
+     "Gannet"
+    ],
+    "why": "Atlantic puffins are famous for their brightly coloured beaks during the spring and summer breeding season."
+   },
+   {
+    "q": "Which is the largest island in the world that is not generally classified as a continent?",
+    "a": [
+     "Greenland",
+     "New Guinea",
+     "Borneo",
+     "Madagascar"
+    ],
+    "why": "While Australia is larger, it is defined as a continent rather than an island, making Greenland the largest."
+   },
+   {
+    "q": "Who was the last British monarch to belong to the House of Hanover?",
+    "a": [
+     "Victoria",
+     "William IV",
+     "George IV",
+     "Edward VII"
+    ],
+    "why": "Victoria was succeeded by her son Edward VII, who belonged to his father's house, Saxe-Coburg and Gotha."
+   },
+   {
+    "q": "Which fruit is used as the base to produce the clear, cherry-flavoured brandy known as Kirsch?",
+    "a": [
+     "Cherry",
+     "Apricot",
+     "Pear",
+     "Plum"
+    ],
+    "why": "Kirsch is a clear, colourless brandy traditionally made from the double distillation of morello cherries."
+   },
+   {
+    "q": "Which word for a scene of uproar and confusion derives from the name of a medieval London hospital?",
+    "a": [
+     "Bedlam",
+     "Shambles",
+     "Mayhem",
+     "Pandemonium"
+    ],
+    "why": "Bedlam is a contraction of Bethlehem, the name of a hospital once used as a mental institution."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the sitcom Father Ted, what is the name of the fictional Craggy Island song entered into Eurosong 96?",
+    "a": [
+     "My Lovely Horse",
+     "My Lovely Pony",
+     "Song for Ireland",
+     "The Miracle is Mine"
+    ],
+    "why": "The music video features Ted and Dougal frolicking in a field with a horse."
+   },
+   {
+    "q": "Which electronic music group's track 'Firestarter' featured on the soundtrack of the 1996 game Wipeout 2097?",
+    "a": [
+     "The Prodigy",
+     "The Chemical Brothers",
+     "Underworld",
+     "Orbital"
+    ],
+    "why": "The game's high-octane soundtrack helped define the 'Cool Britannia' era of the PlayStation."
+   },
+   {
+    "q": "In Monty Python and the Holy Grail, what detail must Bridge of Death victims know about a swallow?",
+    "a": [
+     "African or European",
+     "King or Peasant",
+     "Blue or Yellow",
+     "Large or Small"
+    ],
+    "why": "The bridge keeper asks about the bird's airspeed velocity, leading to this famous retort."
+   },
+   {
+    "q": "Which collectible toy craze of the late 1990s featured beanbag animals with names like 'Patti the Platypus'?",
+    "a": [
+     "Beanie Babies",
+     "Pogs",
+     "Tamagotchis",
+     "Furbies"
+    ],
+    "why": "Launched in 1993, they became a global phenomenon with rare versions selling for thousands."
+   },
+   {
+    "q": "Which food product's TV adverts featured metallic robotic Martians laughing at humans peeling potatoes?",
+    "a": [
+     "Smash",
+     "Aunt Bessie's",
+     "Birds Eye",
+     "Paxo"
+    ],
+    "why": "The iconic 1970s adverts featured robots laughing at the 'primitive' way humans made mashed potatoes."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which guitarist rejoined the Red Hot Chili Peppers in 1998, six years after his first departure from the band?",
+    "a": [
+     "John Frusciante",
+     "Dave Navarro",
+     "Josh Klinghoffer",
+     "Jack Sherman"
+    ],
+    "why": "Frusciante's return heralded a huge commercial peak for the band, including the album 'Californication'."
+   },
+   {
+    "q": "Which boy band kept Mariah Carey's 'All I Want for Christmas Is You' off the UK Number 1 spot in December 1994?",
+    "a": [
+     "East 17",
+     "Take That",
+     "Boyzone",
+     "Backstreet Boys"
+    ],
+    "why": "'Stay Another Day' is the group's only Number 1 and remains a festive staple in the UK."
+   },
+   {
+    "q": "Which pop group won the Eurovision Song Contest for the UK in 1981 with the song 'Making Your Mind Up'?",
+    "a": [
+     "Bucks Fizz",
+     "Brotherhood of Man",
+     "The New Seekers",
+     "Tight Fit"
+    ],
+    "why": "The group's win became iconic thanks to a choreographed routine where the men ripped off the women's skirts."
+   },
+   {
+    "q": "Which 1985 album by Kate Bush became her second UK Number 1 and includes the hit 'Running Up That Hill'?",
+    "a": [
+     "Hounds of Love",
+     "The Dreaming",
+     "The Sensual World",
+     "Aerial"
+    ],
+    "why": "The album was self-produced and used the Fairlight CMI synthesiser to create its unique art-pop sound."
+   },
+   {
+    "q": "Which artist's music video for the 1986 hit 'Sledgehammer' is the most awarded in MTV Video Music Awards history?",
+    "a": [
+     "Peter Gabriel",
+     "Michael Jackson",
+     "David Bowie",
+     "Prince"
+    ],
+    "why": "The groundbreaking stop-motion video was created by Aardman Animations, the studio behind Wallace & Gromit."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Who is the only constant member of the English rock band The Cure?",
+    "a": [
+     "Robert Smith",
+     "Simon Gallup",
+     "Lol Tolhurst",
+     "Porl Thompson"
+    ],
+    "why": "Smith has been the lead singer and primary songwriter since the band formed in 1978."
+   },
+   {
+    "q": "In which year did the Battle of Hastings take place?",
+    "a": [
+     "1066",
+     "1215",
+     "1415",
+     "1588"
+    ],
+    "why": "This pivotal battle marked the beginning of the Norman Conquest of England."
+   },
+   {
+    "q": "In the sitcom Only Fools and Horses, what is the name of the pub frequented by Del Boy and Rodney?",
+    "a": [
+     "The Nag's Head",
+     "The Queen Vic",
+     "The Rover's Return",
+     "The Woolpack"
+    ],
+    "why": "The Nag's Head was the Peckham local where most of the Trotters' deals were made."
+   },
+   {
+    "q": "Which musician created the virtual band Gorillaz alongside artist Jamie Hewlett?",
+    "a": [
+     "Damon Albarn",
+     "Noel Gallagher",
+     "Richard Ashcroft",
+     "Jarvis Cocker"
+    ],
+    "why": "Albarn formed the group in 1998 following his success with the Britpop band Blur."
+   },
+   {
+    "q": "What is the highest mountain in the British Isles?",
+    "a": [
+     "Ben Nevis",
+     "Snowdon",
+     "Scafell Pike",
+     "Slieve Donard"
+    ],
+    "why": "Located in the Scottish Highlands, it stands at 1,345 metres above sea level."
+   },
+   {
+    "q": "In the 1984 film Ghostbusters, what is the name of the giant marshmallow mascot?",
+    "a": [
+     "Stay Puft",
+     "Michelin Man",
+     "Pillsbury Boy",
+     "Jolly Green Giant"
+    ],
+    "why": "The Stay Puft Marshmallow Man was the chosen form of the Destructor, Gozer."
+   },
+   {
+    "q": "Which planet in our solar system is known as the Red Planet?",
+    "a": [
+     "Mars",
+     "Venus",
+     "Jupiter",
+     "Saturn"
+    ],
+    "why": "Iron oxide on its surface gives the planet its distinctive reddish appearance."
+   },
+   {
+    "q": "Which Oasis album became the fastest-selling album in UK history upon its release in 1997?",
+    "a": [
+     "Be Here Now",
+     "Definitely Maybe",
+     "(What's the Story) Morning Glory?",
+     "The Masterplan"
+    ],
+    "why": "It sold over 696,000 copies in its first three days on sale."
+   },
+   {
+    "q": "In the sci-fi sitcom Red Dwarf, what type of creature is the character Cat evolved from?",
+    "a": [
+     "House cat",
+     "Dog",
+     "Rat",
+     "Hamster"
+    ],
+    "why": "The character evolved over three million years from Lister's pet cat, Frankenstein."
+   },
+   {
+    "q": "In the Harry Potter series, what is the name of the station platform for the Hogwarts Express?",
+    "a": [
+     "Platform 9 3/4",
+     "Platform 7 1/2",
+     "Platform 8 1/4",
+     "Platform 10 3/4"
+    ],
+    "why": "It is hidden behind a brick wall at King's Cross Station in London."
+   }
+  ]
+ }
+}
