@@ -64,7 +64,9 @@ async function main() {
     console.log(`${date}: writing questions…`);
     const day = { date, quizzes: {} };
     for (const [key, cfg] of Object.entries(QUIZZES)) {
-      day.quizzes[key] = await buildQuiz(key, cfg, date);
+      // Questions already picked for this day's other quizzes, so the Daily Mix doesn't repeat them
+      const sameDay = Object.values(day.quizzes).flat();
+      day.quizzes[key] = await buildQuiz(key, cfg, date, sameDay);
       console.log(`  ${cfg.label}: ${day.quizzes[key].length} questions`);
     }
     await mkdir(dirname(file), { recursive: true });
@@ -72,7 +74,7 @@ async function main() {
   }
 }
 
-async function buildQuiz(key, cfg, date) {
+async function buildQuiz(key, cfg, date, sameDay = []) {
   // seen.json = every question ever used, across all quizzes (so nothing repeats)
   const seen = new Set(await readJson("data/seen.json", []));
   // recent-<key>.json = latest questions in this category, shown to the AI so
@@ -81,12 +83,14 @@ async function buildQuiz(key, cfg, date) {
 
   const picked = [];
   for (let attempt = 0; attempt < 3 && picked.length < cfg.count; attempt++) {
-    const avoid = [...recent, ...picked.map(asLine)].slice(-120);
+    const avoid = [...recent.slice(-100), ...sameDay.map(asLine), ...picked.map(asLine)];
     const drafts = await draftQuestions(cfg, cfg.count * 2, avoid, date);
     const checked = await factCheck(drafts);
     for (const q of checked) {
       const id = fingerprint(q.q);
       if (seen.has(id) || picked.some(p => fingerprint(p.q) === id)) continue;
+      const ans = q.a[0].trim().toLowerCase();
+      if (sameDay.some(p => p.a[0].trim().toLowerCase() === ans)) continue;   // same answer as another quiz today
       picked.push(q);
       if (picked.length === cfg.count) break;
     }
