@@ -111,9 +111,9 @@ Topic: ${cfg.brief}
 Rules:
 - Every fact must be well established and easy to verify. Nothing from the last 12 months. If you are not certain of a fact, choose a different one.
 - Exactly 4 options. Put the CORRECT answer FIRST, then 3 plausible wrong answers of the same kind. Only one option may be correct.
-- Make them HARD: pitched at a keen pub-quiz team, not a casual player. Roughly 30% medium, 50% hard, 20% very hard. Avoid famous "everyone knows it" facts (capital of France, number of continents, who painted the Mona Lisa).
+- Pitch them at a typical 40-year-old in the UK at a pub quiz with friends: challenging but fair, the kind of question where most people think "I should know this". Roughly 30% easy, 50% medium, 20% hard. Lean towards things a 40-year-old would know or remember (for pop culture and music, especially the 1980s to 2010s). Skip the most famous "everyone knows it" facts (capital of France, who painted the Mona Lisa), but don't hunt for little-known facts either.
 - Make the wrong answers tempting: the kind of thing a well-informed person might pick (e.g. the Severn for "longest river entirely in England").
-- Hard means less well known, never obscure trivia only a specialist could know, and never ambiguous.
+- Never obscure trivia only a specialist could know, and never ambiguous.
 - Questions under 130 characters, options under 40 characters.
 - "why": one short, fun sentence explaining the answer (under 120 characters).
 - Never ask about crimes, allegations, scandals, deaths, illness, relationships or private lives of real people.

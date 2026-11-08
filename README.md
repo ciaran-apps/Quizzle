@@ -1,6 +1,6 @@
 # Quizzle
 
-A hard daily quiz with General Knowledge, Pop Culture, Music Trivia and a Daily Mix. New questions every day, never repeated.
+A daily quiz with General Knowledge, Pop Culture, Music Trivia and a Daily Mix. New questions every day, never repeated.
 
 Live at **https://quiz.ciarandevine.uk** (install from Chrome: ⋮ → Install app).
 

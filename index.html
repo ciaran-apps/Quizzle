@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#1b1b3a">
-<meta name="description" content="A fresh, hard daily quiz: general knowledge, pop culture and music.">
+<meta name="description" content="A fresh daily quiz: general knowledge, pop culture and music.">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon-192.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -402,7 +402,7 @@ async function fromOpenTDB(key){
   const cat = cats[dayNumber()%cats.length];
   try{
     let results=[];
-    for(const level of ["hard","medium"]){
+    for(const level of ["medium","hard"]){
       const res=await fetchWithTimeout(`https://opentdb.com/api.php?amount=40&category=${cat}&difficulty=${level}&type=multiple`, 5000);
       const data=await res.json();
       if(data.response_code===0) results=results.concat(data.results);
