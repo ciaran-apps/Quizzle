@@ -375,17 +375,15 @@ async function fetchWithTimeout(url, ms){
 
 // 1. Daily questions file: one shared set of questions per day for everyone
 async function fromServer(key){
+  // Fetch the latest file first (today's questions can be rewritten); fall back to the saved copy offline.
   const cacheKey=`quizzle-day-${todayKey()}`;
-  let day=store.get(cacheKey);
-  if(!day){
-    try{
-      const res=await fetchWithTimeout(`${QUESTIONS_PATH}${todayKey()}.json`, 8000);
-      if(!res.ok) return null;
-      day=await res.json();
-      if(!day || !day.quizzes) return null;
-      store.set(cacheKey, day);
-    }catch(e){ return null; }
-  }
+  let day=null;
+  try{
+    const res=await fetchWithTimeout(`${QUESTIONS_PATH}${todayKey()}.json`, 8000);
+    if(res.ok){ const d=await res.json(); if(d && d.quizzes){ day=d; store.set(cacheKey, day); } }
+  }catch(e){}
+  if(!day) day=store.get(cacheKey);
+  if(!day) return null;
   const list=day.quizzes[key];
   if(!Array.isArray(list) || !list.length) return null;
   return list.map((item,k)=>prep(item, hash(key+todayKey()+k)));
