@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-12",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which city is the federal seat and de facto capital of Switzerland?",
+    "a": [
+     "Bern",
+     "Zurich",
+     "Geneva",
+     "Basel"
+    ],
+    "why": "Bern has been the seat of the Swiss federal government since 1848, though Zurich is larger."
+   },
+   {
+    "q": "Which spice is produced from the lacy outer covering of the nutmeg seed?",
+    "a": [
+     "Mace",
+     "Cardamom",
+     "Allspice",
+     "Clove"
+    ],
+    "why": "Mace is made from the dried, reddish outer skin (aril) that wraps around the nutmeg seed."
+   },
+   {
+    "q": "In which 1415 battle did English forces under King Henry V defeat a French army?",
+    "a": [
+     "Agincourt",
+     "Crécy",
+     "Poitiers",
+     "Bosworth"
+    ],
+    "why": "Henry V's famous victory at Agincourt took place on St Crispin's Day, 25 October 1415."
+   },
+   {
+    "q": "Which English word originally meant 'ignorant' or 'foolish' in Middle English?",
+    "a": [
+     "Nice",
+     "Silly",
+     "Clever",
+     "Naughty"
+    ],
+    "why": "Nice derived from the Latin 'nescius' (ignorant) and gradually shifted in meaning over time."
+   },
+   {
+    "q": "What is the anatomical name for the human shoulder blade?",
+    "a": [
+     "Scapula",
+     "Clavicle",
+     "Sternum",
+     "Patella"
+    ],
+    "why": "The scapula connects the upper arm bone with the collarbone at the back of the shoulder."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the sitcom The Inbetweeners, what model of car does Simon's dad buy him, complete with a yellow door?",
+    "a": [
+     "Fiat Cinquecento",
+     "Peugeot 106",
+     "Ford Fiesta",
+     "Nissan Micra"
+    ],
+    "why": "Simon's red Fiat Cinquecento (Hawaii Edition) famously lost its passenger door during a trip to Thorpe Park."
+   },
+   {
+    "q": "In the 1997 Nintendo 64 game GoldenEye 007, which character was banned in multiplayer for being too short?",
+    "a": [
+     "Oddjob",
+     "Jaws",
+     "Nick Nack",
+     "May Day"
+    ],
+    "why": "Oddjob's short height made him much harder to hit, leading to a widespread multiplayer etiquette ban."
+   },
+   {
+    "q": "Which Scottish soft drink was famously advertised with the tagline 'Made in Scotland from girders'?",
+    "a": [
+     "Irn-Bru",
+     "Red Kola",
+     "Tizer",
+     "Lucozade"
+    ],
+    "why": "Irn-Bru used the famous 'girders' slogan for decades to highlight its bold flavour and rust-like colour."
+   },
+   {
+    "q": "Which iconic 1980s puzzle toy was invented by Hungarian architecture professor Ernő Rubik?",
+    "a": [
+     "Rubik's Cube",
+     "Snake Rattle",
+     "Perplexus",
+     "Babushka"
+    ],
+    "why": "Ernő Rubik invented the 3x3 Magic Cube in 1974 to help his students understand three-dimensional geometry."
+   },
+   {
+    "q": "In the 2007 comedy film Hot Fuzz, what is the name of the seemingly idyllic village PC Nicholas Angel is sent to?",
+    "a": [
+     "Sandford",
+     "Ashton",
+     "Brampton",
+     "Little Welling"
+    ],
+    "why": "Sandford is the fictional village home to the Neighbourhood Watch Alliance in Edgar Wright's comedy."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which novelty act beat Westlife to secure the UK Christmas Number 1 single in 2000?",
+    "a": [
+     "Bob the Builder",
+     "Mr Blobby",
+     "The Tweenies",
+     "Chef"
+    ],
+    "why": "Neil Morrissey voiced Bob the Builder, whose cover of 'Can We Fix It?' topped the festive chart in 2000."
+   },
+   {
+    "q": "What was the title of Pulp's critically acclaimed 1995 album featuring 'Common People' and 'Disco 2000'?",
+    "a": [
+     "Different Class",
+     "His 'n' Hers",
+     "This Is Hardcore",
+     "We Love Life"
+    ],
+    "why": "'Different Class' won the 1996 Mercury Prize and reached number one on the UK Albums Chart."
+   },
+   {
+    "q": "Which Leeds rock band released their smash hit debut album 'Employment' in 2005?",
+    "a": [
+     "Kaiser Chiefs",
+     "Franz Ferdinand",
+     "The Fratellis",
+     "The Futureheads"
+    ],
+    "why": "'Employment' included hit singles 'I Predict a Riot' and 'Oh My God', selling over two million copies."
+   },
+   {
+    "q": "Which synth-pop group had the UK Christmas Number 1 in 1981 with 'Don't You Want Me'?",
+    "a": [
+     "The Human League",
+     "Soft Cell",
+     "Heaven 17",
+     "Depeche Mode"
+    ],
+    "why": "'Don't You Want Me' was the biggest-selling single of 1981 in the UK."
+   },
+   {
+    "q": "Which pop star spent 10 consecutive weeks at UK Number 1 in 2007 with the single 'Umbrella'?",
+    "a": [
+     "Rihanna",
+     "Beyoncé",
+     "Lady Gaga",
+     "Katy Perry"
+    ],
+    "why": "Rihanna's hit featured Jay-Z and became the longest-running UK number one single of the 2000s."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which English rock band released the hit album 'Urban Hymns' in 1997?",
+    "a": [
+     "The Verve",
+     "Cast",
+     "Ocean Colour Scene",
+     "Supergrass"
+    ],
+    "why": "Urban Hymns was one of the biggest-selling albums of the 90s, powered by 'Bitter Sweet Symphony'."
+   },
+   {
+    "q": "What is the largest national park in Great Britain by land area?",
+    "a": [
+     "The Cairngorms",
+     "Lake District",
+     "Peak District",
+     "Snowdonia"
+    ],
+    "why": "The Cairngorms National Park in Scotland covers over 4,500 square kilometres."
+   },
+   {
+    "q": "In the classic sitcom Father Ted, on which fictional Irish island is the parish set?",
+    "a": [
+     "Craggy Island",
+     "Rugged Island",
+     "Kilnock",
+     "Inishmore"
+    ],
+    "why": "Ted and Dougal live in the parochial house on the bleak Craggy Island."
+   },
+   {
+    "q": "Which gas makes up approximately 78% of the Earth's atmosphere?",
+    "a": [
+     "Nitrogen",
+     "Oxygen",
+     "Argon",
+     "Carbon dioxide"
+    ],
+    "why": "Nitrogen is by far the most abundant gas in Earth's atmosphere."
+   },
+   {
+    "q": "Which pop group released the hit single 'Karma Chameleon' in 1983?",
+    "a": [
+     "Culture Club",
+     "Wham!",
+     "Spandau Ballet",
+     "Tears for Fears"
+    ],
+    "why": "Fronted by Boy George, Culture Club topped the charts worldwide with Karma Chameleon."
+   },
+   {
+    "q": "In the 1996 film Trainspotting, which actor played the unhinged character Francis Begbie?",
+    "a": [
+     "Robert Carlyle",
+     "Ewan McGregor",
+     "Jonny Lee Miller",
+     "Ewen Bremner"
+    ],
+    "why": "Robert Carlyle gave a terrifyingly memorable performance as the violent Begbie."
+   },
+   {
+    "q": "Who was Prime Minister of the United Kingdom when World War II broke out in 1939?",
+    "a": [
+     "Neville Chamberlain",
+     "Winston Churchill",
+     "Clement Attlee",
+     "Stanley Baldwin"
+    ],
+    "why": "Neville Chamberlain declared war on Germany on 3 September 1939."
+   },
+   {
+    "q": "Which indie band released the critically acclaimed debut album 'Silent Alarm' in 2005?",
+    "a": [
+     "Bloc Party",
+     "The Libertines",
+     "Maxïmo Park",
+     "Franz Ferdinand"
+    ],
+    "why": "Silent Alarm was a landmark UK indie post-punk revival album of the mid-2000s."
+   },
+   {
+    "q": "Which blue video game character made his debut on the Sega Mega Drive in 1991?",
+    "a": [
+     "Sonic the Hedgehog",
+     "Mega Man",
+     "Rayman",
+     "Crash Bandicoot"
+    ],
+    "why": "Sonic became Sega's iconic mascot created to compete with Nintendo's Mario."
+   },
+   {
+    "q": "What type of spirit forms the traditional base of a Mojito cocktail?",
+    "a": [
+     "Rum",
+     "Vodka",
+     "Gin",
+     "Tequila"
+    ],
+    "why": "A traditional Cuban Mojito combines white rum, sugar, lime, soda water, and mint."
+   }
+  ]
+ }
+}

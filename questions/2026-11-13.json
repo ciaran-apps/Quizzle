@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-13",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which is the longest river located entirely within Scotland?",
+    "a": [
+     "River Tay",
+     "River Spey",
+     "River Tweed",
+     "River Clyde"
+    ],
+    "why": "The Tay flows for 117 miles across Scotland, edging out the Spey which reaches 107 miles."
+   },
+   {
+    "q": "Which gas makes up roughly 78% of Earth's atmosphere by volume?",
+    "a": [
+     "Nitrogen",
+     "Oxygen",
+     "Argon",
+     "Carbon dioxide"
+    ],
+    "why": "Nitrogen dominates our atmosphere, with oxygen making up almost all of the remaining 21%."
+   },
+   {
+    "q": "In which London street did the Great Fire of London begin in September 1666?",
+    "a": [
+     "Pudding Lane",
+     "Threadneedle Street",
+     "Drury Lane",
+     "Fleet Street"
+    ],
+    "why": "It started at Thomas Farriner's bakery on Pudding Lane on 2 September 1666."
+   },
+   {
+    "q": "Which spirit forms the base of a classic Negroni cocktail, alongside Campari and sweet vermouth?",
+    "a": [
+     "Gin",
+     "Bourbon",
+     "Vodka",
+     "Tequila"
+    ],
+    "why": "An equal-parts mix of gin, Campari, and sweet vermouth creates this iconic Italian cocktail."
+   },
+   {
+    "q": "Which English word for an order to stay indoors comes from the Old French for 'cover fire'?",
+    "a": [
+     "Curfew",
+     "Quarantine",
+     "Embargo",
+     "Billet"
+    ],
+    "why": "It comes from 'couvre-feu', a medieval law requiring household fires to be extinguished at night."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In classic 1990s Tomb Raider video games, what is the name of Lara Croft's long-suffering butler?",
+    "a": [
+     "Winston",
+     "Alfred",
+     "Jeeves",
+     "Higgins"
+    ],
+    "why": "Winston famously follows Lara around Croft Manor carrying his tray of tea, often getting locked in the freezer!"
+   },
+   {
+    "q": "In the 1990s playground craze Pogs, what were the heavier metal or plastic discs used to flip the caps called?",
+    "a": [
+     "Slammers",
+     "Whackers",
+     "Strippers",
+     "Hammers"
+    ],
+    "why": "Slammers were used to strike the stack of Pogs, and players kept any caps that landed face up!"
+   },
+   {
+    "q": "Which chocolate brand famously asked in its adverts: \"Do you love anyone enough to give them your last...?\"",
+    "a": [
+     "Rolo",
+     "Galaxy",
+     "Quality Street",
+     "Bounty"
+    ],
+    "why": "The iconic Rolo slogan ran from 1980 until 2003, featuring sweet clips of people giving away their final sweet."
+   },
+   {
+    "q": "In the 1993 Wallace & Gromit film The Wrong Trousers, what disguise does Feathers McGraw wear to look like a chicken?",
+    "a": [
+     "A rubber glove",
+     "A red balloon",
+     "A paper bag",
+     "A tea cosy"
+    ],
+    "why": "Feathers McGraw puts a red rubber glove on his head to impersonate a chicken while committing diamond heists!"
+   },
+   {
+    "q": "In the BBC sitcom The Royle Family, what is lazy patriarch Jim Royle's signature catchphrase?",
+    "a": [
+     "My arse!",
+     "Give over!",
+     "Bloody hell!",
+     "Absolute rubbish!"
+    ],
+    "why": "Played by Ricky Tomlinson, Jim Royle yelled \"My arse!\" from his armchair at almost everything on TV."
+   }
+  ],
+  "music": [
+   {
+    "q": "What was the title of Radiohead's debut studio album, released in 1993?",
+    "a": [
+     "Pablo Honey",
+     "The Bends",
+     "OK Computer",
+     "Amnesiac"
+    ],
+    "why": "'Pablo Honey' launched Radiohead's career in 1993, driven by the breakout single 'Creep'."
+   },
+   {
+    "q": "Which synth-pop group, fronted by Martin Fry, released the hit 1982 album 'The Lexicon of Love'?",
+    "a": [
+     "ABC",
+     "Spandau Ballet",
+     "Haircut 100",
+     "Heaven 17"
+    ],
+    "why": "Produced by Trevor Horn, ABC's 'The Lexicon of Love' topped the UK Albums Chart in 1982."
+   },
+   {
+    "q": "Which song by Gnarls Barkley became the first single to reach UK Number 1 on downloads alone in 2006?",
+    "a": [
+     "Crazy",
+     "Smiley Faces",
+     "Run",
+     "St. Elsewhere"
+    ],
+    "why": "'Crazy' spent nine consecutive weeks at UK Number 1 in 2006, making chart history."
+   },
+   {
+    "q": "Which American rock band beat Joe McElderry to the UK Christmas Number 1 spot in 2009?",
+    "a": [
+     "Rage Against the Machine",
+     "Red Hot Chili Peppers",
+     "Foo Fighters",
+     "Green Day"
+    ],
+    "why": "'Killing in the Name' won a famous fan campaign to keep The X Factor winner off the top spot."
+   },
+   {
+    "q": "On which Somerset farm has the Glastonbury Festival been held since its inception in 1970?",
+    "a": [
+     "Worthy Farm",
+     "Manor Farm",
+     "Home Farm",
+     "Hill Farm"
+    ],
+    "why": "Michael Eavis hosted the first festival at his dairy farm, Worthy Farm, in September 1970."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British band had a major hit in 1997 with the single 'Tubthumping'?",
+    "a": [
+     "Chumbawamba",
+     "Carter USM",
+     "EMF",
+     "Pop Will Eat Itself"
+    ],
+    "why": "Tubthumping reached number two in the UK Singles Chart in 1997."
+   },
+   {
+    "q": "In the sitcom 'Spaced', what is the name of Tim and Daisy's eccentric landlady?",
+    "a": [
+     "Marsha",
+     "Amber",
+     "Twist",
+     "Sophie"
+    ],
+    "why": "Marsha Klein was memorably played by Julia Deakin in the Channel 4 comedy."
+   },
+   {
+    "q": "Which 1990s English rock band was formed by brothers Richard and Danny McNamara?",
+    "a": [
+     "Embrace",
+     "Shed Seven",
+     "Starsailor",
+     "Doves"
+    ],
+    "why": "Embrace topped the UK album chart in 1998 with their debut album 'The Good Will Out'."
+   },
+   {
+    "q": "Which traditional British dish consists of sausages baked in a savoury batter?",
+    "a": [
+     "Toad in the hole",
+     "Bubble and squeak",
+     "Welsh rarebit",
+     "Shepherd's pie"
+    ],
+    "why": "Toad in the hole is traditionally served with onion gravy and vegetables."
+   },
+   {
+    "q": "In the 1999 film 'Fight Club', which actor plays the character of Tyler Durden?",
+    "a": [
+     "Brad Pitt",
+     "Edward Norton",
+     "Jared Leto",
+     "Keanu Reeves"
+    ],
+    "why": "Brad Pitt starred as soap maker Tyler Durden alongside Edward Norton."
+   },
+   {
+    "q": "Which American rock group released the hit single 'Mr. Brightside' in 2003?",
+    "a": [
+     "The Killers",
+     "Kings of Leon",
+     "Maroon 5",
+     "The Strokes"
+    ],
+    "why": "The Killers released 'Mr. Brightside' as their debut single from the album 'Hot Fuss'."
+   },
+   {
+    "q": "Which Roman emperor ordered the construction of a stone wall across northern Britain in AD 122?",
+    "a": [
+     "Hadrian",
+     "Antoninus",
+     "Trajan",
+     "Marcus Aurelius"
+    ],
+    "why": "Hadrian's Wall stretched 73 miles from the River Tyne to the Solway Firth."
+   },
+   {
+    "q": "What fruit does Crash Bandicoot collect throughout his classic video game series?",
+    "a": [
+     "Wumpa fruit",
+     "Mango",
+     "Passionfruit",
+     "Dragonfruit"
+    ],
+    "why": "Crash collects Wumpa fruit to earn extra lives across the franchise."
+   },
+   {
+    "q": "Which album by Michael Jackson, released in 1982, became the best-selling album of all time?",
+    "a": [
+     "Thriller",
+     "Bad",
+     "Off the Wall",
+     "Dangerous"
+    ],
+    "why": "Thriller yielded seven top-10 singles and has sold over 70 million copies worldwide."
+   },
+   {
+    "q": "What is the hardest naturally occurring substance on Earth?",
+    "a": [
+     "Diamond",
+     "Quartz",
+     "Corundum",
+     "Topaz"
+    ],
+    "why": "Diamond scores a maximum 10 on the Mohs scale of mineral hardness."
+   }
+  ]
+ }
+}
