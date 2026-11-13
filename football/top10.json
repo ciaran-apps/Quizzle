@@ -1,0 +1,1019 @@
+{
+ "updated": "2026-11-13",
+ "clubs": [
+  {
+   "key": "manutd",
+   "name": "Man Utd",
+   "colour": "#da291c",
+   "goals": [
+    {
+     "rank": 1,
+     "name": "Wayne Rooney",
+     "first": "Wayne",
+     "last": "Rooney",
+     "value": 183,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Ryan Giggs",
+     "first": "Ryan",
+     "last": "Giggs",
+     "value": 109,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Paul Scholes",
+     "first": "Paul",
+     "last": "Scholes",
+     "value": 107,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Cristiano Ronaldo",
+     "first": "Cristiano Ronaldo",
+     "last": "dos Santos Aveiro",
+     "value": 103,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Ruud van Nistelrooij",
+     "first": "Ruud",
+     "last": "van Nistelrooij",
+     "value": 95,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Andrew Cole",
+     "first": "Andrew",
+     "last": "Cole",
+     "value": 93,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Ole Gunnar Solskjær",
+     "first": "Ole Gunnar",
+     "last": "Solskjær",
+     "value": 91,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Marcus Rashford",
+     "first": "Marcus",
+     "last": "Rashford",
+     "value": 87,
+     "active": true
+    },
+    {
+     "rank": 9,
+     "name": "Bruno Fernandes",
+     "first": "Bruno Miguel",
+     "last": "Borges Fernandes",
+     "value": 75,
+     "active": true
+    },
+    {
+     "rank": 10,
+     "name": "Eric Cantona",
+     "first": "Eric",
+     "last": "Cantona",
+     "value": 64,
+     "active": false
+    }
+   ],
+   "apps": [
+    {
+     "rank": 1,
+     "name": "Ryan Giggs",
+     "first": "Ryan",
+     "last": "Giggs",
+     "value": 632,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Paul Scholes",
+     "first": "Paul",
+     "last": "Scholes",
+     "value": 499,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "David de Gea",
+     "first": "David",
+     "last": "de Gea",
+     "value": 415,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Gary Neville",
+     "first": "Gary",
+     "last": "Neville",
+     "value": 400,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Wayne Rooney",
+     "first": "Wayne",
+     "last": "Rooney",
+     "value": 393,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Roy Keane",
+     "first": "Roy",
+     "last": "Keane",
+     "value": 326,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Michael Carrick",
+     "first": "Michael",
+     "last": "Carrick",
+     "value": 316,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Rio Ferdinand",
+     "first": "Rio",
+     "last": "Ferdinand",
+     "value": 312,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Denis Irwin",
+     "first": "Denis",
+     "last": "Irwin",
+     "value": 296,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Marcus Rashford",
+     "first": "Marcus",
+     "last": "Rashford",
+     "value": 293,
+     "active": true
+    }
+   ]
+  },
+  {
+   "key": "liverpool",
+   "name": "Liverpool",
+   "colour": "#c8102e",
+   "goals": [
+    {
+     "rank": 1,
+     "name": "Mohamed Salah",
+     "first": "Mohamed",
+     "last": "Salah Hamed Mahrous Ghaly",
+     "value": 191,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Robbie Fowler",
+     "first": "Robbie",
+     "last": "Fowler",
+     "value": 128,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Steven Gerrard",
+     "first": "Steven",
+     "last": "Gerrard",
+     "value": 120,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Michael Owen",
+     "first": "Michael",
+     "last": "Owen",
+     "value": 118,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Sadio Mané",
+     "first": "Sadio",
+     "last": "Mané",
+     "value": 90,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Roberto Firmino",
+     "first": "Roberto Firmino",
+     "last": "Barbosa de Oliveira",
+     "value": 82,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Luis Suárez",
+     "first": "Luis",
+     "last": "Suárez",
+     "value": 69,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Fernando Torres",
+     "first": "Fernando",
+     "last": "Torres",
+     "value": 65,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Dirk Kuijt",
+     "first": "Dirk",
+     "last": "Kuijt",
+     "value": 51,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Daniel Sturridge",
+     "first": "Daniel",
+     "last": "Sturridge",
+     "value": 50,
+     "active": false
+    }
+   ],
+   "apps": [
+    {
+     "rank": 1,
+     "name": "Jamie Carragher",
+     "first": "Jamie",
+     "last": "Carragher",
+     "value": 508,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Steven Gerrard",
+     "first": "Steven",
+     "last": "Gerrard",
+     "value": 504,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Jordan Henderson",
+     "first": "Jordan",
+     "last": "Henderson",
+     "value": 360,
+     "active": true
+    },
+    {
+     "rank": 4,
+     "name": "Sami Hyypiä",
+     "first": "Sami",
+     "last": "Hyypiä",
+     "value": 318,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Mohamed Salah",
+     "first": "Mohamed",
+     "last": "Salah Hamed Mahrous Ghaly",
+     "value": 315,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Pepe Reina",
+     "first": "Pepe",
+     "last": "Reina",
+     "value": 285,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Virgil van Dijk",
+     "first": "Virgil",
+     "last": "van Dijk",
+     "value": 282,
+     "active": true
+    },
+    {
+     "rank": 8,
+     "name": "Andy Robertson",
+     "first": "Andy",
+     "last": "Robertson",
+     "value": 275,
+     "active": true
+    },
+    {
+     "rank": 9,
+     "name": "Robbie Fowler",
+     "first": "Robbie",
+     "last": "Fowler",
+     "value": 266,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Alisson Becker",
+     "first": "Alisson Ramsés",
+     "last": "Becker",
+     "value": 265,
+     "active": true
+    }
+   ]
+  },
+  {
+   "key": "arsenal",
+   "name": "Arsenal",
+   "colour": "#ef0107",
+   "goals": [
+    {
+     "rank": 1,
+     "name": "Thierry Henry",
+     "first": "Thierry",
+     "last": "Henry",
+     "value": 175,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Ian Wright",
+     "first": "Ian",
+     "last": "Wright",
+     "value": 104,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Robin van Persie",
+     "first": "Robin",
+     "last": "van Persie",
+     "value": 96,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Dennis Bergkamp",
+     "first": "Dennis",
+     "last": "Bergkamp",
+     "value": 87,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Olivier Giroud",
+     "first": "Olivier",
+     "last": "Giroud",
+     "value": 73,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Pierre-Emerick Aubameyang",
+     "first": "Pierre-Emerick",
+     "last": "Aubameyang",
+     "value": 68,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Theo Walcott",
+     "first": "Theo",
+     "last": "Walcott",
+     "value": 65,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Bukayo Saka",
+     "first": "Bukayo",
+     "last": "Saka",
+     "value": 63,
+     "active": true
+    },
+    {
+     "rank": 9,
+     "name": "Robert Pirès",
+     "first": "Robert",
+     "last": "Pirès",
+     "value": 62,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Alexis Sánchez",
+     "first": "Alexis",
+     "last": "Sánchez",
+     "value": 60,
+     "active": false
+    }
+   ],
+   "apps": [
+    {
+     "rank": 1,
+     "name": "Ray Parlour",
+     "first": "Ray",
+     "last": "Parlour",
+     "value": 333,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "David Seaman",
+     "first": "David",
+     "last": "Seaman",
+     "value": 325,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Dennis Bergkamp",
+     "first": "Dennis",
+     "last": "Bergkamp",
+     "value": 315,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Martin Keown",
+     "first": "Martin",
+     "last": "Keown",
+     "value": 310,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Lee Dixon",
+     "first": "Lee",
+     "last": "Dixon",
+     "value": 305,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Patrick Vieira",
+     "first": "Patrick",
+     "last": "Vieira",
+     "value": 279,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Theo Walcott",
+     "first": "Theo",
+     "last": "Walcott",
+     "value": 270,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Nigel Winterburn",
+     "first": "Nigel",
+     "last": "Winterburn",
+     "value": 270,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Aaron Ramsey",
+     "first": "Aaron",
+     "last": "Ramsey",
+     "value": 262,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Thierry Henry",
+     "first": "Thierry",
+     "last": "Henry",
+     "value": 258,
+     "active": false
+    }
+   ]
+  },
+  {
+   "key": "chelsea",
+   "name": "Chelsea",
+   "colour": "#034694",
+   "goals": [
+    {
+     "rank": 1,
+     "name": "Frank Lampard",
+     "first": "Frank",
+     "last": "Lampard",
+     "value": 147,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Didier Drogba",
+     "first": "Didier",
+     "last": "Drogba",
+     "value": 104,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Eden Hazard",
+     "first": "Eden",
+     "last": "Hazard",
+     "value": 85,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Jimmy Floyd Hasselbaink",
+     "first": "Jimmy Floyd",
+     "last": "Hasselbaink",
+     "value": 69,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Gianfranco Zola",
+     "first": "Gianfranco",
+     "last": "Zola",
+     "value": 59,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Eidur Gudjohnsen",
+     "first": "Eidur",
+     "last": "Gudjohnsen",
+     "value": 54,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Diego Costa",
+     "first": "Diego",
+     "last": "Da Silva Costa",
+     "value": 52,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Cole Palmer",
+     "first": "Cole",
+     "last": "Palmer",
+     "value": 50,
+     "active": true
+    },
+    {
+     "rank": 9,
+     "name": "John Terry",
+     "first": "John",
+     "last": "Terry",
+     "value": 41,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Nicolas Anelka",
+     "first": "Nicolas",
+     "last": "Anelka",
+     "value": 38,
+     "active": false
+    }
+   ],
+   "apps": [
+    {
+     "rank": 1,
+     "name": "John Terry",
+     "first": "John",
+     "last": "Terry",
+     "value": 492,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Frank Lampard",
+     "first": "Frank",
+     "last": "Lampard",
+     "value": 429,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "César Azpilicueta",
+     "first": "César",
+     "last": "Azpilicueta",
+     "value": 349,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Petr Cech",
+     "first": "Petr",
+     "last": "Cech",
+     "value": 333,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Branislav Ivanovic",
+     "first": "Branislav",
+     "last": "Ivanovic",
+     "value": 261,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Dennis Wise",
+     "first": "Dennis",
+     "last": "Wise",
+     "value": 261,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Didier Drogba",
+     "first": "Didier",
+     "last": "Drogba",
+     "value": 254,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "John Obi Mikel",
+     "first": "Mikel John",
+     "last": "Obi",
+     "value": 249,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Eden Hazard",
+     "first": "Eden",
+     "last": "Hazard",
+     "value": 245,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Willian",
+     "first": "Willian",
+     "last": "Borges da Silva",
+     "value": 234,
+     "active": false
+    }
+   ]
+  },
+  {
+   "key": "mancity",
+   "name": "Man City",
+   "colour": "#6cabdd",
+   "goals": [
+    {
+     "rank": 1,
+     "name": "Sergio Agüero",
+     "first": "Sergio",
+     "last": "Agüero",
+     "value": 184,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Erling Haaland",
+     "first": "Erling",
+     "last": "Haaland",
+     "value": 121,
+     "active": true
+    },
+    {
+     "rank": 3,
+     "name": "Raheem Sterling",
+     "first": "Raheem",
+     "last": "Sterling",
+     "value": 91,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Kevin De Bruyne",
+     "first": "Kevin",
+     "last": "De Bruyne",
+     "value": 72,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Phil Foden",
+     "first": "Phil",
+     "last": "Foden",
+     "value": 69,
+     "active": true
+    },
+    {
+     "rank": 6,
+     "name": "Yaya Touré",
+     "first": "Yaya",
+     "last": "Touré",
+     "value": 62,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "David Silva",
+     "first": "David",
+     "last": "Silva",
+     "value": 60,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Gabriel Jesus",
+     "first": "Gabriel Fernando",
+     "last": "de Jesus",
+     "value": 58,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Carlos Tevez",
+     "first": "Carlos",
+     "last": "Tevez",
+     "value": 58,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Edin Dzeko",
+     "first": "Edin",
+     "last": "Dzeko",
+     "value": 50,
+     "active": false
+    }
+   ],
+   "apps": [
+    {
+     "rank": 1,
+     "name": "David Silva",
+     "first": "David",
+     "last": "Silva",
+     "value": 309,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Bernardo Silva",
+     "first": "Bernardo",
+     "last": "Mota Veiga de Carvalho e Silva",
+     "value": 304,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Kevin De Bruyne",
+     "first": "Kevin",
+     "last": "De Bruyne",
+     "value": 285,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Ederson",
+     "first": "Ederson",
+     "last": "Santana de Moraes",
+     "value": 276,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Sergio Agüero",
+     "first": "Sergio",
+     "last": "Agüero",
+     "value": 275,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Joe Hart",
+     "first": "Joe",
+     "last": "Hart",
+     "value": 266,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Vincent Kompany",
+     "first": "Vincent",
+     "last": "Kompany",
+     "value": 265,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Fernandinho",
+     "first": "Fernando Luiz",
+     "last": "Rosa",
+     "value": 264,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Richard Dunne",
+     "first": "Richard",
+     "last": "Dunne",
+     "value": 253,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Phil Foden",
+     "first": "Phil",
+     "last": "Foden",
+     "value": 233,
+     "active": true
+    }
+   ]
+  },
+  {
+   "key": "spurs",
+   "name": "Spurs",
+   "colour": "#132257",
+   "goals": [
+    {
+     "rank": 1,
+     "name": "Harry Kane",
+     "first": "Harry",
+     "last": "Kane",
+     "value": 213,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Son Heung-Min",
+     "first": "Heung-Min",
+     "last": "Son",
+     "value": 127,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Teddy Sheringham",
+     "first": "Teddy",
+     "last": "Sheringham",
+     "value": 97,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Jermain Defoe",
+     "first": "Jermain",
+     "last": "Defoe",
+     "value": 91,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Robbie Keane",
+     "first": "Robbie",
+     "last": "Keane",
+     "value": 91,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Gareth Bale",
+     "first": "Gareth",
+     "last": "Bale",
+     "value": 53,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Dele Alli",
+     "first": "Dele",
+     "last": "Alli",
+     "value": 51,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Christian Eriksen",
+     "first": "Christian",
+     "last": "Eriksen",
+     "value": 51,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Chris Armstrong",
+     "first": "Chris",
+     "last": "Armstrong",
+     "value": 48,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Steffen Iversen",
+     "first": "Steffen",
+     "last": "Iversen",
+     "value": 36,
+     "active": false
+    }
+   ],
+   "apps": [
+    {
+     "rank": 1,
+     "name": "Hugo Lloris",
+     "first": "Hugo",
+     "last": "Lloris",
+     "value": 361,
+     "active": false
+    },
+    {
+     "rank": 2,
+     "name": "Son Heung-Min",
+     "first": "Heung-Min",
+     "last": "Son",
+     "value": 333,
+     "active": false
+    },
+    {
+     "rank": 3,
+     "name": "Harry Kane",
+     "first": "Harry",
+     "last": "Kane",
+     "value": 317,
+     "active": false
+    },
+    {
+     "rank": 4,
+     "name": "Darren Anderton",
+     "first": "Darren",
+     "last": "Anderton",
+     "value": 299,
+     "active": false
+    },
+    {
+     "rank": 5,
+     "name": "Jermain Defoe",
+     "first": "Jermain",
+     "last": "Defoe",
+     "value": 276,
+     "active": false
+    },
+    {
+     "rank": 6,
+     "name": "Eric Dier",
+     "first": "Eric",
+     "last": "Dier",
+     "value": 274,
+     "active": false
+    },
+    {
+     "rank": 7,
+     "name": "Ledley King",
+     "first": "Ledley",
+     "last": "King",
+     "value": 268,
+     "active": false
+    },
+    {
+     "rank": 8,
+     "name": "Aaron Lennon",
+     "first": "Aaron",
+     "last": "Lennon",
+     "value": 266,
+     "active": false
+    },
+    {
+     "rank": 9,
+     "name": "Sol Campbell",
+     "first": "Sol",
+     "last": "Campbell",
+     "value": 255,
+     "active": false
+    },
+    {
+     "rank": 10,
+     "name": "Ben Davies",
+     "first": "Ben",
+     "last": "Davies",
+     "value": 247,
+     "active": true
+    }
+   ]
+  }
+ ]
+}
