@@ -40,5 +40,6 @@ jobs:
             echo "Nothing new to save."
           else
             git commit -m "Daily questions"
+            git pull --rebase
             git push
           fi

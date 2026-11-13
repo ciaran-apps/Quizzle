@@ -1,0 +1,42 @@
+name: Football data
+
+on:
+  schedule:
+    # Every Monday at 06:23 UTC, after the weekend's games
+    - cron: "23 6 * * 1"
+  # Run by hand: Actions tab → Football data → Run workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: football-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Get top 10s from the Premier League
+        run: node scripts/football.mjs
+
+      - name: Save to the repository
+        run: |
+          git config user.name "quizzle-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add football
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Football top 10s"
+            git pull --rebase
+            git push
+          fi
