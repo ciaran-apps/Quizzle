@@ -24,6 +24,12 @@ The AI is **Google's Gemini API** on its free tier: no card and no charges. If i
 3. **GitHub Pages:** **Settings → Pages**. Source: **Deploy from a branch**, branch **main**, folder **/(root)**. Custom domain: `quiz.ciarandevine.uk`.
 4. **Cloudflare:** add a DNS record: type `CNAME`, name `quiz`, target `ciaran-apps.github.io`, proxy **off** (DNS only).
 
+## Football Top 10s
+
+Name the top 10 Premier League goalscorers or appearance makers (1992 to now) for Man Utd, Liverpool, Arsenal, Chelsea, Man City or Spurs. Type names, surnames are fine, three wrong guesses and you're out.
+
+The lists are in `football/top10.json`, fetched from the official Premier League stats by the **Football data** Action (`scripts/football.mjs`) every Monday, so current players' totals stay up to date. To add a club, add it to `CLUBS` in `scripts/football.mjs` and run the Action. Extra accepted names (nicknames, alternative spellings) are in `FB_ALIASES` in `index.html`.
+
 ## Changing things
 
 - **Topics, number of questions, how hard:** `scripts/generate.mjs` (`QUIZZES` and the rules in `draftQuestions`). If you add a topic, add it to `TOPICS` and `ORDER` in `index.html` too.
