@@ -115,6 +115,29 @@
   .fb-end b{display:block;font:800 26px "Bricolage Grotesque"}
   .fb-end p{color:var(--muted);font-size:14px;margin-top:4px}
   .fb-note{color:var(--muted);font-size:12px;text-align:center;margin-top:14px}
+  .setup{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:18px}
+  .setrow{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .setrow+.setrow{margin-top:12px}
+  .setrow span{font-weight:600}
+  .stepper{display:flex;align-items:center;gap:6px}
+  .stepper button{width:38px;height:38px;border-radius:12px;border:0;background:var(--card);color:var(--ink);font:700 20px Inter;cursor:pointer}
+  .stepper b{min-width:28px;text-align:center;font:800 20px "Bricolage Grotesque"}
+  .names{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+  .names input{min-width:0;background:var(--card);border:2px solid var(--line);border-radius:12px;padding:10px 12px;color:var(--ink);font:500 15px Inter;outline:none;border-left-width:6px}
+  .names input:focus{border-color:var(--accent)}
+  .board{display:flex;gap:8px;overflow-x:auto;margin-bottom:12px;padding-bottom:2px}
+  .pl{flex:1;min-width:92px;background:var(--card);border:2px solid transparent;border-radius:14px;padding:8px 10px;transition:.2s}
+  .pl.turn{border-color:var(--accent);background:#3a3a70}
+  .pl.out{opacity:.4}
+  .pl .pn{display:flex;align-items:center;gap:6px;font-weight:700;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pl .dot{width:10px;height:10px;border-radius:50%;flex:none}
+  .pl .ps{display:flex;justify-content:space-between;align-items:baseline;margin-top:4px}
+  .pl .pts{font:800 22px "Bricolage Grotesque"}
+  .pl .lv{font-size:12px;color:var(--muted)}
+  .turnbar{text-align:center;font:800 18px "Bricolage Grotesque";margin-bottom:10px;padding:10px;border-radius:12px;background:var(--bg2)}
+  .slot .who{font-size:11px;font-weight:700;border-radius:99px;padding:2px 8px;color:var(--bg);margin-left:6px;white-space:nowrap}
+  .standings{margin:10px 0 4px;text-align:left}
+  .standings div{display:flex;justify-content:space-between;padding:6px 4px;border-bottom:1px solid var(--line);font-size:15px}
   .linkbtn{background:none;border:0;color:var(--muted);font:500 14px Inter;text-decoration:underline;cursor:pointer;padding:10px;display:block;margin:4px auto 0}
 
   /* Loading */
@@ -218,11 +241,19 @@
       <button class="icon-btn" id="fbBack" aria-label="Back">←</button>
       <h2>⚽ Football Top 10s</h2>
     </div>
-    <p style="color:var(--muted);margin:-6px 0 18px;line-height:1.45">Name a club's top 10 in the Premier League era (1992 to now). Surnames are fine. Three wrong guesses and you're out.</p>
+    <p style="color:var(--muted);margin:-6px 0 18px;line-height:1.45">Name a club's top 10 in the Premier League era (1992 to now). Surnames are fine. Play alone or take turns on one phone: a right name scores a point, a wrong one costs a life.</p>
     <div class="seg" id="fbSeg">
       <button data-f="goals" class="on">⚽ Goals</button>
       <button data-f="apps">👕 Appearances</button>
     </div>
+    <div class="setup">
+      <div class="setrow"><span>👥 Players</span>
+        <div class="stepper"><button data-s="players" data-d="-1" aria-label="Fewer players">−</button><b id="fbNPlayers">1</b><button data-s="players" data-d="1" aria-label="More players">+</button></div></div>
+      <div class="setrow"><span>❤️ Lives each</span>
+        <div class="stepper"><button data-s="lives" data-d="-1" aria-label="Fewer lives">−</button><b id="fbNLives">3</b><button data-s="lives" data-d="1" aria-label="More lives">+</button></div></div>
+      <div class="names" id="fbNames"></div>
+    </div>
+    <div class="label">Pick a club to start</div>
     <div class="clubs" id="fbClubs"></div>
     <p class="fb-note" id="fbUpdated"></p>
   </section>
@@ -234,6 +265,8 @@
       <div class="fb-title"><b id="fbTitle"></b><small id="fbSub"></small></div>
       <div class="lives" id="fbLives"></div>
     </div>
+    <div class="board" id="fbBoard"></div>
+    <div class="turnbar" id="fbTurnBar"></div>
     <form class="fb-form" id="fbForm" autocomplete="off">
       <input id="fbInput" placeholder="Type a player…" autocapitalize="words" autocorrect="off" spellcheck="false" enterkeyhint="go">
       <button type="submit">Guess</button>
@@ -242,6 +275,8 @@
     <div class="slots" id="fbSlots"></div>
     <div class="fb-end" id="fbEnd">
       <b id="fbScore"></b><p id="fbEndMsg"></p>
+      <div class="standings" id="fbStandings"></div>
+      <button class="btn ghost" id="fbRematch">Play this list again</button>
       <button class="btn primary" id="fbAgain">Try another list</button>
     </div>
     <button class="linkbtn" id="fbGiveUp">Give up and reveal</button>
@@ -691,7 +726,13 @@ const FB_ALIASES = {
   "heungmin son":["son"],
 };
 const FB_ALIAS_N=Object.fromEntries(Object.entries(FB_ALIASES).map(([k,v])=>[fbNorm(k),v]));
-let fbData=null, fbField="goals", fbClub=null, fbList=[], fbFound=new Set(), fbLives=FB_LIVES, fbOver=false;
+const FB_COLOURS=["#ffcf4a","#3ddc97","#6cb8ff","#ff8fb1","#c39bff","#ff9f5a"];
+const FB_MAX_PLAYERS=6, FB_MAX_LIVES=10;
+let fbData=null, fbField="goals", fbClub=null, fbList=[], fbFound=new Map(), fbOver=false;
+// game setup, remembered on this phone
+let fbSetup=Object.assign({players:1, lives:FB_LIVES, names:[]}, store.get("quizzle-fb-setup")||{});
+let fbPlayers=[], fbTurn=0;
+const fbSolo=()=>fbPlayers.length===1;
 
 // lower-case, no accents/punctuation, "ij" read as "y" (Nistelrooij/Nistelrooy)
 function fbNorm(t){
@@ -742,14 +783,30 @@ async function fbOpen(){
 }
 function alertMsg(t){ const n=document.querySelector("#home .note"); n.textContent=t; n.style.color="var(--bad)"; setTimeout(()=>{ n.textContent="Questions change every day at midnight."; n.style.color=""; },5000); }
 
+function fbRenderSetup(){
+  $("fbNPlayers").textContent=fbSetup.players;
+  $("fbNLives").textContent=fbSetup.lives;
+  const box=$("fbNames"); box.innerHTML="";
+  if(fbSetup.players>1){
+    for(let i=0;i<fbSetup.players;i++){
+      const inp=document.createElement("input");
+      inp.maxLength=14; inp.placeholder=`Player ${i+1}`; inp.value=fbSetup.names[i]||"";
+      inp.style.borderLeftColor=FB_COLOURS[i];
+      inp.oninput=()=>{ fbSetup.names[i]=inp.value; store.set("quizzle-fb-setup",fbSetup); };
+      box.appendChild(inp);
+    }
+  }
+}
+
 function fbRenderPick(){
   document.querySelectorAll("#fbSeg button").forEach(b=>b.classList.toggle("on", b.dataset.f===fbField));
+  fbRenderSetup();
   const best=fbBest();
   $("fbClubs").innerHTML="";
   fbData.clubs.forEach(c=>{
     const b=document.createElement("button"); b.className="club"; b.style.background=c.colour;
     const sc=best[c.key+"-"+fbField];
-    b.innerHTML=`<b></b><small>${sc!=null?`Best: ${sc}/${c[fbField].length}`:FB_LABEL[fbField]}</small>`;
+    b.innerHTML=`<b></b><small>${sc!=null?`Solo best: ${sc}/${c[fbField].length}`:FB_LABEL[fbField]}</small>`;
     b.querySelector("b").textContent=c.name;
     b.onclick=()=>fbStart(c.key);
     $("fbClubs").appendChild(b);
@@ -761,10 +818,14 @@ function fbRenderPick(){
 function fbStart(key){
   fbClub=fbData.clubs.find(c=>c.key===key);
   fbList=fbClub[fbField].map(p=>({...p, keys:fbKeys(p)}));
-  fbFound=new Set(); fbLives=FB_LIVES; fbOver=false;
+  fbFound=new Map(); fbOver=false;
+  fbPlayers=Array.from({length:fbSetup.players},(_,i)=>({
+    name:(fbSetup.names[i]||"").trim()||(fbSetup.players===1?"You":`Player ${i+1}`),
+    colour:FB_COLOURS[i], lives:fbSetup.lives, points:0 }));
+  fbTurn=0;
   $("fbTitle").textContent=`${fbClub.name} · ${FB_LABEL[fbField]}`;
   $("fbSub").textContent=`Top ${fbList.length} in the Premier League${fbList.length>10?" (ties included)":""}`;
-  $("fbMsg").textContent=""; $("fbMsg").className="fb-msg";
+  fbSay(fbSolo()?"":`${fbPlayers[0].name} starts. Pass the phone after each guess.`);
   $("fbEnd").classList.remove("show"); $("fbGiveUp").style.display="block";
   $("fbForm").style.display="flex"; $("fbInput").value="";
   fbRender(); show("fbGame");
@@ -772,60 +833,122 @@ function fbStart(key){
 }
 
 function fbRender(){
-  $("fbLives").textContent="❤️".repeat(fbLives)+"🖤".repeat(FB_LIVES-fbLives);
-  const ranks=fbList.map(p=>p.rank);
+  const solo=fbSolo(), p=fbPlayers[fbTurn];
+  // header hearts (solo) or scoreboard (multiplayer)
+  $("fbLives").style.display=solo?"block":"none";
+  if(solo) $("fbLives").textContent=p.lives<=5 ? "❤️".repeat(p.lives)+"🖤".repeat(Math.max(0,Math.min(5,fbSetup.lives)-p.lives)) : `❤️ ×${p.lives}`;
+  $("fbBoard").style.display=solo?"none":"flex";
+  $("fbTurnBar").style.display=(solo||fbOver)?"none":"block";
+  if(!solo){
+    $("fbBoard").innerHTML="";
+    fbPlayers.forEach((pl,i)=>{
+      const d=document.createElement("div");
+      d.className="pl"+(i===fbTurn&&!fbOver?" turn":"")+(pl.lives<=0?" out":"");
+      d.innerHTML=`<div class="pn"><span class="dot"></span><span></span></div><div class="ps"><span class="pts">${pl.points}</span><span class="lv">${pl.lives>0?"❤️ "+pl.lives:"out"}</span></div>`;
+      d.querySelector(".dot").style.background=pl.colour;
+      d.querySelector(".pn span:last-child").textContent=pl.name;
+      $("fbBoard").appendChild(d);
+    });
+    $("fbTurnBar").textContent=`${p.name}'s turn`;
+    $("fbTurnBar").style.color=p.colour;
+    $("fbInput").placeholder=`${p.name}, name a player…`;
+  } else $("fbInput").placeholder="Type a player…";
+
+  const ranks=fbList.map(x=>x.rank);
   $("fbSlots").innerHTML="";
-  fbList.forEach((p,i)=>{
-    const tied=ranks.filter(r=>r===p.rank).length>1;
-    const shown=fbFound.has(i)||fbOver;
+  fbList.forEach((pl,i)=>{
+    const tied=ranks.filter(r=>r===pl.rank).length>1;
+    const by=fbFound.get(i), shown=by!==undefined||fbOver;
     const row=document.createElement("div");
-    row.className="slot"+(fbFound.has(i)?" found":(fbOver?" missed":""));
+    row.className="slot"+(by!==undefined?" found":(fbOver?" missed":""));
     row.innerHTML=`<span class="rk"></span><span class="nm"></span><span class="val"></span>`;
-    row.children[0].textContent=(tied?"=":"")+p.rank;
-    row.children[1].textContent=shown?p.name:"? ? ?";
+    row.children[0].textContent=(tied?"=":"")+pl.rank;
+    row.children[1].textContent=shown?pl.name:"? ? ?";
     if(!shown) row.children[1].classList.add("hidden");
-    row.children[2].textContent=p.value;
+    if(by!==undefined && !solo){
+      const tag=document.createElement("span"); tag.className="who";
+      tag.textContent=fbPlayers[by].name; tag.style.background=fbPlayers[by].colour;
+      row.children[1].appendChild(tag);
+    }
+    row.children[2].textContent=pl.value;
     $("fbSlots").appendChild(row);
   });
 }
 
 function fbSay(t,cls){ const m=$("fbMsg"); m.textContent=t; m.className="fb-msg"+(cls?" "+cls:""); }
 
+// move to the next player who still has lives
+function fbNextTurn(){
+  for(let k=1;k<=fbPlayers.length;k++){
+    const n=(fbTurn+k)%fbPlayers.length;
+    if(fbPlayers[n].lives>0){ fbTurn=n; return true; }
+  }
+  return false;
+}
+
 function fbGuess(raw){
   if(fbOver) return;
   const guess=raw.trim(); if(!guess) return;
+  const p=fbPlayers[fbTurn], solo=fbSolo();
   const hits=fbMatch(guess);
   const fresh=hits.filter(i=>!fbFound.has(i));
-  if(hits.length && !fresh.length){ fbSay(`Already got ${fbList[hits[0]].name}.`); return; }
+  // these don't use up a turn
+  if(hits.length && !fresh.length){ fbSay(`Already got ${fbList[hits[0]].name}. Try another.`); return; }
   if(fresh.length>1){
-    // e.g. "Silva" when David and Bernardo are both on the list
     const names=fresh.map(i=>fbList[i].name).join(" or ");
     fbSay(`Which one: ${names}? Add the first name.`); return;
   }
-  if(fresh.length===1){
-    fbFound.add(fresh[0]);
-    if(navigator.vibrate) try{ navigator.vibrate(20); }catch(e){}
-    fbSay(`✅ ${fbList[fresh[0]].name}: ${fbList[fresh[0]].value} ${fbField==="goals"?"goals":"apps"}`,"good");
-    $("fbInput").value="";
-    if(fbFound.size===fbList.length) fbEnd(); else fbRender();
-    return;
-  }
-  fbLives--;
-  if(navigator.vibrate) try{ navigator.vibrate([30,40,30]); }catch(e){}
   $("fbInput").value="";
-  if(fbLives<=0){ fbSay(`❌ "${guess}" isn't in the top ${fbList.length}.`,"bad"); fbEnd(); }
-  else { fbSay(`❌ "${guess}" isn't in the top ${fbList.length}. ${fbLives} ${fbLives===1?"life":"lives"} left.`,"bad"); fbRender(); }
+  const who=solo?"":`${p.name}: `;
+  if(fresh.length===1){
+    const pl=fbList[fresh[0]];
+    fbFound.set(fresh[0], fbTurn); p.points++;
+    if(navigator.vibrate) try{ navigator.vibrate(20); }catch(e){}
+    fbSay(`✅ ${who}${pl.name}, ${pl.value} ${fbField==="goals"?"goals":"apps"}`,"good");
+  } else {
+    p.lives--;
+    if(navigator.vibrate) try{ navigator.vibrate([30,40,30]); }catch(e){}
+    const left=p.lives>0?` ${p.lives} ${p.lives===1?"life":"lives"} left.`:(solo?"":` ${p.name} is out!`);
+    fbSay(`❌ ${who}"${guess}" isn't in the top ${fbList.length}.${left}`,"bad");
+  }
+  if(fbFound.size===fbList.length){ fbEnd(); return; }
+  if(solo){ if(p.lives<=0){ fbEnd(); return; } fbRender(); return; }
+  if(!fbNextTurn()){ fbEnd(); return; }
+  fbRender();
 }
 
 function fbEnd(){
   fbOver=true; fbRender();
-  const n=fbFound.size, total=fbList.length, key=fbClub.key+"-"+fbField;
-  const best=fbBest(); const isBest=best[key]==null||n>best[key];
-  if(isBest){ best[key]=n; store.set("quizzle-fb-best",best); }
-  $("fbScore").textContent=`${n} / ${total}`;
-  $("fbEndMsg").textContent=(n===total?"Perfect! Every one. 🏆":n>=7?"Proper knowledge. ⭐":n>=4?"Not bad at all. 👍":"Tough one. 💪")+(isBest&&n>0?" New best!":"");
+  const total=fbList.length;
+  $("fbStandings").innerHTML="";
+  if(fbSolo()){
+    const n=fbFound.size, key=fbClub.key+"-"+fbField;
+    const best=fbBest(); const isBest=best[key]==null||n>best[key];
+    if(isBest && fbSetup.lives<=FB_LIVES){ best[key]=n; store.set("quizzle-fb-best",best); }  // only counts with 3 lives or fewer
+    $("fbScore").textContent=`${n} / ${total}`;
+    $("fbEndMsg").textContent=(n===total?"Perfect! Every one. 🏆":n>=7?"Proper knowledge. ⭐":n>=4?"Not bad at all. 👍":"Tough one. 💪")+(isBest&&n>0&&fbSetup.lives<=FB_LIVES?" New best!":"");
+  } else {
+    const ranked=fbPlayers.slice().sort((a,b)=>b.points-a.points);
+    const top=ranked[0].points, winners=ranked.filter(x=>x.points===top);
+    $("fbScore").textContent=top===0?"No winner":winners.length>1?"It's a draw! 🤝":`🏆 ${winners[0].name} wins!`;
+    $("fbEndMsg").textContent=`${fbFound.size} of ${total} found between you.`;
+    ranked.forEach(pl=>{
+      const r=document.createElement("div");
+      r.innerHTML=`<span></span><b>${pl.points}</b>`;
+      r.firstChild.textContent=pl.name; r.firstChild.style.color=pl.colour;
+      $("fbStandings").appendChild(r);
+    });
+  }
   $("fbEnd").classList.add("show"); $("fbForm").style.display="none"; $("fbGiveUp").style.display="none";
 }
+
+document.querySelectorAll(".stepper button").forEach(b=>b.onclick=()=>{
+  const k=b.dataset.s, d=+b.dataset.d;
+  if(k==="players") fbSetup.players=Math.min(FB_MAX_PLAYERS,Math.max(1,fbSetup.players+d));
+  else fbSetup.lives=Math.min(FB_MAX_LIVES,Math.max(1,fbSetup.lives+d));
+  store.set("quizzle-fb-setup",fbSetup); fbRenderSetup();
+});
+$("fbRematch").onclick=()=>fbStart(fbClub.key);
 
 $("fbBtn").onclick=fbOpen;
 $("fbBack").onclick=()=>{ renderHome(); show("home"); };

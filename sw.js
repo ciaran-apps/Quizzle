@@ -1,6 +1,6 @@
 // Makes Quizzle installable and lets it open offline.
 // Everything is fetched network-first, so new questions and app updates arrive straight away.
-const CACHE_NAME = 'quizzle-v2';
+const CACHE_NAME = 'quizzle-v3';
 const APP_SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (event) => {
