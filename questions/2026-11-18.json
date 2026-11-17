@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-18",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which traditional British cheese can legally only be made in Derbyshire, Leicestershire, and Nottinghamshire?",
+    "a": [
+     "Stilton",
+     "Red Leicester",
+     "Wensleydale",
+     "Cheshire"
+    ],
+    "why": "Blue Stilton has protected status, meaning even the village of Stilton in Cambridgeshire cannot legally produce it."
+   },
+   {
+    "q": "Which African country was historically known in the English-speaking world as Abyssinia?",
+    "a": [
+     "Ethiopia",
+     "Somalia",
+     "Eritrea",
+     "Sudan"
+    ],
+    "why": "Abyssinia was the official name used in English for the Ethiopian Empire until the mid-20th century."
+   },
+   {
+    "q": "Which planet in our solar system has the shortest day, rotating once every ten hours?",
+    "a": [
+     "Jupiter",
+     "Saturn",
+     "Neptune",
+     "Mars"
+    ],
+    "why": "Despite being the largest planet in our solar system, gas giant Jupiter spins on its axis in under 10 hours."
+   },
+   {
+    "q": "Which organ in the human body produces the hormone insulin?",
+    "a": [
+     "Pancreas",
+     "Liver",
+     "Thyroid",
+     "Adrenal gland"
+    ],
+    "why": "The pancreas secretes insulin from clusters of cells called the islets of Langerhans to regulate blood sugar levels."
+   },
+   {
+    "q": "Which Japanese word translates literally into English as 'empty orchestra'?",
+    "a": [
+     "Karaoke",
+     "Origami",
+     "Sudoku",
+     "Tsunami"
+    ],
+    "why": "'Kara' means empty and 'oke' is short for okesutora (orchestra), referring to the missing vocal track."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the sitcom Peep Show, what is the name of Mark Corrigan's charismatic boss at JLB Credit?",
+    "a": [
+     "Alan Johnson",
+     "Jeff Heaney",
+     "Dobby",
+     "Gerard"
+    ],
+    "why": "Alan Johnson, played by Paterson Joseph, is Mark's idol and boss at JLB Credit."
+   },
+   {
+    "q": "Which chocolate bar was advertised from 2002 with the famous slogan 'It's not for girls!'?",
+    "a": [
+     "Yorkie",
+     "Lion Bar",
+     "Drifter",
+     "Double Decker"
+    ],
+    "why": "Yorkie used the controversial slogan on packaging and adverts from 2002 until 2011."
+   },
+   {
+    "q": "In the original 1997 video game Grand Theft Auto, which of these was NOT one of the three featured cities?",
+    "a": [
+     "Bullworth",
+     "Liberty City",
+     "Vice City",
+     "San Andreas"
+    ],
+    "why": "The 1997 original featured Liberty City, Vice City and San Andreas. Bullworth was in Bully."
+   },
+   {
+    "q": "Which late 1980s monster puppet toy was sold inside a cardboard box styled like a cage with plastic bars?",
+    "a": [
+     "Boglins",
+     "Madballs",
+     "Creepy Crawlers",
+     "Monster in My Pocket"
+    ],
+    "why": "Boglins were rubber hand puppets sold in crate-like boxes with plastic bars."
+   },
+   {
+    "q": "In the BBC comedy series The Office, what is the name of the paper merchant where David Brent is manager?",
+    "a": [
+     "Wernham Hogg",
+     "Dunder Mifflin",
+     "Reynholm Industries",
+     "Empire Records"
+    ],
+    "why": "David Brent is the regional manager of the Slough branch of paper merchant Wernham Hogg."
+   }
+  ],
+  "music": [
+   {
+    "q": "What was the title of Coldplay's debut studio album, released in 2000?",
+    "a": [
+     "Parachutes",
+     "A Rush of Blood to the Head",
+     "X&Y",
+     "Viva la Vida"
+    ],
+    "why": "'Parachutes' included hit singles like 'Yellow' and 'Trouble', launching the band to global fame."
+   },
+   {
+    "q": "Which Norwegian synth-pop band had a UK Number 1 hit in 1985 with 'Take On Me'?",
+    "a": [
+     "A-ha",
+     "Duran Duran",
+     "Spandau Ballet",
+     "Tears for Fears"
+    ],
+    "why": "The song is famous for its revolutionary pencil-sketch animation music video."
+   },
+   {
+    "q": "Which electronic music duo released their influential debut album 'Homework' in 1997?",
+    "a": [
+     "Daft Punk",
+     "The Chemical Brothers",
+     "The Prodigy",
+     "Leftfield"
+    ],
+    "why": "'Homework' featured classic club tracks like 'Da Funk' and 'Around the World'."
+   },
+   {
+    "q": "Who had the UK Christmas Number 1 single in 1992 with 'I Will Always Love You'?",
+    "a": [
+     "Whitney Houston",
+     "Mariah Carey",
+     "Celine Dion",
+     "Toni Braxton"
+    ],
+    "why": "The song spent 10 consecutive weeks at UK Number 1 after featuring on The Bodyguard soundtrack."
+   },
+   {
+    "q": "Which rock band released the critically acclaimed album 'Rumours' in 1977?",
+    "a": [
+     "Fleetwood Mac",
+     "Eagles",
+     "Supertramp",
+     "Electric Light Orchestra"
+    ],
+    "why": "'Rumours' became one of the best-selling albums of all time, featuring hits like 'Go Your Own Way'."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British synth-pop duo had a UK number one hit in 1986 with 'West End Girls'?",
+    "a": [
+     "Pet Shop Boys",
+     "Erasure",
+     "Soft Cell",
+     "Tears for Fears"
+    ],
+    "why": "West End Girls was originally released in 1984 before being re-recorded and hitting number one in 1985."
+   },
+   {
+    "q": "What is the chemical symbol for gold on the periodic table?",
+    "a": [
+     "Au",
+     "Ag",
+     "Fe",
+     "Pb"
+    ],
+    "why": "Au comes from the Latin word for gold, aurum, which translates as 'shining dawn'."
+   },
+   {
+    "q": "In the classic BBC sitcom Fawlty Towers, what was the first name of Basil's wife?",
+    "a": [
+     "Sybil",
+     "Polly",
+     "Audrey",
+     "Beatrice"
+    ],
+    "why": "Sybil Fawlty was played by Prunella Scales across both series of the sitcom."
+   },
+   {
+    "q": "Which actor played Morpheus in the original 1999 sci-fi film The Matrix?",
+    "a": [
+     "Laurence Fishburne",
+     "Samuel L. Jackson",
+     "Morgan Freeman",
+     "Forest Whitaker"
+    ],
+    "why": "Laurence Fishburne turned down several other roles before taking the iconic part of Morpheus."
+   },
+   {
+    "q": "Which synth-pop group had the UK Christmas number one single in 1981 with Don't You Want Me?",
+    "a": [
+     "The Human League",
+     "Heaven 17",
+     "Depeche Mode",
+     "Ultravox"
+    ],
+    "why": "It was the biggest-selling UK single of 1981 despite singer Philip Oakey's initial dislike of the mix."
+   },
+   {
+    "q": "What is the official capital city of Australia?",
+    "a": [
+     "Canberra",
+     "Sydney",
+     "Melbourne",
+     "Brisbane"
+    ],
+    "why": "Canberra was selected as the compromise capital between rival cities Sydney and Melbourne in 1908."
+   },
+   {
+    "q": "In the classic arcade fighting game Street Fighter II, which country is Blanka from?",
+    "a": [
+     "Brazil",
+     "Mexico",
+     "Japan",
+     "Colombia"
+    ],
+    "why": "Blanka is a feral fighter from the Brazilian rainforest with green skin and orange hair."
+   },
+   {
+    "q": "Which rock band released the groundbreaking 1991 album Nevermind?",
+    "a": [
+     "Nirvana",
+     "Pearl Jam",
+     "Soundgarden",
+     "Alice in Chains"
+    ],
+    "why": "Nevermind brought alternative rock to the mainstream and sold over 30 million copies worldwide."
+   },
+   {
+    "q": "Which type of pastry is traditionally used to make profiteroles and éclairs?",
+    "a": [
+     "Choux",
+     "Puff",
+     "Shortcrust",
+     "Filo"
+    ],
+    "why": "Choux pastry relies on high moisture content to create steam and puff up during baking."
+   },
+   {
+    "q": "What was the name of the fictional high school in the American teen sitcom Saved by the Bell?",
+    "a": [
+     "Bayside High",
+     "West Beverly High",
+     "Degrassi High",
+     "Sunnydale High"
+    ],
+    "why": "Bayside High was located in Pacific Palisades, California, led by Principal Mr Belding."
+   }
+  ]
+ }
+}

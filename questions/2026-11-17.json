@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-17",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which country has the longest total coastline in the world?",
+    "a": [
+     "Canada",
+     "Indonesia",
+     "Russia",
+     "Norway"
+    ],
+    "why": "Canada boasts over 202,000 km of coastline, far more than any other nation."
+   },
+   {
+    "q": "Which metal has the chemical symbol Pb on the periodic table?",
+    "a": [
+     "Lead",
+     "Platinum",
+     "Phosphorus",
+     "Potassium"
+    ],
+    "why": "The symbol Pb comes from plumbum, the Latin word for lead."
+   },
+   {
+    "q": "What is the traditional collective noun for a group of owls?",
+    "a": [
+     "A parliament",
+     "A murder",
+     "A convocation",
+     "A congress"
+    ],
+    "why": "While crows form a murder and eagles a convocation, owls gather in a parliament."
+   },
+   {
+    "q": "In which year did the Channel Tunnel officially open to passenger services?",
+    "a": [
+     "1994",
+     "1992",
+     "1990",
+     "1996"
+    ],
+    "why": "Queen Elizabeth II and President François Mitterrand opened the tunnel in May 1994."
+   },
+   {
+    "q": "Which letter does not appear in the name of any US state?",
+    "a": [
+     "Q",
+     "X",
+     "Z",
+     "J"
+    ],
+    "why": "Every letter of the alphabet appears at least once in a US state name except Q."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the BBC comedy Gavin & Stacey, what type of trip is the source of Uncle Bryn and Jason's secret incident?",
+    "a": [
+     "A fishing trip",
+     "A camping trip",
+     "A golf weekend",
+     "A narrowboat holiday"
+    ],
+    "why": "Details of what happened on Bryn and Jason's fishing trip remain one of British TV's greatest unsolved mysteries."
+   },
+   {
+    "q": "What is the name of the fictional language spoken by characters throughout The Sims video game franchise?",
+    "a": [
+     "Simlish",
+     "Simoleons",
+     "Plumbob",
+     "Simspeak"
+    ],
+    "why": "Simlish was created using spoken gibberish so developers didn't need to translate dialogue into real languages."
+   },
+   {
+    "q": "Which soft drink brand was famously advertised in the UK with the catchphrase 'What's the worst that could happen?'?",
+    "a": [
+     "Dr Pepper",
+     "Lilt",
+     "Tango",
+     "Sprite"
+    ],
+    "why": "The slogan featured in comical UK adverts showing embarrassing scenarios unfolding after taking a sip."
+   },
+   {
+    "q": "Which UK toy company originally created and manufactured Polly Pocket before selling the brand to Mattel?",
+    "a": [
+     "Bluebird Toys",
+     "Hornby",
+     "Palitoy",
+     "Meccano"
+    ],
+    "why": "Bluebird Toys launched Polly Pocket in 1989 after it was created inside a makeup powder compact."
+   },
+   {
+    "q": "In the hit 1997 British comedy film The Full Monty, in which Yorkshire city do the unemployed steelworkers live?",
+    "a": [
+     "Sheffield",
+     "Leeds",
+     "Bradford",
+     "Rotherham"
+    ],
+    "why": "The film follows six unemployed former steelworkers in Sheffield who decide to form a male striptease act."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which British band released the hit 1997 album 'Urban Hymns'?",
+    "a": [
+     "The Verve",
+     "Stereophonics",
+     "Oasis",
+     "Blur"
+    ],
+    "why": "The Verve's 'Urban Hymns' topped the UK charts for 12 weeks and featured 'Bitter Sweet Symphony'."
+   },
+   {
+    "q": "Which Frankie Goes to Hollywood single hit UK Number 1 in 1984 after being banned by the BBC?",
+    "a": [
+     "Relax",
+     "Two Tribes",
+     "The Power of Love",
+     "Rage Hard"
+    ],
+    "why": "BBC Radio 1 DJ Mike Read refused to play 'Relax', which helped propel it to Number 1 for five weeks."
+   },
+   {
+    "q": "Which Fatboy Slim music video famously featured actor Christopher Walken dancing in a hotel?",
+    "a": [
+     "Weapon of Choice",
+     "Praise You",
+     "Right Here, Right Now",
+     "The Rockafeller Skank"
+    ],
+    "why": "Christopher Walken, a trained dancer, starred in the iconic 2001 video directed by Spike Jonze."
+   },
+   {
+    "q": "Which singer finished in second place for the UK at the 2022 Eurovision Song Contest with 'Space Man'?",
+    "a": [
+     "Sam Ryder",
+     "James Newman",
+     "Michael Rice",
+     "SuRie"
+    ],
+    "why": "Sam Ryder won the jury vote and came second behind Ukraine's Kalush Orchestra in Turin."
+   },
+   {
+    "q": "Who joined the Sugababes in 2005 as a replacement for departing founding member Mutya Buena?",
+    "a": [
+     "Amelle Berrabah",
+     "Heidi Range",
+     "Jade Ewen",
+     "Keisha Buchanan"
+    ],
+    "why": "Amelle Berrabah joined Keisha Buchanan and Heidi Range, completing the group's second official lineup."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British band had a UK number one single in 1996 with 'Spaceman'?",
+    "a": [
+     "Babylon Zoo",
+     "Space",
+     "Mansun",
+     "Supergrass"
+    ],
+    "why": "Levi's featured the track in a TV advert, propelling the band straight to number one."
+   },
+   {
+    "q": "Which sea separates Great Britain from the island of Ireland?",
+    "a": [
+     "Irish Sea",
+     "North Sea",
+     "Celtic Sea",
+     "Hebridean Sea"
+    ],
+    "why": "The Irish Sea connects to the Atlantic via the North Channel and St George's Channel."
+   },
+   {
+    "q": "What is the main structural protein found in human hair and nails?",
+    "a": [
+     "Keratin",
+     "Collagen",
+     "Elastin",
+     "Fibrin"
+    ],
+    "why": "Keratin is a tough protein that also forms the protective outer layer of human skin."
+   },
+   {
+    "q": "Which 1980 single by The Jam went straight to number one on the UK charts?",
+    "a": [
+     "Going Underground",
+     "Town Called Malice",
+     "Eton Rifles",
+     "That's Entertainment"
+    ],
+    "why": "Going Underground was one of the first singles to debut directly at number one in the UK."
+   },
+   {
+    "q": "Which monarch had the shortest reign in English history, lasting nine days in 1553?",
+    "a": [
+     "Lady Jane Grey",
+     "Edward V",
+     "Richard III",
+     "Mary I"
+    ],
+    "why": "Lady Jane Grey was deposed by Mary I after just nine days on the throne."
+   },
+   {
+    "q": "Who had a UK number one hit single in 2007 with the pop track 'Umbrella'?",
+    "a": [
+     "Rihanna",
+     "Beyoncé",
+     "Katy Perry",
+     "Alicia Keys"
+    ],
+    "why": "Umbrella featuring Jay-Z spent ten consecutive weeks at number one on the UK Singles Chart."
+   },
+   {
+    "q": "In Nintendo's Mario video games, what is the name of Mario's green dinosaur companion?",
+    "a": [
+     "Yoshi",
+     "Toad",
+     "Bowser",
+     "Koopa"
+    ],
+    "why": "Yoshi made his debut in the 1990 Super Nintendo game Super Mario World."
+   },
+   {
+    "q": "Which spirit is traditionally mixed with dry vermouth and an olive to make a classic Martini?",
+    "a": [
+     "Gin",
+     "Vodka",
+     "Rum",
+     "Tequila"
+    ],
+    "why": "A classic Martini is made with gin and dry vermouth, although vodka is a popular alternative."
+   },
+   {
+    "q": "Which Scottish indie band released the acclaimed 1991 album 'Bandwagonesque'?",
+    "a": [
+     "Teenage Fanclub",
+     "Primal Scream",
+     "The Vaselines",
+     "Mogwai"
+    ],
+    "why": "Bandwagonesque famously beat Nirvana's Nevermind to be named Album of the Year by Spin."
+   },
+   {
+    "q": "Who directed the iconic 1982 sci-fi film E.T. the Extra-Terrestrial?",
+    "a": [
+     "Steven Spielberg",
+     "George Lucas",
+     "Ridley Scott",
+     "James Cameron"
+    ],
+    "why": "Steven Spielberg created one of cinema's biggest blockbusters about a stranded alien."
+   }
+  ]
+ }
+}
