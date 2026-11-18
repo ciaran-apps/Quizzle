@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-19",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which European capital city is built across a total of 14 islands?",
+    "a": [
+     "Stockholm",
+     "Copenhagen",
+     "Helsinki",
+     "Amsterdam"
+    ],
+    "why": "The Swedish capital is connected by 57 bridges across its many islands."
+   },
+   {
+    "q": "Which bird has the largest wingspan of any living species, measuring up to 3.5 metres?",
+    "a": [
+     "Wandering Albatross",
+     "Andean Condor",
+     "Mute Swan",
+     "Golden Eagle"
+    ],
+    "why": "These massive seabirds can spend years at sea without touching land."
+   },
+   {
+    "q": "Who was the last English king to die in battle, falling at the Battle of Bosworth Field in 1485?",
+    "a": [
+     "Richard III",
+     "Harold II",
+     "Richard I",
+     "Henry VI"
+    ],
+    "why": "His remains were famously discovered under a car park in Leicester in 2012."
+   },
+   {
+    "q": "What is the predominant flavour of the French liqueur Cointreau?",
+    "a": [
+     "Orange",
+     "Lemon",
+     "Almond",
+     "Aniseed"
+    ],
+    "why": "It is a clear, orange-flavoured triple sec produced in Saint-Barthélemy-d'Anjou."
+   },
+   {
+    "q": "The English word 'shampoo' originated from a word in which language?",
+    "a": [
+     "Hindi",
+     "Arabic",
+     "Greek",
+     "Japanese"
+    ],
+    "why": "The word 'champo' originally meant to press, knead, or massage the muscles."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the sci-fi sitcom Red Dwarf, what is the full name of the holographic character played by Chris Barrie?",
+    "a": [
+     "Arnold Rimmer",
+     "Dave Lister",
+     "Kryten",
+     "Holly"
+    ],
+    "why": "Arnold J. Rimmer is the self-important, neurotic technician who is the only crew member Dave Lister can't stand."
+   },
+   {
+    "q": "What is the real name of Sonic the Hedgehog's two-tailed fox sidekick, known as Tails?",
+    "a": [
+     "Miles Prower",
+     "Knuckles Echidna",
+     "Shadow Fox",
+     "Tails McGee"
+    ],
+    "why": "His name is a pun on 'miles per hour', fitting the high-speed theme of the Sega game series."
+   },
+   {
+    "q": "In a classic 1983 Yellow Pages advert, an elderly man searches for a copy of which fictional book?",
+    "a": [
+     "Fly Fishing by J.R. Hartley",
+     "My Life in Streams",
+     "The Angler's Tale",
+     "Hook, Line and Sinker"
+    ],
+    "why": "The advert was so popular that a real book titled Fly Fishing by J.R. Hartley was published in 1991."
+   },
+   {
+    "q": "In the 1985 cult classic film The Goonies, what is the name of the pirate whose treasure the kids are hunting for?",
+    "a": [
+     "One-Eyed Willy",
+     "Blackbeard",
+     "Captain Hook",
+     "Long John Silver"
+    ],
+    "why": "One-Eyed Willy's booby-trapped ship, the Inferno, is hidden in a cavern beneath Astoria, Oregon."
+   },
+   {
+    "q": "In the comedy series The Fast Show, which character is known for the catchphrase \"I was very, very drunk\"?",
+    "a": [
+     "Rowley Birkin QC",
+     "Swiss Toni",
+     "Arthur Atkinson",
+     "Billy Bleach"
+    ],
+    "why": "Rowley Birkin QC usually tells long, mumbling stories that end with him admitting his intoxication."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which 1980s band took their name from a villain in the 1968 science fiction film 'Barbarella'?",
+    "a": [
+     "Duran Duran",
+     "Spandau Ballet",
+     "Depeche Mode",
+     "Soft Cell"
+    ],
+    "why": "The character Dr. Durand Durand was a mad scientist in the cult film starring Jane Fonda."
+   },
+   {
+    "q": "Which 1991 Nirvana album is often credited with bringing alternative rock into the mainstream?",
+    "a": [
+     "Nevermind",
+     "In Utero",
+     "Bleach",
+     "Incesticide"
+    ],
+    "why": "Featuring 'Smells Like Teen Spirit', it famously knocked Michael Jackson off the top of the US album charts."
+   },
+   {
+    "q": "After Peter Gabriel's departure in 1975, which member of Genesis took over as the band's lead singer?",
+    "a": [
+     "Phil Collins",
+     "Mike Rutherford",
+     "Tony Banks",
+     "Steve Hackett"
+    ],
+    "why": "Collins was the band's drummer before stepping up to the microphone for the album 'A Trick of the Tail'."
+   },
+   {
+    "q": "Which song's music video was the first ever to be broadcast on MTV in the United States in August 1981?",
+    "a": [
+     "Video Killed the Radio Star",
+     "You Better Run",
+     "Take On Me",
+     "Billie Jean"
+    ],
+    "why": "Performed by The Buggles, the song's title was a cheeky nod to the launch of the music television channel."
+   },
+   {
+    "q": "What was the title of Oasis's record-breaking debut studio album, released in August 1994?",
+    "a": [
+     "Definitely Maybe",
+     "Be Here Now",
+     "Morning Glory",
+     "The Masterplan"
+    ],
+    "why": "It became the fastest-selling debut album in UK history at the time, featuring the hit 'Live Forever'."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which English band released the 1995 album 'Different Class', featuring the hit single 'Common People'?",
+    "a": [
+     "Pulp",
+     "Suede",
+     "Blur",
+     "Elastica"
+    ],
+    "why": "Jarvis Cocker's band helped define the Britpop era with this Mercury Prize-winning album."
+   },
+   {
+    "q": "Which European city is famous for its historic Spanish Riding School and the Lipizzaner horses?",
+    "a": [
+     "Vienna",
+     "Madrid",
+     "Seville",
+     "Budapest"
+    ],
+    "why": "Vienna has hosted the school for over 450 years, despite the 'Spanish' name of the horses."
+   },
+   {
+    "q": "In the BBC sitcom 'Blackadder Goes Forth', what is the name of the dim-witted lieutenant played by Hugh Laurie?",
+    "a": [
+     "George",
+     "Kevin",
+     "Percy",
+     "Baldrick"
+    ],
+    "why": "Hugh Laurie played Lieutenant George, while Tim McInnerny previously played the role of Lord Percy."
+   },
+   {
+    "q": "Which 1985 Kate Bush album reached number one in the UK, knocking Madonna's 'Like a Virgin' off the top spot?",
+    "a": [
+     "Hounds of Love",
+     "The Dreaming",
+     "Lionheart",
+     "The Sensual World"
+    ],
+    "why": "It was her first number one album since her debut and was recorded in her own purpose-built studio."
+   },
+   {
+    "q": "Which of Henry VIII’s wives was the mother of Queen Elizabeth I?",
+    "a": [
+     "Anne Boleyn",
+     "Jane Seymour",
+     "Catherine of Aragon",
+     "Anne of Cleves"
+    ],
+    "why": "Elizabeth was the only child of Henry and Anne Boleyn to survive infancy."
+   },
+   {
+    "q": "In the 1993 film 'Jurassic Park', what species of dinosaur is the first one seen by the visitors?",
+    "a": [
+     "Brachiosaurus",
+     "Triceratops",
+     "Velociraptor",
+     "Dilophosaurus"
+    ],
+    "why": "The sight of the towering Brachiosaurus remains one of cinema's most iconic and groundbreaking moments."
+   },
+   {
+    "q": "Which noble gas, with the symbol Ne, is known for its bright reddish-orange glow in vacuum discharge tubes?",
+    "a": [
+     "Neon",
+     "Argon",
+     "Xenon",
+     "Krypton"
+    ],
+    "why": "Discovered in 1898, neon is widely used across the world in high-voltage advertising signs."
+   },
+   {
+    "q": "Which 2006 album by Amy Winehouse features the hits 'Rehab' and 'You Know I'm No Good'?",
+    "a": [
+     "Back to Black",
+     "Frank",
+     "Lioness",
+     "Version"
+    ],
+    "why": "Produced by Mark Ronson and Salaam Remi, it won five Grammy Awards in a single night."
+   },
+   {
+    "q": "Which British cheese is traditionally produced in the counties of Derbyshire, Leicestershire, and Nottinghamshire?",
+    "a": [
+     "Stilton",
+     "Cheddar",
+     "Red Leicester",
+     "Wensleydale"
+    ],
+    "why": "Blue Stilton has a Protected Designation of Origin status and cannot be made in the village of Stilton itself."
+   },
+   {
+    "q": "On which Nintendo console did 'The Legend of Zelda: Ocarina of Time' first appear in 1998?",
+    "a": [
+     "Nintendo 64",
+     "GameCube",
+     "SNES",
+     "NES"
+    ],
+    "why": "Often cited as one of the greatest games ever, it was a landmark 3D title for the N64."
+   }
+  ]
+ }
+}
