@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-21",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which planet in our solar system has the highest average surface temperature?",
+    "a": [
+     "Venus",
+     "Mercury",
+     "Mars",
+     "Jupiter"
+    ],
+    "why": "Venus traps extreme heat beneath a thick carbon dioxide atmosphere, reaching over 460°C."
+   },
+   {
+    "q": "Which British politician established the Metropolitan Police force in 1829?",
+    "a": [
+     "Robert Peel",
+     "Arthur Wellesley",
+     "William Pitt",
+     "Lord Palmerston"
+    ],
+    "why": "Sir Robert Peel created the force, inspiring nicknames for officers like 'bobbies' and 'peelers'."
+   },
+   {
+    "q": "What is the largest internal organ in the human body?",
+    "a": [
+     "Liver",
+     "Brain",
+     "Heart",
+     "Stomach"
+    ],
+    "why": "While the skin is the largest organ overall, the liver is the heaviest and largest inside the body."
+   },
+   {
+    "q": "Which African kingdom is entirely surrounded by the territory of South Africa?",
+    "a": [
+     "Lesotho",
+     "Eswatini",
+     "Botswana",
+     "Namibia"
+    ],
+    "why": "Lesotho is an enclaved sovereign country completely encircled by its single neighbour, South Africa."
+   },
+   {
+    "q": "What is the SI unit of electrical resistance?",
+    "a": [
+     "Ohm",
+     "Volt",
+     "Ampere",
+     "Watt"
+    ],
+    "why": "Named after German physicist Georg Ohm, it quantifies how strongly a material opposes current flow."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the comedy series Phoenix Nights, what is the name of Peter Kay's wheelchair-using club boss?",
+    "a": [
+     "Brian Potter",
+     "Jerry St Clair",
+     "Ray Von",
+     "Clinton Baptiste"
+    ],
+    "why": "Peter Kay played Phoenix Club licensee Brian Potter as well as doorman Eric Agnew."
+   },
+   {
+    "q": "In the 1993 film Jurassic Park, which dinosaur is the very first that Alan Grant and Ellie Sattler see?",
+    "a": [
+     "Brachiosaurus",
+     "Triceratops",
+     "Velociraptor",
+     "Tyrannosaurus rex"
+    ],
+    "why": "The breathtaking reveal of the gentle herbivore Brachiosaurus is one of cinema's most iconic moments."
+   },
+   {
+    "q": "Which TV presenter shot to fame in the late 1990s as the face of Boddingtons bitter adverts?",
+    "a": [
+     "Melanie Sykes",
+     "Denise van Outen",
+     "Kelly Brook",
+     "Davina McCall"
+    ],
+    "why": "Melanie Sykes famously served pints with the catchphrase 'It's your round, gorge!'"
+   },
+   {
+    "q": "When Tracy Island toys sold out in 1992, which Blue Peter presenter showed viewers how to make one?",
+    "a": [
+     "Anthea Turner",
+     "Konnie Huq",
+     "Katy Hill",
+     "Diane-Louise Jordan"
+    ],
+    "why": "Anthea Turner's DIY Tracy Island received over 100,000 requests for the cardboard instruction sheet."
+   },
+   {
+    "q": "On Cilla Black's hit ITV show Blind Date, what was the nickname of voiceover announcer Graham Skidmore?",
+    "a": [
+     "Our Graham",
+     "Honest Graham",
+     "Good Old Graham",
+     "Uncle Graham"
+    ],
+    "why": "Cilla Black affectionately referred to Graham Skidmore as 'Our Graham' before he gave recaps."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which song spent 15 consecutive weeks at UK Number 1 in 1994 for Wet Wet Wet?",
+    "a": [
+     "Love Is All Around",
+     "Stay Another Day",
+     "I Swear",
+     "Without You"
+    ],
+    "why": "Taken from Four Weddings and a Funeral, the band famously deleted the single while it was still near the top."
+   },
+   {
+    "q": "Which band headlined the Glastonbury Pyramid Stage in 2007, just over a year after their debut album?",
+    "a": [
+     "Arctic Monkeys",
+     "The Killers",
+     "Franz Ferdinand",
+     "Kasabian"
+    ],
+    "why": "They headlined on the Friday night following the record-breaking success of their debut and second albums."
+   },
+   {
+    "q": "Which comic book artist co-created the virtual band Gorillaz with Damon Albarn in 1998?",
+    "a": [
+     "Jamie Hewlett",
+     "Brian Bolland",
+     "Mark Millar",
+     "Alan Moore"
+    ],
+    "why": "Hewlett, best known for creating the comic Tank Girl, designed the band's distinctive animated characters."
+   },
+   {
+    "q": "Which group won the 1976 Eurovision Song Contest for the UK with 'Save Your Kisses for Me'?",
+    "a": [
+     "Brotherhood of Man",
+     "The New Seekers",
+     "Middle of the Road",
+     "The Shadows"
+    ],
+    "why": "The single sold over six million copies worldwide, becoming one of the most commercially successful Eurovision hits."
+   },
+   {
+    "q": "Which Hollywood star starred in the continuous-shot music video for Elton John's 2001 single 'I Want Love'?",
+    "a": [
+     "Robert Downey Jr.",
+     "Jude Law",
+     "Brad Pitt",
+     "Johnny Depp"
+    ],
+    "why": "Directed by Sam Taylor-Johnson, the video was shot in an empty Beverly Hills mansion in a single take."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which Welsh rock band released the critically acclaimed 1996 album 'Everything Must Go'?",
+    "a": [
+     "Manic Street Preachers",
+     "Stereophonics",
+     "Super Furry Animals",
+     "Catatonia"
+    ],
+    "why": "The multi-platinum album featured hit singles including 'A Design for Life' and 'Kevin Carter'."
+   },
+   {
+    "q": "In the sitcom 'The Inbetweeners', what make and model is Simon's yellow car with one red door?",
+    "a": [
+     "Fiat Cinquecento",
+     "Ford Fiesta",
+     "Vauxhall Corsa",
+     "Peugeot 106"
+    ],
+    "why": "Simon's battered yellow Cinquecento famously lost its passenger door at Thorpe Park."
+   },
+   {
+    "q": "What is the capital city of New Zealand?",
+    "a": [
+     "Wellington",
+     "Auckland",
+     "Christchurch",
+     "Hamilton"
+    ],
+    "why": "Auckland is New Zealand's most populous city, but Wellington has been the capital since 1865."
+   },
+   {
+    "q": "Which girl group had their debut UK number one single with 'Sound of the Underground' in 2002?",
+    "a": [
+     "Girls Aloud",
+     "Sugababes",
+     "Atomic Kitten",
+     "Mis-Teeq"
+    ],
+    "why": "Formed on 'Popstars: The Rivals', Girls Aloud beat One True Voice to the 2002 Christmas number one."
+   },
+   {
+    "q": "Which organ in the human body is primarily responsible for producing insulin?",
+    "a": [
+     "Pancreas",
+     "Liver",
+     "Gallbladder",
+     "Spleen"
+    ],
+    "why": "Islets of Langerhans within the pancreas produce insulin to regulate blood glucose."
+   },
+   {
+    "q": "In the 1998 Coen brothers film 'The Big Lebowski', what is The Dude's cocktail of choice?",
+    "a": [
+     "White Russian",
+     "Black Russian",
+     "Moscow Mule",
+     "Rusty Nail"
+    ],
+    "why": "Jeff Bridges' character drinks White Russians made with vodka, coffee liqueur, and cream."
+   },
+   {
+    "q": "Which British electronic group released the hit 1997 album 'The Fat of the Land'?",
+    "a": [
+     "The Prodigy",
+     "The Chemical Brothers",
+     "Faithless",
+     "Underworld"
+    ],
+    "why": "The album entered the UK chart at number one and included huge hits like 'Firestarter' and 'Breathe'."
+   },
+   {
+    "q": "Which variety of British cooking apple was first cultivated in Nottinghamshire in the 1800s?",
+    "a": [
+     "Bramley",
+     "Cox's Orange Pippin",
+     "Russet",
+     "Worcester Pearmain"
+    ],
+    "why": "All Bramley apple trees trace back to a single seedling planted in Southwell around 1809."
+   },
+   {
+    "q": "In the N64 game GoldenEye 007, which multiplayer character was often banned for being too short?",
+    "a": [
+     "Oddjob",
+     "Boris Grishenko",
+     "Baron Samedi",
+     "Jaws"
+    ],
+    "why": "Oddjob's short stature meant players had to manually aim downwards to hit him in split-screen."
+   },
+   {
+    "q": "Which English rock band released the 1979 album 'Reggatta de Blanc', featuring 'Message in a Bottle'?",
+    "a": [
+     "The Police",
+     "The Clash",
+     "Dire Straits",
+     "The Jam"
+    ],
+    "why": "'Reggatta de Blanc' was The Police's second studio album and their first UK number one."
+   }
+  ]
+ }
+}

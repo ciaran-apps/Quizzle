@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-22",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which desert is widely considered the driest non-polar desert in the world?",
+    "a": [
+     "Atacama",
+     "Sahara",
+     "Namib",
+     "Gobi"
+    ],
+    "why": "Parts of Chile's Atacama Desert have had no recorded rainfall for centuries."
+   },
+   {
+    "q": "Which is the most abundant chemical element in the universe by mass?",
+    "a": [
+     "Hydrogen",
+     "Helium",
+     "Oxygen",
+     "Carbon"
+    ],
+    "why": "Hydrogen accounts for roughly 75% of all normal matter in the cosmos."
+   },
+   {
+    "q": "Which citrus fruit provides the distinctive flavouring in Earl Grey tea?",
+    "a": [
+     "Bergamot orange",
+     "Seville orange",
+     "Yuzu",
+     "Blood orange"
+    ],
+    "why": "Bergamot oil is extracted from the rinds of the fragrant bergamot orange."
+   },
+   {
+    "q": "In snooker, how many points are awarded for potting the blue ball?",
+    "a": [
+     "5",
+     "4",
+     "6",
+     "7"
+    ],
+    "why": "Colours run from yellow (2) through green (3), brown (4), blue (5), pink (6), to black (7)."
+   },
+   {
+    "q": "Which English computer scientist invented the World Wide Web in 1989?",
+    "a": [
+     "Tim Berners-Lee",
+     "Alan Turing",
+     "Vint Cerf",
+     "Charles Babbage"
+    ],
+    "why": "He invented the World Wide Web while working at CERN in Geneva."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the comedy series I'm Alan Partridge, what is the first name of Alan's long-suffering personal assistant?",
+    "a": [
+     "Lynn",
+     "Sonja",
+     "Jill",
+     "Susan"
+    ],
+    "why": "Played by Felicity Montagu, Lynn patiently endured Alan's bizarre antics and demands."
+   },
+   {
+    "q": "Which car model was advertised in the 1990s in a famous TV campaign starring the characters Papa and Nicole?",
+    "a": [
+     "Renault Clio",
+     "Peugeot 206",
+     "Citroën Saxo",
+     "Fiat Punto"
+    ],
+    "why": "The French-themed commercials were huge hits in the UK, running from 1991 to 1998."
+   },
+   {
+    "q": "Which Scottish developer, based in Dundee, created the hit 1991 puzzle video game Lemmings?",
+    "a": [
+     "DMA Design",
+     "Rare",
+     "Sensible Software",
+     "Bullfrog Productions"
+    ],
+    "why": "DMA Design later created Grand Theft Auto and rebranded as Rockstar North."
+   },
+   {
+    "q": "What paperwork famously came included with every Cabbage Patch Kids doll sold during the 1980s craze?",
+    "a": [
+     "Adoption papers",
+     "A passport",
+     "A warranty deed",
+     "A family tree"
+    ],
+    "why": "Each doll was marketed as unique and came complete with an adoption certificate."
+   },
+   {
+    "q": "In the 1988 action film Die Hard, what is the name of the Los Angeles skyscraper seized by Hans Gruber?",
+    "a": [
+     "Nakatomi Plaza",
+     "Century Tower",
+     "Fox Plaza",
+     "Stark Tower"
+    ],
+    "why": "Filming took place at Fox Plaza, the real-life headquarters of 20th Century Fox."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which 1981 UK number one single by Soft Cell was originally recorded by Gloria Jones in 1964?",
+    "a": [
+     "Tainted Love",
+     "Torch",
+     "Say Hello, Wave Goodbye",
+     "Bedsitter"
+    ],
+    "why": "Gloria Jones recorded 'Tainted Love' in 1964 as a B-side before Soft Cell turned it into a hit."
+   },
+   {
+    "q": "Which acid jazz band's 1996 video for 'Virtual Insanity' featured lead singer Jay Kay on a moving floor?",
+    "a": [
+     "Jamiroquai",
+     "Brand New Heavies",
+     "Stereo MCs",
+     "Incognito"
+    ],
+    "why": "The iconic music video won four MTV Video Music Awards in 1997, including Video of the Year."
+   },
+   {
+    "q": "What was the title of Scottish rock band The Fratellis' hit debut studio album, released in 2006?",
+    "a": [
+     "Costello Music",
+     "Here We Stand",
+     "We Need Medicine",
+     "Eyes Wide, Tongue Tied"
+    ],
+    "why": "Costello Music debuted at number two on the UK Albums Chart and sold over a million copies."
+   },
+   {
+    "q": "Which song gave the UK its first ever victory in the Eurovision Song Contest in 1967?",
+    "a": [
+     "Puppet on a String",
+     "Boom Bang-a-Bang",
+     "Jack in the Box",
+     "Beg, Steal or Borrow"
+    ],
+    "why": "Performed barefoot by Sandie Shaw, 'Puppet on a String' won Eurovision by a massive landslide."
+   },
+   {
+    "q": "Which Scottish band released the critically acclaimed 1997 album 'White On Blonde'?",
+    "a": [
+     "Texas",
+     "Deacon Blue",
+     "Garbage",
+     "Wet Wet Wet"
+    ],
+    "why": "White On Blonde contained hit singles like 'Say What You Want' and went six times platinum in the UK."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British band had a major UK hit in 1995 with the anthem 'Alright'?",
+    "a": [
+     "Supergrass",
+     "Ash",
+     "Ocean Colour Scene",
+     "Reef"
+    ],
+    "why": "'Alright' was featured on Supergrass's debut album I Should Coco, which reached number one in 1995."
+   },
+   {
+    "q": "In the BBC sitcom The Royle Family, what is the name of Jim and Barbara's daughter played by Caroline Aherne?",
+    "a": [
+     "Denise",
+     "Cheryl",
+     "Mary",
+     "Tina"
+    ],
+    "why": "Caroline Aherne played Denise Royle alongside Ricky Tomlinson as her television father Jim."
+   },
+   {
+    "q": "Which English sea inlet separates the Isle of Wight from the mainland of Great Britain?",
+    "a": [
+     "The Solent",
+     "The Minch",
+     "Menai Strait",
+     "Morecambe Bay"
+    ],
+    "why": "The Solent is a major shipping lane and host to the annual Cowes Week sailing regatta."
+   },
+   {
+    "q": "Which English pop rock band released the hit album 'Songs from the Big Chair' in 1985?",
+    "a": [
+     "Tears for Fears",
+     "Talk Talk",
+     "Spandau Ballet",
+     "Ultravox"
+    ],
+    "why": "The album spawned huge global hits including 'Everybody Wants to Rule the World' and 'Shout'."
+   },
+   {
+    "q": "In the 1994 action thriller Speed, what speed must the bus stay above to prevent the bomb from detonating?",
+    "a": [
+     "50 mph",
+     "40 mph",
+     "60 mph",
+     "70 mph"
+    ],
+    "why": "Keanu Reeves and Sandra Bullock had to keep the bus travelling above 50 mph through Los Angeles."
+   },
+   {
+    "q": "Which chemical element has the symbol 'K' on the periodic table?",
+    "a": [
+     "Potassium",
+     "Krypton",
+     "Sodium",
+     "Phosphorus"
+    ],
+    "why": "The symbol K comes from Kalium, the Neo-Latin word for potassium derived from Arabic."
+   },
+   {
+    "q": "Which English city was home to Core Design, the video game studio that created Lara Croft?",
+    "a": [
+     "Derby",
+     "Nottingham",
+     "Sheffield",
+     "Leicester"
+    ],
+    "why": "Core Design developed the original Tomb Raider games from their headquarters in Derby."
+   },
+   {
+    "q": "Which Scottish rock band won the 2004 Mercury Prize for their self-titled debut album?",
+    "a": [
+     "Franz Ferdinand",
+     "Snow Patrol",
+     "Biffy Clyro",
+     "Idlewild"
+    ],
+    "why": "Franz Ferdinand took home the Mercury Prize in 2004 following the massive success of 'Take Me Out'."
+   },
+   {
+    "q": "Which fermented condiment was famously created by chemists John Wheeley Lea and William Henry Perrins?",
+    "a": [
+     "Worcestershire sauce",
+     "HP Sauce",
+     "Brown sauce",
+     "Colman's mustard"
+    ],
+    "why": "Lea & Perrins originally created their signature Worcestershire sauce in Worcester in the 1830s."
+   },
+   {
+    "q": "In the comedy series The Vicar of Dibley, what is the name of the church verger played by Emma Chambers?",
+    "a": [
+     "Alice Tinker",
+     "Letitia Cropley",
+     "Geraldine Granger",
+     "Mary Tinker"
+    ],
+    "why": "Emma Chambers won a British Comedy Award in 1998 for her beloved role as Alice Tinker."
+   }
+  ]
+ }
+}
