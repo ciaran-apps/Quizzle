@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-23",
  "clubs": [
   {
    "key": "manutd",
@@ -310,7 +310,7 @@
      "name": "Virgil van Dijk",
      "first": "Virgil",
      "last": "van Dijk",
-     "value": 282,
+     "value": 283,
      "active": true
     },
     {
@@ -323,19 +323,19 @@
     },
     {
      "rank": 9,
+     "name": "Alisson Becker",
+     "first": "Alisson Ramsés",
+     "last": "Becker",
+     "value": 266,
+     "active": true
+    },
+    {
+     "rank": 9,
      "name": "Robbie Fowler",
      "first": "Robbie",
      "last": "Fowler",
      "value": 266,
      "active": false
-    },
-    {
-     "rank": 10,
-     "name": "Alisson Becker",
-     "first": "Alisson Ramsés",
-     "last": "Becker",
-     "value": 265,
-     "active": true
     }
    ]
   },
@@ -841,7 +841,7 @@
      "name": "Phil Foden",
      "first": "Phil",
      "last": "Foden",
-     "value": 233,
+     "value": 234,
      "active": true
     }
    ]
