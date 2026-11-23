@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-24",
+ "quizzes": {
+  "general": [
+   {
+    "q": "In darts, what is the highest score a player can checkout using just two darts?",
+    "a": [
+     "110",
+     "100",
+     "120",
+     "107"
+    ],
+    "why": "A maximum two-dart finish requires a treble 20 (60) followed by the bullseye (50)."
+   },
+   {
+    "q": "In which European capital city would you find the famous Spanish Steps?",
+    "a": [
+     "Rome",
+     "Madrid",
+     "Barcelona",
+     "Seville"
+    ],
+    "why": "Despite their name, the Spanish Steps climb from Piazza di Spagna in Rome."
+   },
+   {
+    "q": "Which British chemist invented the miner's safety lamp in 1815?",
+    "a": [
+     "Humphry Davy",
+     "Michael Faraday",
+     "Joseph Priestley",
+     "John Dalton"
+    ],
+    "why": "Sir Humphry Davy's wire mesh design allowed light through without igniting gases."
+   },
+   {
+    "q": "Which variety of bean is traditionally used in British tinned baked beans?",
+    "a": [
+     "Haricot",
+     "Cannellini",
+     "Pinto",
+     "Borlotti"
+    ],
+    "why": "Manufacturers like Heinz use dried haricot beans, also known as navy beans."
+   },
+   {
+    "q": "Which English city was founded by the Romans under the name Eboracum?",
+    "a": [
+     "York",
+     "Chester",
+     "Bath",
+     "Colchester"
+    ],
+    "why": "Founded in 71 AD as a legionary fortress, Eboracum grew into Roman York."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the Channel 4 sitcom Spaced, what is the first name of the eccentric artist who lives downstairs?",
+    "a": [
+     "Brian",
+     "Mike",
+     "Tyres",
+     "Bilbo"
+    ],
+    "why": "Brian Topp, played by Mark Heap, famously described his art style as \"Angst, pain, aggression... clear?\"."
+   },
+   {
+    "q": "In the 2004 video game Grand Theft Auto: San Andreas, what is the nickname of the main protagonist?",
+    "a": [
+     "CJ",
+     "Sweet",
+     "Big Smoke",
+     "Ryder"
+    ],
+    "why": "Carl \"CJ\" Johnson returns home to Los Santos after his mother's murder in the classic 2004 game."
+   },
+   {
+    "q": "Which iconic 1990s water gun brand was invented by former NASA engineer Lonnie Johnson?",
+    "a": [
+     "Super Soaker",
+     "Aqua Force",
+     "Water Bazooka",
+     "Hydro Blaster"
+    ],
+    "why": "Lonnie Johnson developed the Super Soaker while working on heat pumps for the US Air Force and NASA."
+   },
+   {
+    "q": "Which chocolate brand's 2007 TV advert featured a gorilla playing drums to a Phil Collins song?",
+    "a": [
+     "Cadbury Dairy Milk",
+     "Galaxy",
+     "Wispa",
+     "KitKat"
+    ],
+    "why": "The viral Cadbury advert featured an actor in a gorilla suit playing along to 'In the Air Tonight'."
+   },
+   {
+    "q": "In the 1994 film Pulp Fiction, what does Vincent Vega say a Quarter Pounder with Cheese is called in Paris?",
+    "a": [
+     "Royale with Cheese",
+     "Le Big Mac",
+     "Quarter Royale",
+     "Cheese Royale"
+    ],
+    "why": "Vincent explains to Jules that because of the metric system, it's called a Royale with Cheese."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which electronic act released the acclaimed UK Number 1 album 'The Fat of the Land' in 1997?",
+    "a": [
+     "The Prodigy",
+     "The Chemical Brothers",
+     "Underworld",
+     "Faithless"
+    ],
+    "why": "The album debuted at Number 1 in both the UK and US, featuring iconic singles like 'Firestarter'."
+   },
+   {
+    "q": "Which singer represented the UK at the 1996 Eurovision Song Contest with 'Ooh Aah... Just a Little Bit'?",
+    "a": [
+     "Gina G",
+     "Kylie Minogue",
+     "Natalie Imbruglia",
+     "Holly Valance"
+    ],
+    "why": "Gina G finished eighth in Eurovision, but her track went on to top the UK Singles Chart."
+   },
+   {
+    "q": "Which film director directed the iconic 1983 music video for Michael Jackson's 'Thriller'?",
+    "a": [
+     "John Landis",
+     "Steven Spielberg",
+     "Ridley Scott",
+     "George Lucas"
+    ],
+    "why": "John Landis directed the 14-minute short film after Jackson admired his work on An American Werewolf in London."
+   },
+   {
+    "q": "Which pop group achieved the UK Christmas Number 1 in 2002 with their debut single 'Sound of the Underground'?",
+    "a": [
+     "Girls Aloud",
+     "Atomic Kitten",
+     "Sugababes",
+     "Liberty X"
+    ],
+    "why": "Girls Aloud formed on Popstars: The Rivals and beat boyband rival One True Voice to the top spot."
+   },
+   {
+    "q": "Which musician was the lead guitarist and primary co-songwriter for Manchester band The Stone Roses?",
+    "a": [
+     "John Squire",
+     "Johnny Marr",
+     "Bernard Butler",
+     "Graham Coxon"
+    ],
+    "why": "John Squire co-wrote the band's hits with lead singer Ian Brown and also created their iconic artwork."
+   }
+  ],
+  "mix": [
+   {
+    "q": "In the Channel 4 sitcom Peep Show, what is the nickname of Jeremy's wild bandmate played by Matt King?",
+    "a": [
+     "Super Hans",
+     "Super Dave",
+     "Mad Dog",
+     "Jezzer"
+    ],
+    "why": "Matt King played the iconic, drug-addled musician Super Hans across all nine series of Peep Show."
+   },
+   {
+    "q": "Which British band had a UK number one hit in 1998 with Fatboy Slim's remix of 'Brimful of Asha'?",
+    "a": [
+     "Cornershop",
+     "Chumbawamba",
+     "Ocean Colour Scene",
+     "The Boo Radleys"
+    ],
+    "why": "Norman Cook (Fatboy Slim) remixed Cornershop's tribute to Indian music legend Asha Bhosle into a number one hit."
+   },
+   {
+    "q": "In which English county is the cathedral city of Canterbury located?",
+    "a": [
+     "Kent",
+     "Sussex",
+     "Surrey",
+     "Essex"
+    ],
+    "why": "Canterbury Cathedral, located in Kent, is the mother church of the worldwide Anglican Communion."
+   },
+   {
+    "q": "In the 1999 movie The Sixth Sense, which actor plays child psychologist Malcolm Crowe?",
+    "a": [
+     "Bruce Willis",
+     "Haley Joel Osment",
+     "John Travolta",
+     "Mel Gibson"
+    ],
+    "why": "Bruce Willis starred as Dr Malcolm Crowe alongside Haley Joel Osment in the smash-hit supernatural thriller."
+   },
+   {
+    "q": "Which organ in the human body is responsible for producing bile to aid digestion?",
+    "a": [
+     "Liver",
+     "Gallbladder",
+     "Stomach",
+     "Pancreas"
+    ],
+    "why": "While bile is stored in the gallbladder, it is actually produced by the liver."
+   },
+   {
+    "q": "Which British synth-pop band had a hit single in 1984 with 'Smalltown Boy'?",
+    "a": [
+     "Bronski Beat",
+     "Erasure",
+     "Soft Cell",
+     "Yazoo"
+    ],
+    "why": "Jimmy Somerville's distinctive falsetto lead vocals made 'Smalltown Boy' a huge synth-pop hit for Bronski Beat."
+   },
+   {
+    "q": "Which British monarch was the last to belong to the House of Hanover?",
+    "a": [
+     "Queen Victoria",
+     "King William IV",
+     "King George IV",
+     "Queen Anne"
+    ],
+    "why": "Queen Victoria was the final Hanoverian monarch before the royal house switched to Saxe-Coburg and Gotha."
+   },
+   {
+    "q": "In the original 1996 video game Tomb Raider, in which country does Lara Croft begin her adventure?",
+    "a": [
+     "Peru",
+     "Egypt",
+     "Greece",
+     "Bolivia"
+    ],
+    "why": "Lara Croft begins her quest for the Scion in the snowy mountain ruins of Vilcabamba, Peru."
+   },
+   {
+    "q": "Which classic Italian cocktail is made with equal parts gin, sweet vermouth, and Campari?",
+    "a": [
+     "Negroni",
+     "Aperol Spritz",
+     "Americano",
+     "Manhattan"
+    ],
+    "why": "The Negroni was invented in Florence in 1919 when Count Camillo Negroni asked for gin in his Americano."
+   },
+   {
+    "q": "In the hit American sitcom Friends, what is Chandler's embarrassing middle name?",
+    "a": [
+     "Muriel",
+     "Eustace",
+     "Francis",
+     "Montgomery"
+    ],
+    "why": "Chandler's middle name Muriel is revealed in season 10, to the great amusement of his friends."
+   }
+  ]
+ }
+}
