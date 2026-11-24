@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-25",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which Norwegian explorer led the first expedition to reach the South Pole in December 1911?",
+    "a": [
+     "Roald Amundsen",
+     "Robert Falcon Scott",
+     "Ernest Shackleton",
+     "Douglas Mawson"
+    ],
+    "why": "Amundsen reached the South Pole on 14 December 1911, five weeks before Robert Falcon Scott."
+   },
+   {
+    "q": "Which chemical element has the symbol Au on the periodic table?",
+    "a": [
+     "Gold",
+     "Silver",
+     "Copper",
+     "Aluminium"
+    ],
+    "why": "The symbol Au comes from 'aurum', the Latin word for gold, which translates to 'shining dawn'."
+   },
+   {
+    "q": "Which fortified wine is produced exclusively in the Douro Valley region of northern Portugal?",
+    "a": [
+     "Port",
+     "Sherry",
+     "Madeira",
+     "Marsala"
+    ],
+    "why": "Port has been produced in the Douro Valley since the 17th century and is named after the city of Porto."
+   },
+   {
+    "q": "What is the smallest bone in the human body, located inside the middle ear?",
+    "a": [
+     "Stapes",
+     "Malleus",
+     "Incus",
+     "Cochlea"
+    ],
+    "why": "Also known as the stirrup, the stapes measures just 3 millimetres long."
+   },
+   {
+    "q": "On which planet in our solar system is Olympus Mons, the largest volcano known to science?",
+    "a": [
+     "Mars",
+     "Venus",
+     "Mercury",
+     "Jupiter"
+    ],
+    "why": "Olympus Mons on Mars is about two and a half times the height of Mount Everest."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the classic BBC sitcom The Young Ones, what was the name of Vyvyan's pet hamster?",
+    "a": [
+     "SPG",
+     "Scab",
+     "Nigel",
+     "Gnasher"
+    ],
+    "why": "SPG stands for Special Patrol Group, named after an infamous Metropolitan Police branch."
+   },
+   {
+    "q": "In the classic video game Street Fighter II, which country does the green-skinned fighter Blanka represent?",
+    "a": [
+     "Brazil",
+     "Colombia",
+     "Peru",
+     "Mexico"
+    ],
+    "why": "Blanka survived a plane crash in the Amazon jungle, developing his electric powers there."
+   },
+   {
+    "q": "In Masters of the Universe, what is the name of He-Man's cowardly pet green tiger before he transforms?",
+    "a": [
+     "Cringer",
+     "Snarl",
+     "Growler",
+     "Fearless"
+    ],
+    "why": "When He-Man uses the Power of Grayskull, Cringer transforms into the mighty Battle Cat."
+   },
+   {
+    "q": "Which actress starred alongside Anthony Head in the famous 1980s and 90s Nescafé Gold Blend TV adverts?",
+    "a": [
+     "Sharon Maughan",
+     "Glynis Barber",
+     "Jane Asher",
+     "Amanda Redman"
+    ],
+    "why": "The serialized romance storyline between the neighbours ran for 12 popular episodes over five years."
+   },
+   {
+    "q": "In the 1997 sci-fi comedy Men in Black, what is the official name of the shiny silver device used to erase memories?",
+    "a": [
+     "Neuralyzer",
+     "Memoryzer",
+     "Oblivionator",
+     "Chrono-wiper"
+    ],
+    "why": "Agents J and K use the red-flashing Neuralyzer to keep alien encounters secret from the public."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which album by Adele became the fastest-selling album in UK chart history upon its release in 2015?",
+    "a": [
+     "25",
+     "21",
+     "19",
+     "30"
+    ],
+    "why": "Adele's '25' sold over 800,000 copies in its first week in the UK, breaking record after record."
+   },
+   {
+    "q": "Which filmmaker directed the 1994 music video for Weezer's 'Buddy Holly', integrating the band into scenes from Happy Days?",
+    "a": [
+     "Spike Jonze",
+     "Michel Gondry",
+     "Baz Luhrmann",
+     "Quentin Tarantino"
+    ],
+    "why": "Spike Jonze seamlessly inserted Weezer into original footage from the classic 1970s TV show Happy Days."
+   },
+   {
+    "q": "What was the title of Keane's hit debut studio album, released in 2004?",
+    "a": [
+     "Hopes and Fears",
+     "Under the Iron Sea",
+     "Perfect Symmetry",
+     "Strangeland"
+    ],
+    "why": "'Hopes and Fears' featured hits like 'Somewhere Only We Know' and spent nine weeks at UK Number 1."
+   },
+   {
+    "q": "Which singer represented the UK at the 1998 Eurovision Song Contest in Birmingham with the song 'Where Are You?'?",
+    "a": [
+     "Imaani",
+     "Sonia",
+     "Jade Ewen",
+     "Jessica Garlick"
+    ],
+    "why": "Imaani finished as runner-up to Israel's Dana International in a thrilling contest held in Birmingham."
+   },
+   {
+    "q": "Who replaced Ozzy Osbourne as the lead vocalist of heavy metal band Black Sabbath in 1979?",
+    "a": [
+     "Ronnie James Dio",
+     "Ian Gillan",
+     "Glenn Hughes",
+     "David Coverdale"
+    ],
+    "why": "Ronnie James Dio joined Black Sabbath and sang on their hit 1980 album 'Heaven and Hell'."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which Scottish rock band had a huge international hit in 1985 with 'Don't You (Forget About Me)'?",
+    "a": [
+     "Simple Minds",
+     "Deacon Blue",
+     "Big Country",
+     "Wet Wet Wet"
+    ],
+    "why": "The song famously featured on the soundtrack to John Hughes's teen movie The Breakfast Club."
+   },
+   {
+    "q": "In the BBC comedy series 'The Office', what is the name of the paper merchant company where David Brent works?",
+    "a": [
+     "Wernham Hogg",
+     "Reynolds & Co",
+     "Paper Chase",
+     "Slough Paper Supplies"
+    ],
+    "why": "The fictional paper merchants were based at the Slough Trading Estate."
+   },
+   {
+    "q": "What is the main gas found inside a standard incandescent light bulb to prevent the filament from burning out?",
+    "a": [
+     "Argon",
+     "Oxygen",
+     "Hydrogen",
+     "Carbon dioxide"
+    ],
+    "why": "Argon is an unreactive noble gas that stops the tungsten filament from oxidising."
+   },
+   {
+    "q": "In the 1994 film 'Pulp Fiction', what is the name of John Travolta's character?",
+    "a": [
+     "Vincent Vega",
+     "Jules Winnfield",
+     "Marsellus Wallace",
+     "Butch Coolidge"
+    ],
+    "why": "John Travolta earned an Oscar nomination for his portrayal of the hitman Vincent Vega."
+   },
+   {
+    "q": "Which indie band released the UK number one single 'I Bet You Look Good on the Dancefloor' in 2005?",
+    "a": [
+     "Arctic Monkeys",
+     "Kaiser Chiefs",
+     "The Kooks",
+     "Razorlight"
+    ],
+    "why": "It was the debut single from Arctic Monkeys, taken from their record-breaking album Whatever People Say I Am..."
+   },
+   {
+    "q": "Which body of water lies between the southern coast of England and the northern coast of France?",
+    "a": [
+     "English Channel",
+     "North Sea",
+     "Celtic Sea",
+     "Bristol Channel"
+    ],
+    "why": "The English Channel connects the North Sea to the Atlantic Ocean and is crossed by the Channel Tunnel."
+   },
+   {
+    "q": "In the classic BBC comedy 'Dad's Army', what was the catchphrase famously shouted by Captain Mainwaring to Pike?",
+    "a": [
+     "Stupid boy!",
+     "You fool!",
+     "Don't panic!",
+     "Quiet down!"
+    ],
+    "why": "Captain Mainwaring frequently uttered \"Stupid boy!\" whenever Frank Pike made a silly suggestion."
+   },
+   {
+    "q": "Which female pop group had a major 1998 UK number one hit with the song 'C'est la Vie'?",
+    "a": [
+     "B*Witched",
+     "Atomic Kitten",
+     "All Saints",
+     "Honeyz"
+    ],
+    "why": "The Irish pop group B*Witched became the youngest Irish group to score a UK number one single with this track."
+   },
+   {
+    "q": "Which traditional Scottish dish is made from sheep's pluck mixed with oats, suet, and spices, encased in a stomach?",
+    "a": [
+     "Haggis",
+     "Black pudding",
+     "Lorne sausage",
+     "Cullen skink"
+    ],
+    "why": "Haggis is traditionally served with \"neeps and tatties\" on Burns Night."
+   },
+   {
+    "q": "In the classic 1990s video game series 'Monkey Island', what is the name of the main protagonist?",
+    "a": [
+     "Guybrush Threepwood",
+     "LeChuck",
+     "Stan",
+     "Herman Toothrot"
+    ],
+    "why": "Guybrush Threepwood aspires to become the most notorious pirate in the Caribbean."
+   }
+  ]
+ }
+}
