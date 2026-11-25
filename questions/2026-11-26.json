@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-26",
+ "quizzes": {
+  "general": [
+   {
+    "q": "In golf, what is the term for scoring three strokes under par on a single hole?",
+    "a": [
+     "Albatross",
+     "Eagle",
+     "Condor",
+     "Birdie"
+    ],
+    "why": "An albatross (or double eagle) is three under par, while two under par is an eagle and one under is a birdie."
+   },
+   {
+    "q": "Which treaty, signed in 1919, officially brought an end to the First World War?",
+    "a": [
+     "Treaty of Versailles",
+     "Treaty of Utrecht",
+     "Treaty of Ghent",
+     "Treaty of Paris"
+    ],
+    "why": "Signed in the Hall of Mirrors at Versailles in 1919, the treaty formally ended the state of war with Germany."
+   },
+   {
+    "q": "What is the capital city of Australia?",
+    "a": [
+     "Canberra",
+     "Sydney",
+     "Melbourne",
+     "Brisbane"
+    ],
+    "why": "Canberra was selected as a compromise capital in 1908 to settle a rivalry between Sydney and Melbourne."
+   },
+   {
+    "q": "Which liqueur is traditionally used to flame a classic Crêpe Suzette?",
+    "a": [
+     "Grand Marnier",
+     "Cognac",
+     "Calvados",
+     "Kirsch"
+    ],
+    "why": "Grand Marnier, an orange liqueur made from cognac, is ignited to flame the dessert right before serving."
+   },
+   {
+    "q": "Which gas in the upper atmosphere of Uranus absorbs red light, giving it a blue-green colour?",
+    "a": [
+     "Methane",
+     "Ammonia",
+     "Nitrogen",
+     "Chlorine"
+    ],
+    "why": "Atmospheric methane absorbs red light, reflecting the characteristic blue-green wavelengths into space."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the BBC comedy Bottom, what is the name of the local pub frequented by Richie and Eddie?",
+    "a": [
+     "The Lamb and Flag",
+     "The Nag's Head",
+     "The Winchester",
+     "The King's Head"
+    ],
+    "why": "Richie and Eddie frequently cause chaos in their favourite local, The Lamb and Flag."
+   },
+   {
+    "q": "Which 1990s toy line featured compact plastic playsets shaped like skulls, designed as a rival to Polly Pocket?",
+    "a": [
+     "Mighty Max",
+     "Monster in My Pocket",
+     "Street Sharks",
+     "Micro Machines"
+    ],
+    "why": "Mighty Max was created by Bluebird Toys in 1992 as a boy-oriented counterpart to Polly Pocket."
+   },
+   {
+    "q": "Which meat snack was famously advertised in the 1990s using an aggressive cartoon character voiced by Ade Edmondson?",
+    "a": [
+     "Peperami",
+     "Mattessons",
+     "Pepperidge",
+     "Slim Jim"
+    ],
+    "why": "Ade Edmondson voiced the iconic angry stick figure in Peperami's 'It's a bit of an animal' ads."
+   },
+   {
+    "q": "In the 1998 Nintendo 64 game The Legend of Zelda: Ocarina of Time, what is the name of Link's fairy companion?",
+    "a": [
+     "Navi",
+     "Tatl",
+     "Midna",
+     "Fi"
+    ],
+    "why": "Navi guides Link throughout his quest, famously shouting 'Hey!' and 'Listen!' at the player."
+   },
+   {
+    "q": "In the 1984 film Ghostbusters, what is the name of the demonic Gatekeeper that possesses Dana Barrett?",
+    "a": [
+     "Zuul",
+     "Vinz Clortho",
+     "Gozer",
+     "Vigo"
+    ],
+    "why": "Zuul is the Gatekeeper of Gozer who possesses Dana, famously declaring 'There is no Dana, only Zuul'."
+   }
+  ],
+  "music": [
+   {
+    "q": "What was the title of Supergrass's hit debut studio album, released in 1995?",
+    "a": [
+     "I Should Coco",
+     "In It for the Money",
+     "Supergrass",
+     "Life on Other Planets"
+    ],
+    "why": "I Should Coco reached UK Number 1 in 1995 and featured the hit single 'Alright'."
+   },
+   {
+    "q": "Which pop group scored a UK Number 1 single in 1983 with 'Karma Chameleon'?",
+    "a": [
+     "Culture Club",
+     "Wham!",
+     "Spandau Ballet",
+     "Duran Duran"
+    ],
+    "why": "'Karma Chameleon' was Culture Club's second UK Number 1 single and the UK's best-selling single of 1983."
+   },
+   {
+    "q": "Which rock duo's 2002 music video for 'Fell in Love with a Girl' was animated entirely using Lego bricks?",
+    "a": [
+     "The White Stripes",
+     "The Black Keys",
+     "The Strokes",
+     "The Ting Tings"
+    ],
+    "why": "Directed by Michel Gondry, the Lego animation for 'Fell in Love with a Girl' won three MTV Video Music Awards."
+   },
+   {
+    "q": "Which disco group secured the UK Christmas Number 1 single in 1978 with 'Mary's Boy Child – Oh My Lord'?",
+    "a": [
+     "Boney M.",
+     "ABBA",
+     "Baccara",
+     "CHIC"
+    ],
+    "why": "Boney M.'s festive hit sold over 1.8 million copies in the UK, becoming one of the best-selling singles ever."
+   },
+   {
+    "q": "Which country won the 2006 Eurovision Song Contest with the heavy metal band Lordi?",
+    "a": [
+     "Finland",
+     "Sweden",
+     "Norway",
+     "Iceland"
+    ],
+    "why": "Lordi gave Finland their first Eurovision victory with their hard rock anthem 'Hard Rock Hallelujah'."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which Welsh alt-rock band had a top five UK hit in 1998 with the single 'Mulder and Scully'?",
+    "a": [
+     "Catatonia",
+     "Space",
+     "Super Furry Animals",
+     "Gorky's Zygotic Mynci"
+    ],
+    "why": "Catatonia, fronted by Cerys Matthews, scored a huge hit named after The X-Files characters."
+   },
+   {
+    "q": "In the BBC sci-fi sitcom Red Dwarf, what is the middle name of the hologram character Arnold Rimmer?",
+    "a": [
+     "Judas",
+     "Jonathan",
+     "Julian",
+     "Jasper"
+    ],
+    "why": "Arnold Judas Rimmer frequently complains about his unfortunate middle name."
+   },
+   {
+    "q": "Which river is the longest contained entirely within the borders of Scotland?",
+    "a": [
+     "River Tay",
+     "River Clyde",
+     "River Forth",
+     "River Spey"
+    ],
+    "why": "The River Tay flows for 117 miles, making it the longest river entirely in Scotland."
+   },
+   {
+    "q": "Which English pop band released the smash-hit 1982 album 'Rio', featuring 'Hungry Like the Wolf'?",
+    "a": [
+     "Duran Duran",
+     "Spandau Ballet",
+     "Wham!",
+     "Ultravox"
+    ],
+    "why": "Duran Duran's second studio album spent 110 weeks on the UK Albums Chart."
+   },
+   {
+    "q": "Which actress won an Academy Award for playing police chief Marge Gunderson in the 1996 film Fargo?",
+    "a": [
+     "Frances McDormand",
+     "Holly Hunter",
+     "Julianne Moore",
+     "Sigourney Weaver"
+    ],
+    "why": "Frances McDormand won Best Actress for her iconic portrayal of the pregnant police chief."
+   },
+   {
+    "q": "What is the largest organ in the human body by surface area and mass?",
+    "a": [
+     "Skin",
+     "Liver",
+     "Large intestine",
+     "Lungs"
+    ],
+    "why": "The skin covers approximately two square metres on an average adult."
+   },
+   {
+    "q": "Which French electronic music duo released the hit 2001 album 'Discovery', featuring 'One More Time'?",
+    "a": [
+     "Daft Punk",
+     "Justice",
+     "Air",
+     "Cassius"
+    ],
+    "why": "Daft Punk released Discovery in 2001, which later formed the soundtrack to Interstella 5555."
+   },
+   {
+    "q": "Which flagship sci-fi video game franchise features the protagonist Master Chief?",
+    "a": [
+     "Halo",
+     "Mass Effect",
+     "Gears of War",
+     "Killzone"
+    ],
+    "why": "Master Chief first appeared in Halo: Combat Evolved on the original Xbox in 2001."
+   },
+   {
+    "q": "Which espresso-based coffee drink is prepared by diluting a shot of espresso with hot water?",
+    "a": [
+     "Americano",
+     "Macchiato",
+     "Flat white",
+     "Cortado"
+    ],
+    "why": "The Americano got its name when American soldiers in WWII diluted Italian espresso with hot water."
+   },
+   {
+    "q": "Which Scottish band released the hit 1999 album 'The Man Who', featuring 'Why Does It Always Rain on Me?'?",
+    "a": [
+     "Travis",
+     "Feeder",
+     "Stereophonics",
+     "Idlewild"
+    ],
+    "why": "Travis achieved huge commercial success in 1999 with their second album, The Man Who."
+   }
+  ]
+ }
+}
