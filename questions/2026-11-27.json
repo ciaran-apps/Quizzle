@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-27",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which town is located at the southernmost point of mainland Europe?",
+    "a": [
+     "Tarifa",
+     "Gibraltar",
+     "Malaga",
+     "Faro"
+    ],
+    "why": "Tarifa is in southern Spain and is only about 14 kilometres from the coast of Morocco."
+   },
+   {
+    "q": "For which invention was the Scottish-born scientist Alexander Graham Bell granted a patent in 1876?",
+    "a": [
+     "Telephone",
+     "Lightbulb",
+     "Radio",
+     "Steam engine"
+    ],
+    "why": "Bell's patent for the telephone is often cited as one of the most valuable in history."
+   },
+   {
+    "q": "Which of King Henry VIII’s six wives was the biological mother of Queen Elizabeth I?",
+    "a": [
+     "Anne Boleyn",
+     "Catherine of Aragon",
+     "Jane Seymour",
+     "Catherine Howard"
+    ],
+    "why": "Anne Boleyn was the mother of Elizabeth I, while Jane Seymour gave birth to the future Edward VI."
+   },
+   {
+    "q": "What is the main legume used to make the traditional Middle Eastern dip hummus?",
+    "a": [
+     "Chickpeas",
+     "Lentils",
+     "Broad beans",
+     "Soybeans"
+    ],
+    "why": "The word 'hummus' literally means chickpea in Arabic."
+   },
+   {
+    "q": "At which English racecourse is the Derby, one of the five Classics of the Flat racing season, held annually?",
+    "a": [
+     "Epsom Downs",
+     "Ascot",
+     "Newmarket",
+     "Aintree"
+    ],
+    "why": "The Derby at Epsom Downs was first run in 1780 and is the most prestigious of the five Classics."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In Only Fools and Horses, which three-word phrase does Uncle Albert usually use to start his war stories?",
+    "a": [
+     "During the war...",
+     "In the navy...",
+     "Back in the day...",
+     "When I was..."
+    ],
+    "why": "Uncle Albert famously annoyed Del and Rodney by starting every story with those three words."
+   },
+   {
+    "q": "In the original 1980 arcade game Pac-Man, what is the name of the red ghost?",
+    "a": [
+     "Blinky",
+     "Pinky",
+     "Inky",
+     "Clyde"
+    ],
+    "why": "Blinky is the leader of the ghosts; the others are named Pinky, Inky, and Clyde."
+   },
+   {
+    "q": "Which actress played the 'Oxo Mum' in the long-running British television adverts from 1983 to 1999?",
+    "a": [
+     "Lynda Bellingham",
+     "Wendy Richard",
+     "Pauline Quirke",
+     "Anne Reid"
+    ],
+    "why": "Lynda Bellingham became a household name playing the mother in the popular Oxo family adverts."
+   },
+   {
+    "q": "In the 1977 film Star Wars, which character is the pilot and captain of the Millennium Falcon?",
+    "a": [
+     "Han Solo",
+     "Lando Calrissian",
+     "Luke Skywalker",
+     "Chewbacca"
+    ],
+    "why": "Han Solo won the ship from Lando Calrissian in a game of Sabacc before the events of the films."
+   },
+   {
+    "q": "What was the name of the collectible animal figures launched in the UK in 1987 by the toy company Tomy?",
+    "a": [
+     "Sylvanian Families",
+     "Calico Critters",
+     "Littlest Pet Shop",
+     "Care Bears"
+    ],
+    "why": "Sylvanian Families were woodland creature figures that lived in the fictional village of Sylvania."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which band released the multi-platinum 1985 album 'Songs from the Big Chair'?",
+    "a": [
+     "Tears for Fears",
+     "Depeche Mode",
+     "Talk Talk",
+     "The Cure"
+    ],
+    "why": "It featured the massive hits Shout and Everybody Wants to Rule the World."
+   },
+   {
+    "q": "Who defeated Gareth Gates to win the final of the first series of Pop Idol in February 2002?",
+    "a": [
+     "Will Young",
+     "Darius Danesh",
+     "Lemar",
+     "Zoe Birkett"
+    ],
+    "why": "Will Young won the final with 53% of the vote in one of the most-watched TV moments of 2002."
+   },
+   {
+    "q": "The 2006 viral music video for 'Here It Goes Again' featured which band dancing on eight treadmills?",
+    "a": [
+     "OK Go",
+     "Weezer",
+     "The Bravery",
+     "Modest Mouse"
+    ],
+    "why": "The low-budget video was a viral sensation in the early days of YouTube."
+   },
+   {
+    "q": "Which band replaced The Stone Roses as Glastonbury headliners in 1995 after they pulled out?",
+    "a": [
+     "Pulp",
+     "Suede",
+     "Radiohead",
+     "Blur"
+    ],
+    "why": "Jarvis Cocker and his band stepped in to play a legendary set on the Pyramid Stage."
+   },
+   {
+    "q": "Which song was at the top of the UK Singles Chart on New Year's Day 1980?",
+    "a": [
+     "Another Brick in the Wall",
+     "Brass in Pocket",
+     "Coward of the County",
+     "Please Don't Go"
+    ],
+    "why": "The song, which features a school choir, spent five weeks at the top of the charts."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British indie band released the critically acclaimed 1994 album 'Parklife'?",
+    "a": [
+     "Blur",
+     "Pulp",
+     "Oasis",
+     "Suede"
+    ],
+    "why": "The album helped define the Britpop era and won four Brit Awards."
+   },
+   {
+    "q": "In the 1985 film 'Back to the Future', what speed must the DeLorean reach to travel through time?",
+    "a": [
+     "88 mph",
+     "55 mph",
+     "70 mph",
+     "100 mph"
+    ],
+    "why": "Doc Brown's time machine requires this specific speed to trigger the flux capacitor."
+   },
+   {
+    "q": "Located in the Lake District, which is the largest natural lake in England?",
+    "a": [
+     "Windermere",
+     "Ullswater",
+     "Coniston Water",
+     "Derwentwater"
+    ],
+    "why": "It is the largest natural lake in England, stretching for over 10 miles."
+   },
+   {
+    "q": "In the sitcom 'Father Ted', what is the name of the fictional island where the priests live?",
+    "a": [
+     "Craggy Island",
+     "Rugged Island",
+     "Aris Island",
+     "Rocky Island"
+    ],
+    "why": "Ted, Dougal, and Jack are exiled to this island off the coast of Ireland."
+   },
+   {
+    "q": "What is the most abundant gas found in the Earth's atmosphere?",
+    "a": [
+     "Nitrogen",
+     "Oxygen",
+     "Carbon Dioxide",
+     "Argon"
+    ],
+    "why": "Nitrogen makes up about 78% of the Earth's atmosphere."
+   },
+   {
+    "q": "Which British singer had a huge UK number one hit in 1987 with 'Never Gonna Give You Up'?",
+    "a": [
+     "Rick Astley",
+     "Jason Donovan",
+     "Kylie Minogue",
+     "Sinitta"
+    ],
+    "why": "This debut single was the best-selling single of 1987 in the UK."
+   },
+   {
+    "q": "In the 'Harry Potter' books, what is the name of the village where Harry was born?",
+    "a": [
+     "Godric's Hollow",
+     "Hogsmeade",
+     "Little Whinging",
+     "Ottery St Catchpole"
+    ],
+    "why": "It is the birthplace of Godric Gryffindor and the location of the Potters' house."
+   },
+   {
+    "q": "Which English king was killed at the Battle of Bosworth Field in 1485?",
+    "a": [
+     "Richard III",
+     "Henry VI",
+     "Edward IV",
+     "Harold II"
+    ],
+    "why": "His death marked the end of the Wars of the Roses and the start of the Tudor dynasty."
+   },
+   {
+    "q": "In the 'Sonic the Hedgehog' video games, what is the name of Sonic's two-tailed fox sidekick?",
+    "a": [
+     "Tails",
+     "Knuckles",
+     "Shadow",
+     "Big"
+    ],
+    "why": "Miles Prower, better known as Tails, first appeared in Sonic the Hedgehog 2."
+   },
+   {
+    "q": "Which spirit is traditionally used as the base for a classic Mojito cocktail?",
+    "a": [
+     "Rum",
+     "Vodka",
+     "Gin",
+     "Tequila"
+    ],
+    "why": "This Cuban cocktail consists of white rum, sugar, lime juice, soda water, and mint."
+   }
+  ]
+ }
+}
