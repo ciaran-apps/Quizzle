@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-28",
+ "quizzes": {
+  "general": [
+   {
+    "q": "How many hearts does an octopus have?",
+    "a": [
+     "Three",
+     "Two",
+     "Four",
+     "One"
+    ],
+    "why": "An octopus has three hearts: two pump blood to the gills, while the larger one pumps blood to the body."
+   },
+   {
+    "q": "Which British passenger liner was sunk by a German U-boat off the southern coast of Ireland in May 1915?",
+    "a": [
+     "RMS Lusitania",
+     "RMS Mauretania",
+     "RMS Britannic",
+     "RMS Olympic"
+    ],
+    "why": "The sinking of the Lusitania claimed 1,198 lives and hardened American opinion against Germany."
+   },
+   {
+    "q": "Which Brazilian spirit distilled from fermented sugarcane juice forms the base of a classic Caipirinha?",
+    "a": [
+     "Cachaça",
+     "White rum",
+     "Pisco",
+     "Aguardiente"
+    ],
+    "why": "Cachaça is distilled from fresh sugarcane juice, whereas standard rum is typically made from molasses."
+   },
+   {
+    "q": "Which metal has the highest melting point of any element on the periodic table?",
+    "a": [
+     "Tungsten",
+     "Titanium",
+     "Platinum",
+     "Tantalum"
+    ],
+    "why": "Tungsten melts at 3,422 °C, making it historically indispensable for incandescent light bulb filaments."
+   },
+   {
+    "q": "Excluding the Sun, which star is closest to Earth?",
+    "a": [
+     "Proxima Centauri",
+     "Sirius",
+     "Alpha Centauri A",
+     "Barnard's Star"
+    ],
+    "why": "Proxima Centauri is a faint red dwarf located roughly 4.24 light-years away in the constellation Centaurus."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the BBC comedy series The League of Gentlemen, what is the name of the shop run by Edward and Tubbs?",
+    "a": [
+     "A Local Shop",
+     "Royston Vasey",
+     "The Village Store",
+     "Tattsyrup Crafts"
+    ],
+    "why": "Edward and Tubbs were fiercely protective of their local shop for local people in Royston Vasey."
+   },
+   {
+    "q": "In the 1994 action film Speed, below what speed in miles per hour will the bomb on the bus detonate?",
+    "a": [
+     "50 mph",
+     "40 mph",
+     "60 mph",
+     "55 mph"
+    ],
+    "why": "Keanu Reeves and Sandra Bullock had to keep the bus above 50 mph to prevent the bomb exploding."
+   },
+   {
+    "q": "In the original 1991 Sega Megadrive game Sonic the Hedgehog, what items does Sonic collect to protect himself?",
+    "a": [
+     "Golden rings",
+     "Gold coins",
+     "Chaos emeralds",
+     "Power stars"
+    ],
+    "why": "Collecting golden rings prevents Sonic from losing a life whenever he bumps into enemies."
+   },
+   {
+    "q": "Released in 1996, which electronic game instructed players to \"Bop it\", \"Twist it\", and which third action?",
+    "a": [
+     "Pull it",
+     "Spin it",
+     "Flick it",
+     "Shake it"
+    ],
+    "why": "The original 1996 electronic handheld game featured three main actions: Bop it, Twist it, and Pull it."
+   },
+   {
+    "q": "Which wood care brand became famous in the 1990s for the tagline 'It does exactly what it says on the tin'?",
+    "a": [
+     "Ronseal",
+     "Cuprinol",
+     "Dulux",
+     "Sadolin"
+    ],
+    "why": "Ronseal introduced the iconic tagline in 1994, and it has since entered everyday British slang."
+   }
+  ],
+  "music": [
+   {
+    "q": "What was the title of The Stone Roses' long-awaited second studio album, released in December 1994?",
+    "a": [
+     "Second Coming",
+     "Spike Island",
+     "The Second Wave",
+     "Turn Into Stone"
+    ],
+    "why": "Second Coming was released five years after their debut, peaking at number four in the UK album chart."
+   },
+   {
+    "q": "Which boy band achieved the UK Christmas Number 1 single in 1999 with 'I Have a Dream / Seasons in the Sun'?",
+    "a": [
+     "Westlife",
+     "Boyzone",
+     "Five",
+     "Take That"
+    ],
+    "why": "Westlife's double A-side single kept Cliff Richard's 'The Millennium Prayer' off the top spot."
+   },
+   {
+    "q": "Which singer is the only person to have won the Eurovision Song Contest three times as a performer or songwriter?",
+    "a": [
+     "Johnny Logan",
+     "Linda Martin",
+     "Niamh Kavanagh",
+     "Dana"
+    ],
+    "why": "Johnny Logan won twice as a singer in 1980 and 1987, and wrote Linda Martin's winning entry in 1992."
+   },
+   {
+    "q": "Which synth-pop duo, formed by Alison Moyet and Vince Clarke, released the hit 1982 album 'Upstairs at Eric's'?",
+    "a": [
+     "Yazoo",
+     "Eurythmics",
+     "Erasure",
+     "Soft Cell"
+    ],
+    "why": "Yazoo released 'Upstairs at Eric's' shortly after Vince Clarke departed Depeche Mode."
+   },
+   {
+    "q": "Which British band's 1997 music video for 'Bitter Sweet Symphony' features their lead singer walking down a London street?",
+    "a": [
+     "The Verve",
+     "Blur",
+     "Supergrass",
+     "Pulp"
+    ],
+    "why": "The iconic music video for 'Bitter Sweet Symphony' was filmed along Hoxton Street in London."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which British rock group had a huge UK hit single in 1997 with the energetic track 'Tubthumping'?",
+    "a": [
+     "Chumbawamba",
+     "Tubeway Army",
+     "Carter USM",
+     "Pop Will Eat Itself"
+    ],
+    "why": "Chumbawamba reached number two in the UK and enjoyed massive international success with 'Tubthumping'."
+   },
+   {
+    "q": "In the Channel 4 comedy series 'Spaced', what is the name of the eccentric artist who lives downstairs?",
+    "a": [
+     "Brian",
+     "Tyres",
+     "Mike",
+     "Marsha"
+    ],
+    "why": "Mark Heap played Brian Topp, the tortured conceptual artist living in the ground-floor flat."
+   },
+   {
+    "q": "Which English county is home to the prehistoric stone circle at Avebury and the historic site of Stonehenge?",
+    "a": [
+     "Wiltshire",
+     "Dorset",
+     "Somerset",
+     "Hampshire"
+    ],
+    "why": "Wiltshire contains both Stonehenge and Avebury, the world's largest prehistoric stone circle."
+   },
+   {
+    "q": "In the 1999 psychological film 'Fight Club', what product do Tyler Durden and the Narrator manufacture and sell?",
+    "a": [
+     "Soap",
+     "Candles",
+     "Perfume",
+     "Leather belts"
+    ],
+    "why": "They steal human fat from liposuction clinics to make high-end luxury soap."
+   },
+   {
+    "q": "Which English synth-pop duo had a UK number one single in 1981 with their iconic cover of 'Tainted Love'?",
+    "a": [
+     "Soft Cell",
+     "Erasure",
+     "Depeche Mode",
+     "Blancmange"
+    ],
+    "why": "Marc Almond and Dave Ball formed Soft Cell, taking 'Tainted Love' to the top of the UK chart."
+   },
+   {
+    "q": "What is the name of the hard, white outer layer that covers and protects the crown of a human tooth?",
+    "a": [
+     "Enamel",
+     "Dentine",
+     "Cementum",
+     "Pulp"
+    ],
+    "why": "Tooth enamel is the hardest substance in the human body."
+   },
+   {
+    "q": "Which spirit is traditionally mixed with ginger beer and lime juice to create a Dark 'n' Stormy cocktail?",
+    "a": [
+     "Dark rum",
+     "Bourbon",
+     "Vodka",
+     "Tequila"
+    ],
+    "why": "A classic Dark 'n' Stormy is made with dark rum (traditionally Goslings) and ginger beer."
+   },
+   {
+    "q": "Which 1997 Nintendo 64 racing game featured playable characters Diddy Kong, Banjo, and Conker the Squirrel?",
+    "a": [
+     "Diddy Kong Racing",
+     "Mario Kart 64",
+     "Crash Team Racing",
+     "Wave Race 64"
+    ],
+    "why": "Diddy Kong Racing was a hugely popular N64 racer developed by Rare."
+   },
+   {
+    "q": "Which British Prime Minister held up a piece of paper in 1938 and declared 'peace for our time'?",
+    "a": [
+     "Neville Chamberlain",
+     "Stanley Baldwin",
+     "Ramsay MacDonald",
+     "Anthony Eden"
+    ],
+    "why": "Neville Chamberlain uttered the famous line upon returning from Munich in September 1938."
+   },
+   {
+    "q": "Which American rock duo released the iconic guitar-riff single 'Seven Nation Army' in 2003?",
+    "a": [
+     "The White Stripes",
+     "The Strokes",
+     "The Killers",
+     "Kings of Leon"
+    ],
+    "why": "Jack and Meg White of The White Stripes released 'Seven Nation Army' on their album 'Elephant'."
+   }
+  ]
+ }
+}
