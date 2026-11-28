@@ -1,0 +1,263 @@
+{
+ "date": "2026-11-29",
+ "quizzes": {
+  "general": [
+   {
+    "q": "Which country hosted and won the inaugural FIFA Men's World Cup in 1930?",
+    "a": [
+     "Uruguay",
+     "Argentina",
+     "Brazil",
+     "Italy"
+    ],
+    "why": "Uruguay defeated neighbouring Argentina 4–2 in the final in Montevideo."
+   },
+   {
+    "q": "The apple brandy Calvados is traditionally produced in which region of France?",
+    "a": [
+     "Normandy",
+     "Brittany",
+     "Burgundy",
+     "Bordeaux"
+    ],
+    "why": "Calvados has held Protected Designation of Origin status in Normandy since 1942."
+   },
+   {
+    "q": "Which country is the largest landlocked nation in the world by total land area?",
+    "a": [
+     "Kazakhstan",
+     "Mongolia",
+     "Chad",
+     "Bolivia"
+    ],
+    "why": "Kazakhstan spans over 2.7 million square kilometres without an ocean coastline."
+   },
+   {
+    "q": "Which British monarch was the first to take up official residence at Buckingham Palace?",
+    "a": [
+     "Queen Victoria",
+     "King William IV",
+     "King George IV",
+     "King George III"
+    ],
+    "why": "Victoria moved into the palace in July 1837, shortly after ascending the throne."
+   },
+   {
+    "q": "Which is the only living species of bear native to South America?",
+    "a": [
+     "Spectacled bear",
+     "Sun bear",
+     "Sloth bear",
+     "Brown bear"
+    ],
+    "why": "Also called the Andean bear, it gets its name from distinct markings around its eyes."
+   }
+  ],
+  "pop": [
+   {
+    "q": "In the Channel 4 sitcom Black Books, which comedian plays the bookshop's eccentric assistant Manny Bianco?",
+    "a": [
+     "Bill Bailey",
+     "Dylan Moran",
+     "Sean Lock",
+     "Mark Heap"
+    ],
+    "why": "Bill Bailey starred as Manny alongside Dylan Moran's misanthropic bookshop owner Bernard Black."
+   },
+   {
+    "q": "Which miniature toy vehicle brand was famously advertised in the 1980s and 90s by fast-talking John Moschitta Jr.?",
+    "a": [
+     "Micro Machines",
+     "Hot Wheels",
+     "Matchbox",
+     "Majorette"
+    ],
+    "why": "Moschitta delivered the trademark rapid-fire slogan: \"If it doesn't say Micro Machines, it's not the real thing!\""
+   },
+   {
+    "q": "In the 1998 game Metal Gear Solid, which boss famously breaks the fourth wall by reading the player's memory card?",
+    "a": [
+     "Psycho Mantis",
+     "Revolver Ocelot",
+     "Sniper Wolf",
+     "Vulcan Raven"
+    ],
+    "why": "Psycho Mantis spooked players by commenting on save files from other Konami games and making the controller vibrate."
+   },
+   {
+    "q": "In a classic 1980s Hamlet cigar advert, which Scottish actor struggles comically to take a passport photo in a booth?",
+    "a": [
+     "Gregor Fisher",
+     "Robbie Coltrane",
+     "Gerard Kelly",
+     "Craig Ferguson"
+    ],
+    "why": "The Rab C. Nesbitt star's photo booth mishap remains one of British television's most celebrated adverts."
+   },
+   {
+    "q": "On the comedy panel show Shooting Stars, which comedian played the scorekeeping giant baby George Dawes?",
+    "a": [
+     "Matt Lucas",
+     "David Walliams",
+     "Johnny Vegas",
+     "Vic Reeves"
+    ],
+    "why": "Matt Lucas delivered scores from his drum kit and famously performed surreal tunes like the Baked Potato Song."
+   }
+  ],
+  "music": [
+   {
+    "q": "Which novelty act kept Take That's 'Babe' off the UK Christmas Number 1 spot in 1993?",
+    "a": [
+     "Mr Blobby",
+     "The Teletubbies",
+     "Chef",
+     "Zig and Zag"
+    ],
+    "why": "Mr Blobby's self-titled single reached the top spot just in time for Christmas Day in 1993."
+   },
+   {
+    "q": "Which Oasis song did Jay-Z open his 2008 Glastonbury headline set with, mocking critics of hip-hop at the festival?",
+    "a": [
+     "Wonderwall",
+     "Don't Look Back in Anger",
+     "Live Forever",
+     "Champagne Supernova"
+    ],
+    "why": "Jay-Z walked out with a guitar to cover Wonderwall after Noel Gallagher had questioned hip-hop headlining Glastonbury."
+   },
+   {
+    "q": "What was the title of rock band The Darkness's multi-platinum debut studio album, released in 2003?",
+    "a": [
+     "Permission to Land",
+     "One Way Ticket to Hell",
+     "Hot Cakes",
+     "Last of Our Kind"
+    ],
+    "why": "Featuring 'I Believe in a Thing Called Love', Permission to Land topped the UK Albums Chart in 2003."
+   },
+   {
+    "q": "Which pop duo represented the UK at the 2003 Eurovision Song Contest, infamously scoring 'nul points'?",
+    "a": [
+     "Jemini",
+     "Scooch",
+     "Electro Velvet",
+     "Precious"
+    ],
+    "why": "Jemini's rendition of 'Cry Baby' in Riga earned the UK its first ever zero-point Eurovision finish."
+   },
+   {
+    "q": "Which singer joined hip-hop group The Black Eyed Peas in 2002 ahead of their breakout album 'Elephunk'?",
+    "a": [
+     "Fergie",
+     "Nicole Scherzinger",
+     "Ashanti",
+     "Christina Milian"
+    ],
+    "why": "Fergie joined the existing trio in 2002, helping propel the group to global multi-platinum success."
+   }
+  ],
+  "mix": [
+   {
+    "q": "Which English indie rock band reached number one on the UK singles chart in 2007 with the hit 'Ruby'?",
+    "a": [
+     "Kaiser Chiefs",
+     "The Fratellis",
+     "Kasabian",
+     "The Kooks"
+    ],
+    "why": "Ruby was the lead single from Kaiser Chiefs' second studio album, Yours Truly, Angry Mob."
+   },
+   {
+    "q": "In the BBC sitcom 'Gimme Gimme Gimme', what is the name of Linda's actor flatmate played by James Dreyfus?",
+    "a": [
+     "Tom Farrell",
+     "Jez Quigley",
+     "Rick Jones",
+     "Mark Taylor"
+    ],
+    "why": "James Dreyfus played the flamboyant, struggling actor Tom Farrell alongside Kathy Burke's Linda."
+   },
+   {
+    "q": "Which chemical element is the only metal that is liquid at standard room temperature and pressure?",
+    "a": [
+     "Mercury",
+     "Gallium",
+     "Bromine",
+     "Cesium"
+    ],
+    "why": "Mercury, also known as quicksilver, has a melting point of minus 38.8 degrees Celsius."
+   },
+   {
+    "q": "Which mountain peak is the highest point in Wales and the entire British Isles outside Scotland?",
+    "a": [
+     "Yr Wyddfa (Snowdon)",
+     "Pen y Fan",
+     "Cadair Idris",
+     "Crib Goch"
+    ],
+    "why": "Standing at 1,085 metres, Yr Wyddfa (Snowdon) is the highest peak in Wales."
+   },
+   {
+    "q": "In the 2004 comedy horror film 'Shaun of the Dead', what is the name of the pub where the heroes take shelter?",
+    "a": [
+     "The Winchester",
+     "The World's End",
+     "The Black Dragon",
+     "The Queen's Head"
+    ],
+    "why": "Shaun famously decides to head to The Winchester, have a nice cold pint, and wait for it all to blow over."
+   },
+   {
+    "q": "Which classic dessert consists of a dark, dense sponge containing chopped dates, smothered in a toffee sauce?",
+    "a": [
+     "Sticky toffee pudding",
+     "Spotted dick",
+     "Treacle sponge",
+     "Bread and butter pudding"
+    ],
+    "why": "Sticky toffee pudding was originally developed in the mid-20th century in North West England."
+   },
+   {
+    "q": "In the PlayStation video game series 'Crash Bandicoot', what is the name of Crash's main arch-nemesis?",
+    "a": [
+     "Doctor Neo Cortex",
+     "Doctor Robotnik",
+     "Doctor Nitrus Brio",
+     "Doctor N. Gin"
+    ],
+    "why": "Doctor Neo Cortex is the yellow-skinned mad scientist determined to dominate the world."
+   },
+   {
+    "q": "Which English monarch succeeded King Henry VIII upon his death in 1547?",
+    "a": [
+     "Edward VI",
+     "Mary I",
+     "Elizabeth I",
+     "Lady Jane Grey"
+    ],
+    "why": "Edward VI became king at just nine years old and was the son of Henry VIII and Jane Seymour."
+   },
+   {
+    "q": "Who served as Lord Sugar's original male advisor alongside Margaret Mountford on BBC's 'The Apprentice'?",
+    "a": [
+     "Nick Hewer",
+     "Claude Littner",
+     "Tim Campbell",
+     "Simon Woodroffe"
+    ],
+    "why": "Nick Hewer advised Lord Sugar for ten series before leaving the show in 2014."
+   },
+   {
+    "q": "Which American hard rock band released the landmark 1987 debut album 'Appetite for Destruction'?",
+    "a": [
+     "Guns N' Roses",
+     "Aerosmith",
+     "Bon Jovi",
+     "Def Leppard"
+    ],
+    "why": "Appetite for Destruction became one of the best-selling debut albums of all time."
+   }
+  ]
+ }
+}
